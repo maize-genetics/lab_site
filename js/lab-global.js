@@ -15,7 +15,7 @@
     { key: "people", href: "people.html", label: "People" },
     { key: "publications", href: "publications.html", label: "Publications" },
     { key: "tools", href: "tools.html", label: "Tools" },
-    { key: "join", href: "join.html", label: "Join" }
+    { key: "join", href: "join.html", label: "About &amp; Join" }
   ];
 
   var BRAND_MARK =
