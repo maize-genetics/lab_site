@@ -87,7 +87,7 @@
   var SPECIAL = {
     landmarks: {
       name: "Landmark papers",
-      blurb: "Our most-cited, foundational work — each with well over 1,000 citations.",
+      blurb: "The foundational papers the field still builds on.",
       items: function () {
         return (window.LAB_PUBS || []).filter(function (p) {
           return p.flags && p.flags.indexOf("landmark") !== -1;

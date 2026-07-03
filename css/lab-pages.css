@@ -81,6 +81,9 @@ body:not(.theme-dark) .lead-card .r{color:#9a6d12}
 .person{display:flex;align-items:center;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-md);padding:14px 16px;transition:transform .18s ease,box-shadow .18s ease}
 .person:hover{transform:translateY(-2px);box-shadow:var(--shadow-soft)}
 .person .av{width:44px;height:44px;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:"Spectral",serif;font-size:15px;color:var(--on-dark);background:linear-gradient(135deg,#2a4a3a,var(--forest))}
+/* headshot photos in avatars (fall back to initials where absent) */
+.lead-card .avatar.has-photo,.person .av.has-photo{background:none;overflow:hidden}
+.lead-card .avatar img,.person .av img{width:100%;height:100%;object-fit:cover;object-position:center 18%;display:block}
 .person:nth-child(4n+2) .av{background:linear-gradient(135deg,var(--gold),#a9761a);color:var(--forest-2)}
 .person:nth-child(4n+3) .av{background:linear-gradient(135deg,var(--anthocyanin),#3d1a2c)}
 .person:nth-child(4n) .av{background:linear-gradient(135deg,#2a6b57,#16342A)}
