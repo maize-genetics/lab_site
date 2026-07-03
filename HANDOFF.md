@@ -17,10 +17,10 @@ features", and "data/content still owed". Check items off as they land.
       Liu, Szu-Ping Chen, Thuy La.
 
 ## Open — quick copy / asset fixes
-- [ ] **(4) Software icons** on `tools.html` — real icons now on **PlantCAD**,
-      **GeneCAD** (new card), and **AnchorWave**. Still text-mark icons: PHG,
-      TASSEL, rTASSEL, GAPIT, BioKotlin. **Source:** the bucklerlab Wix site has
-      `software_logos` (folder `6b037b2b…`) + `icons` + `brand_logos` — pull the rest via the Wix MCP.
+- [x] **(4) Software icons** on `tools.html` — real logos on PlantCAD, GeneCAD,
+      AnchorWave, and now **PHG, TASSEL, rTASSEL, GAPIT** (pulled from the
+      maize-genetics / jiabowang GitHub repos into `images/tools/`). Only
+      **BioKotlin** stays a "BK" text mark — no logo in its repo or on biokotlin.org.
 - [ ] **(9) Test: move some section pictures adjacent to the title.** Ed wants to
       *try* it (current layout is good; may look crowded) — build a variant of the
       research threads / cards and compare.

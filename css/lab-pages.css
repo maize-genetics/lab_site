@@ -118,6 +118,9 @@ body.theme-dark .pub-links a{color:var(--gold);border-color:rgba(227,163,36,.4)}
 .tool-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-soft)}
 .tool-card .icon{width:52px;height:52px;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-family:"Spectral",serif;font-size:20px;color:var(--on-dark);background:linear-gradient(135deg,var(--forest),var(--forest-2));margin-bottom:18px;overflow:hidden}
 .tool-card .icon img{width:100%;height:100%;object-fit:cover}
+/* real logos (varied aspect / transparency) sit on white, shown whole */
+.tool-card .icon.logo{background:#fff;padding:5px}
+.tool-card .icon.logo img{object-fit:contain}
 .tool-card:nth-child(3n+2) .icon{background:linear-gradient(135deg,var(--anthocyanin),#3d1a2c)}
 .tool-card:nth-child(3n) .icon{background:linear-gradient(135deg,var(--gold),#a9761a);color:var(--forest-2)}
 .tool-card h3{font-size:21px;font-weight:500;margin-bottom:8px}
