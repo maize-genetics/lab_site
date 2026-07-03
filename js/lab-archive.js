@@ -18,7 +18,7 @@
     });
   }
   function authorsHTML(a) {
-    return esc(a).replace(/Buckler ES/g, "<b>Buckler ES</b>");
+    return esc(a); // no author is bolded (bolding only the PI would be inconsistent)
   }
   function pct(year) {
     var y = year === "present" ? T1 : year;
