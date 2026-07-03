@@ -4,3 +4,16 @@ Thumbs.db
 *.swp
 .vscode/
 .idea/
+
+# Local agent/editor config
+.claude/
+
+# Office lock/temp files
+~$*
+
+# Unoptimized source images / dumps — keep originals in Cowork/Drive, not git.
+# Only web-optimized images referenced by the site belong in images/.
+_source/
+images/LabPictures.png/
+images/LabIn2023.png
+images/1932GeneticsCongress.jpg

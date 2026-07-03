@@ -1,0 +1,8 @@
+name,role,start_year,end_year,current_position
+Ed Buckler,pi,1998,present,
+Jane Doe,postdoc,2015,2019,Assistant Professor at Example University
+John Smith,grad,2016,2022,Scientist at Example Co
+,,,,
+# role must be one of: pi | postdoc | grad | staff | undergrad | visiting
+# end_year is a 4-digit year or the word "present"
+# current_position is optional (where they are now); leave blank if unknown

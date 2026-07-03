@@ -89,6 +89,8 @@ body.theme-dark .nav-wrap{background:rgba(7,19,14,.92)}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:1.5px;width:0;background:var(--gold);transition:width .25s ease}
 .nav-links a:hover{opacity:1}
 .nav-links a:hover::after{width:100%}
+.nav-links a[aria-current="page"]{opacity:1}
+.nav-links a[aria-current="page"]::after{width:100%}
 .theme-toggle{display:flex;align-items:center;gap:8px;background:none;border:0;color:var(--on-dark);opacity:.85}
 .theme-toggle:hover{opacity:1}
 .theme-toggle .track{width:34px;height:18px;border-radius:20px;background:rgba(255,255,255,.22);position:relative;transition:background .2s}
@@ -121,6 +123,10 @@ body.theme-dark .theme-toggle .thumb{transform:translateX(16px)}
 .btn-primary:hover{transform:translateY(-2px);background:var(--gold-soft)}
 .btn-ghost{border:1px solid rgba(255,255,255,.28);color:var(--on-dark)}
 .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.btn-outline-dark{border:1px solid var(--forest);color:var(--forest)}
+body.theme-dark .btn-outline-dark{border-color:var(--gold);color:var(--gold)}
+.btn-outline-dark:hover{background:var(--forest);color:var(--on-dark);transform:translateY(-2px)}
+body.theme-dark .btn-outline-dark:hover{background:var(--gold);color:var(--forest-2)}
 
 /* ---------- section headings ---------- */
 .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:48px;flex-wrap:wrap}

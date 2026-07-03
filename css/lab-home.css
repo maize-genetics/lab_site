@@ -13,6 +13,15 @@
     linear-gradient(180deg,var(--forest) 0%, var(--forest-2) 100%);
   color:var(--on-dark);position:relative;overflow:hidden;padding:88px 0 0;
 }
+/* home hero with maize photo layered under the forest gradient */
+.hero-photo{
+  background:
+    linear-gradient(180deg, rgba(14,36,28,.82) 0%, rgba(14,36,28,.90) 60%, var(--forest-2) 100%),
+    radial-gradient(120% 90% at 85% -10%, rgba(227,163,36,.14), transparent 55%),
+    url('../images/hero-maize.jpg');
+  background-size:cover,cover,cover;
+  background-position:center,center,center 30%;
+}
 .hero .wrap{position:relative;z-index:2}
 .hero .eyebrow{display:block;margin-bottom:26px}
 .hero h1{font-size:clamp(38px,6vw,74px);line-height:1.03;letter-spacing:-.015em;max-width:15ch;font-weight:400}
@@ -27,16 +36,20 @@
 /* ---------- research ---------- */
 .research{background:var(--band)}
 .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--line);border:1px solid var(--line)}
-.card{background:var(--surface);padding:38px 34px;position:relative;transition:background .25s ease}
+.card{display:block;background:var(--surface);padding:38px 34px;position:relative;transition:background .25s ease,transform .25s ease;color:inherit}
+.card:hover{background:var(--surface)}
 .card .k{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--anthocyanin);letter-spacing:.1em}
-.card h3{font-size:24px;margin:14px 0 12px;line-height:1.15;font-weight:500}
+.card h3{font-size:24px;margin:14px 0 12px;line-height:1.15;font-weight:500;transition:color .2s ease}
+.card:hover h3{color:var(--anthocyanin)}
+body.theme-dark .card:hover h3{color:var(--gold)}
 .card p{color:var(--text-soft);font-size:15px}
 .card .tags{margin-top:20px;display:flex;gap:8px;flex-wrap:wrap}
 .tag{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.04em;color:var(--green);background:var(--band-alt);padding:4px 9px;border-radius:var(--radius-sm)}
-.card .imgslot{height:120px;margin:-38px -34px 26px;display:flex;align-items:flex-end;padding:12px;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--forest) 0%,var(--forest-2) 100%)}
-.card .imgslot .note{font-family:"IBM Plex Mono",monospace;font-size:10px;color:rgba(255,255,255,.55);letter-spacing:.06em}
-.card:nth-child(3) .imgslot{background:linear-gradient(135deg,var(--anthocyanin),#3d1a2c)}
-.card:nth-child(4) .imgslot{background:linear-gradient(135deg,#7a5a1e,#4a3512)}
+body.theme-dark .tag{color:var(--on-dark)}
+.card .imgslot{height:150px;margin:-38px -34px 26px;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--forest) 0%,var(--forest-2) 100%)}
+.card .imgslot.has-img{background-size:cover;background-position:center;background-repeat:no-repeat}
+.card .imgslot.has-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(14,36,28,.35) 100%)}
+.card:hover .imgslot.has-img{filter:saturate(1.05)}
 
 /* ---------- institutions & leadership ---------- */
 .inst{background:var(--band-alt)}
@@ -48,9 +61,10 @@
 .inst-chip:nth-child(4) .bar{background:#2a6b57}
 .inst-chip h3{font-size:18px;font-weight:500;line-height:1.14;margin-bottom:6px}
 .inst-chip span{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;color:var(--text-soft);text-transform:uppercase}
-.labphoto{position:relative;border-radius:var(--radius-lg);overflow:hidden;min-height:340px;background:linear-gradient(135deg,#2a4a3a 0%,var(--forest) 55%,var(--forest-2) 100%);display:flex;align-items:flex-end;padding:20px 22px;margin-bottom:48px}
-.labphoto .note{font-family:"IBM Plex Mono",monospace;font-size:11px;color:rgba(255,255,255,.6);letter-spacing:.05em;z-index:2}
+.labphoto{position:relative;border-radius:var(--radius-lg);overflow:hidden;background:var(--forest-2);margin-bottom:32px}
+.labphoto img{width:100%;height:clamp(260px,42vw,460px);object-fit:cover;object-position:center 35%;display:block}
 .labphoto .strip{position:absolute;left:0;right:0;bottom:0;height:6px;background:repeating-linear-gradient(90deg,var(--gold) 0 34px,transparent 34px 60px,var(--anthocyanin) 60px 120px,transparent 120px 150px)}
+.inst-foot{display:flex;justify-content:center;margin-top:8px}
 .leads-h{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-soft);margin-bottom:24px}
 .leads{display:grid;grid-template-columns:repeat(5,1fr);gap:22px}
 .lead-card .avatar{width:72px;height:72px;border-radius:50%;margin-bottom:16px;display:flex;align-items:center;justify-content:center;font-family:"Spectral",serif;font-size:23px;color:var(--on-dark);background:linear-gradient(135deg,#2a4a3a,var(--forest))}
@@ -98,10 +112,8 @@ body:not(.theme-dark) .lead-card .r{color:#9a6d12}
 .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
 .item{background:var(--surface);border:1px solid var(--line);border-radius:3px;overflow:hidden;transition:transform .22s ease,box-shadow .22s ease}
 .item:hover{transform:translateY(-4px);box-shadow:var(--shadow-soft)}
-.item .thumb{height:150px;background:linear-gradient(135deg,#2a4a3a,var(--forest));display:flex;align-items:flex-end;padding:12px}
-.item:nth-child(2) .thumb{background:linear-gradient(135deg,var(--gold),#a9761a)}
-.item:nth-child(3) .thumb{background:linear-gradient(135deg,var(--anthocyanin),#3d1a2c)}
-.item .thumb .note{font-family:"IBM Plex Mono",monospace;font-size:10px;color:rgba(255,255,255,.6)}
+.item .thumb{height:170px;background:linear-gradient(135deg,#2a4a3a,var(--forest));background-size:cover;background-position:center}
+.item .thumb.fig{background-color:#fbfaf4;background-size:contain;background-repeat:no-repeat;background-position:center;border-bottom:1px solid var(--line)}
 .item .body{padding:22px 22px 26px}
 .item .date{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--anthocyanin);letter-spacing:.05em}
 body.theme-dark .item .date{color:#c98bab}

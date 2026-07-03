@@ -11,78 +11,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link href="css/lab-base.css" rel="stylesheet">
   <link href="css/lab-home.css" rel="stylesheet">
+  <link href="css/lab-pages.css" rel="stylesheet">
 </head>
-<body class="page-index">
+<body class="page-index" data-page="home">
 
-  <!-- ============ PRIMARY NAV ============ -->
-  <div class="nav-wrap" id="siteNav">
-    <div class="container nav">
-      <a class="brand" href="index.html" aria-label="Lab for Plant Genomic Diversity and Design — home">
-        <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <rect x="2" y="17" width="36" height="6" rx="1" fill="#E3A324"/>
-          <rect x="6" y="17" width="5" height="6" fill="#16342A"/>
-          <rect x="16" y="17" width="5" height="6" fill="#16342A"/>
-          <rect x="29" y="17" width="5" height="6" fill="#16342A"/>
-          <path d="M20 4 C13 10 13 16 20 17 C27 16 27 10 20 4Z" fill="#6B2C4D"/>
-          <path d="M20 36 C13 30 13 24 20 23 C27 24 27 30 20 36Z" fill="#2a4a3a"/>
-        </svg>
-        <span class="wordmark">
-          <span class="name">Lab for Plant Genomic Diversity <b>&amp; Design</b></span>
-          <span class="byline">Founding Director · Edward Buckler</span>
-        </span>
-      </a>
-      <div class="nav-right">
-        <div class="nav-links" id="navLinks">
-          <a href="#research">Research</a>
-          <a href="#institutions">Institutions</a>
-          <a href="#papers">Publications</a>
-          <a href="#tools">Tools</a>
-          <a href="#join">People &amp; Jobs</a>
-        </div>
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark and light mode" aria-pressed="false">
-          <span class="track"><span class="thumb"></span></span>
-          <span class="lbl" id="themeLabel">Light</span>
-        </button>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">Menu</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- ============ SECTION (scroll-spy) NAV ============ -->
-  <nav class="section-nav" aria-label="Section navigation">
-    <div class="container section-nav-inner">
-      <a href="#top" class="section-link active" data-section-link="#top">Intro</a>
-      <a href="#research" class="section-link" data-section-link="#research">Research</a>
-      <a href="#institutions" class="section-link" data-section-link="#institutions">Institutions</a>
-      <a href="#papers" class="section-link" data-section-link="#papers">Papers</a>
-      <a href="#tools" class="section-link" data-section-link="#tools">Tools</a>
-      <a href="#news" class="section-link" data-section-link="#news">News</a>
-      <a href="#join" class="section-link" data-section-link="#join">Join</a>
-    </div>
-  </nav>
-
-  <!-- ============ FLOATING DOTS ============ -->
-  <nav class="floating-indicator" aria-label="Section progress">
-    <a href="#top" class="floating-dot active" data-float-section="#top" aria-label="Intro"></a>
-    <a href="#research" class="floating-dot" data-float-section="#research" aria-label="Research"></a>
-    <a href="#institutions" class="floating-dot" data-float-section="#institutions" aria-label="Institutions"></a>
-    <a href="#papers" class="floating-dot" data-float-section="#papers" aria-label="Papers"></a>
-    <a href="#tools" class="floating-dot" data-float-section="#tools" aria-label="Tools"></a>
-    <a href="#news" class="floating-dot" data-float-section="#news" aria-label="News"></a>
-    <a href="#join" class="floating-dot" data-float-section="#join" aria-label="Join"></a>
-  </nav>
+  <!-- primary nav (injected by js/lab-global.js) -->
+  <div id="site-nav"></div>
 
   <!-- ============ HERO ============ -->
-  <header class="hero" id="top">
+  <header class="hero hero-photo" id="top" data-spy-section>
     <div class="wrap">
       <span class="eyebrow">USDA-ARS · Cornell University · Boyce Thompson Institute · University of Florida</span>
       <h1>Reading the genome to design <em>the crops we need.</em></h1>
-      <p class="lede">We use the natural diversity of plant genomes to find the individual DNA changes behind complex traits — and increasingly, we teach machines to read that diversity, building foundation models that turn raw sequence into biological understanding for maize and thousands of other species.</p>
+      <p class="lede">We mine the natural diversity of plant genomes to find the DNA changes behind complex traits — and we teach machines to read that diversity, building foundation models that turn raw sequence into biological understanding for maize and thousands of other species.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="#research">Explore the research
+        <a class="btn btn-primary" href="research.html">Explore the research
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
-        <a class="btn btn-ghost" href="#papers">Latest papers</a>
+        <a class="btn btn-ghost" href="publications.html">Latest papers</a>
+        <a class="btn btn-ghost" href="#news">News
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+        </a>
       </div>
       <div class="statline">
         <div><b>~100</b>scientists trained &amp; now leading</div>
@@ -113,193 +62,62 @@
     </div>
   </header>
 
-  <!-- ============ RESEARCH ============ -->
-  <section id="research" class="section research">
+  <!-- ============ RESEARCH PREVIEW ============ -->
+  <section id="research" class="section research" data-spy-section>
     <div class="wrap">
       <div class="sec-head reveal">
         <div>
           <span class="sec-num">01 — WHAT WE DO</span>
           <h2>From natural variation to designed crops.</h2>
         </div>
-        <p>Four connected threads run from the diversity in wild and cultivated genomes to the sustainable crops that agriculture will need under a hotter, more variable climate.</p>
+        <p>Four connected threads run from the diversity in wild and cultivated genomes to the sustainable crops agriculture will need under a hotter, more variable climate.</p>
       </div>
       <div class="cards reveal">
-        <div class="card">
-          <div class="imgslot"><span class="note">[ image: maize diversity panel / kernels ]</span></div>
+        <a class="card" href="research.html#diversity">
+          <div class="imgslot has-img" style="background-image:url('images/corn-pile.jpg')"></div>
           <span class="k">/01</span>
-          <h3>Diversity &amp; genome evolution</h3>
-          <p>Any two maize varieties differ more than humans do from chimpanzees. We map that diversity with GBS, HapMaps, and pangenomes to understand how genomes evolve and where useful variation hides.</p>
-          <div class="tags"><span class="tag">NAM</span><span class="tag">pangenomes</span><span class="tag">domestication</span></div>
-        </div>
-        <div class="card">
-          <div class="imgslot"><span class="note">[ image: DNA language model / embeddings ]</span></div>
+          <h3>Diversity &amp; Evolution</h3>
+          <p>Any two maize varieties differ more than humans do from chimpanzees. We map that variation across thousands of landraces and wild relatives — even across species — using genome–environment association to connect DNA to the climates plants are adapted to.</p>
+          <div class="tags"><span class="tag">landraces</span><span class="tag">GEA</span><span class="tag">pangenomes</span></div>
+        </a>
+        <a class="card" href="research.html#ai">
+          <div class="imgslot has-img" style="background-image:url('images/maize-closeup.jpg')"></div>
           <span class="k">/02</span>
           <h3>AI foundation models for genomes</h3>
           <p>PlantCAD2 and GeneCAD read DNA the way language models read text — capturing evolutionary conservation and predicting gene structure directly from sequence across the flowering-plant tree of life.</p>
           <div class="tags"><span class="tag">PlantCAD2</span><span class="tag">GeneCAD</span><span class="tag">deep learning</span></div>
-        </div>
-        <div class="card">
-          <div class="imgslot"><span class="note">[ image: cold field / N-efficient maize ]</span></div>
+        </a>
+        <a class="card" href="research.html#nitrogen">
+          <div class="imgslot has-img" style="background-image:url('images/hero-maize.jpg')"></div>
           <span class="k">/03</span>
-          <h3>Nitrogen 2.0 &amp; sustainable design</h3>
-          <p>Most nitrogen applied to maize is lost to the environment. We're designing nitrogen-efficient, cold-tolerant maize that extends the productive season and cuts fertilizer loss, emissions, and cost.</p>
+          <h3>Efficient, Sustainable Corn</h3>
+          <p>Most nitrogen applied to maize is lost to the environment. Through CERCA, we're designing nitrogen-efficient, cold-tolerant corn that starts earlier, stays green longer, and slashes fertilizer loss, emissions, and cost.</p>
           <div class="tags"><span class="tag">CERCA</span><span class="tag">nitrogen use</span><span class="tag">climate</span></div>
-        </div>
-        <div class="card">
-          <div class="imgslot"><span class="note">[ image: field phenotyping / breeding ]</span></div>
+        </a>
+        <a class="card" href="research.html#breeding">
+          <div class="imgslot has-img" style="background-image:url('images/drone.jpg')"></div>
           <span class="k">/04</span>
           <h3>Breeding &amp; open bioinformatics</h3>
           <p>Ideas become software the community can use. The Practical Haplotype Graph, TASSEL, and imputation tools bring high-tech breeding within reach of programs from Cornell to sub-Saharan Africa.</p>
           <div class="tags"><span class="tag">PHG</span><span class="tag">imputation</span><span class="tag">Breeding Insight</span></div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
-
-  <!-- ============ INSTITUTIONS ============ -->
-  <section id="institutions" class="section inst">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <div>
-          <span class="sec-num">02 — WHO WE ARE</span>
-          <h2>One lab, four institutions.</h2>
-        </div>
-        <p>Founded by Ed Buckler and now led by a team of principal investigators across four institutions — USDA-ARS, Cornell, the Boyce Thompson Institute, and the University of Florida.</p>
-      </div>
-
-      <div class="inst-band reveal">
-        <div class="inst-chip"><span class="bar"></span><h3>USDA-ARS</h3><span>Federal research</span></div>
-        <div class="inst-chip"><span class="bar"></span><h3>Cornell University</h3><span>Genomic diversity</span></div>
-        <div class="inst-chip"><span class="bar"></span><h3>Boyce Thompson Institute</h3><span>Genomic AI</span></div>
-        <div class="inst-chip"><span class="bar"></span><h3>University of Florida</h3><span>Breeding Insight</span></div>
-      </div>
-
-      <div class="labphoto reveal">
-        <span class="note">[ lab group photo — replace with your team photo, ~1200 × 420 → images/lab-team.jpg ]</span>
-        <span class="strip"></span>
-      </div>
-
-      <div class="reveal">
-        <div class="leads-h">Leadership</div>
-        <div class="leads">
-          <div class="lead-card">
-            <div class="avatar">EB</div>
-            <h4>Edward Buckler</h4>
-            <span class="r">Founding Director</span>
-            <span class="i">USDA-ARS</span>
-          </div>
-          <div class="lead-card">
-            <div class="avatar">CR</div>
-            <h4>M. Cinta Romay</h4>
-            <span class="r">Principal Investigator</span>
-            <span class="i">Cornell University</span>
-          </div>
-          <div class="lead-card">
-            <div class="avatar">MS</div>
-            <h4>Moira Sheehan</h4>
-            <span class="r">Breeding Insight Lead</span>
-            <span class="i">University of Florida</span>
-          </div>
-          <div class="lead-card">
-            <div class="avatar">SM</div>
-            <h4>Sara Miller</h4>
-            <span class="r">Administrative Lead</span>
-            <span class="i">Boyce Thompson Institute</span>
-          </div>
-          <div class="lead-card">
-            <div class="avatar">ZM</div>
-            <h4>Z. Miller</h4>
-            <span class="r">Software Development</span>
-            <span class="i">USDA-ARS</span>
-          </div>
-        </div>
-      </div>
-
-      <a class="affil reveal" href="https://breedinginsight.org/" target="_blank" rel="noopener">
-        <div>
-          <span class="lbl">Affiliated program</span>
-          <h3>Breeding Insight</h3>
-          <p>A USDA-ARS initiative bringing genomics, phenomics, and informatics to specialty crop and animal breeders — built on tools and ideas shared with the group.</p>
-        </div>
-        <span class="go">Visit breedinginsight.org
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg>
-        </span>
-      </a>
-    </div>
-  </section>
-
-  <!-- ============ FEATURED PAPERS ============ -->
-  <section id="papers" class="section papers">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <div>
-          <span class="sec-num">03 — NEW WORK</span>
-          <h2>Selected recent publications.</h2>
-        </div>
-        <p>The latest from the lab, spanning DNA foundation models and the design of sustainable maize.</p>
-      </div>
-
-      <div class="reveal">
-        <a class="paper" href="https://doi.org/10.1101/2025.08.27.672609" target="_blank" rel="noopener">
-          <div class="venue">The Plant Journal<br>2025 · bioRxiv</div>
-          <div>
-            <h3>PlantCAD2: a DNA foundation model for interpreting genomes across flowering plants</h3>
-            <p class="authors">Zhai J, Gokaslan A, Hsu S-K, Chen S-P, Liu Z-Y, Marroquin E, Czech E, Cannon B, Berthel A, Romay MC, Pennell M, Kuleshov V, <b>Buckler ES</b></p>
-          </div>
-          <span class="go">read →</span>
-        </a>
-
-        <a class="paper" href="https://doi.org/10.1101/2025.10.31.685877" target="_blank" rel="noopener">
-          <div class="venue">bioRxiv<br>2025</div>
-          <div>
-            <h3>GeneCAD: plant genome annotation with a DNA foundation model</h3>
-            <p class="authors">Liu Z-Y, Berthel A, Czech E, Marroquin E, Stitzer M, Hsu S-K, Pennell M, <b>Buckler ES</b>, Zhai J</p>
-          </div>
-          <span class="go">read →</span>
-        </a>
-
-        <a class="paper" href="https://doi.org/10.1093/plcell/koaf139" target="_blank" rel="noopener">
-          <div class="venue">The Plant Cell<br>2025</div>
-          <div>
-            <h3>Designing a nitrogen-efficient, cold-tolerant maize for modern agricultural systems</h3>
-            <p class="authors">Buckler Lab &amp; collaborators · a blueprint for the CERCA / Nitrogen&nbsp;2.0 ideotype</p>
-          </div>
-          <span class="go">read →</span>
-        </a>
-      </div>
-
-      <div class="papers-foot reveal">
-        <a href="#" target="_blank" rel="noopener">View the full publication list · Google Scholar · ORCID →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ TOOLS ============ -->
-  <div class="tools">
-    <div class="wrap">
-      <span class="lbl">Open-source tools</span>
-      <a href="#">PHG</a>
-      <a href="#">TASSEL</a>
-      <a href="#">rTASSEL</a>
-      <a href="#">PlantCAD</a>
-      <a href="#">GAPIT</a>
-      <a href="https://www.biokotlin.org/">BioKotlin</a>
-    </div>
-  </div>
 
   <!-- ============ NEWS ============ -->
-  <section id="news" class="section news">
+  <section id="news" class="section news" data-spy-section>
     <div class="wrap">
       <div class="sec-head reveal">
         <div>
-          <span class="sec-num">04 — LAB NEWS</span>
+          <span class="sec-num">02 — LAB NEWS</span>
           <h2>What's happening.</h2>
         </div>
         <p>Recent releases, preprints, and milestones from the group.</p>
       </div>
       <div class="news-grid reveal">
         <article class="item">
-          <div class="thumb"><span class="note">[ image slot ]</span></div>
+          <div class="thumb fig" style="background-image:url('images/phylogeny.png')"></div>
           <div class="body">
             <span class="date">2025 · Models</span>
             <h3>PlantCAD2 released for the plant-genomics community</h3>
@@ -307,7 +125,7 @@
           </div>
         </article>
         <article class="item">
-          <div class="thumb"><span class="note">[ image slot ]</span></div>
+          <div class="thumb fig" style="background-image:url('images/diversity-bioinformatics.png')"></div>
           <div class="body">
             <span class="date">2025 · Annotation</span>
             <h3>GeneCAD predicts gene models straight from DNA</h3>
@@ -315,7 +133,7 @@
           </div>
         </article>
         <article class="item">
-          <div class="thumb"><span class="note">[ image slot ]</span></div>
+          <div class="thumb fig" style="background-image:url('images/cerca-system.png')"></div>
           <div class="body">
             <span class="date">2025 · Sustainability</span>
             <h3>A blueprint for nitrogen-efficient maize</h3>
@@ -326,62 +144,8 @@
     </div>
   </section>
 
-  <!-- ============ JOIN ============ -->
-  <section id="join" class="section join">
-    <div class="wrap">
-      <div class="reveal">
-        <span class="sec-num">05 — PEOPLE</span>
-        <h2>Our most important output is <em>the next generation.</em></h2>
-        <p>Nearly a hundred postdocs, students, and visiting scientists have trained here and gone on to lead labs across industry, academia, NGOs, and government. We're recruiting in bioinformatics &amp; ML, population genetics, and pathway biology.</p>
-        <div class="hero-cta" style="margin-top:28px">
-          <a class="btn btn-primary" style="background:var(--forest);color:var(--on-dark)" href="#">See open positions →</a>
-        </div>
-      </div>
-      <div class="panel reveal">
-        <h3>Get in touch</h3>
-        <ul>
-          <li>Administrative Lead <span>Sara Miller</span></li>
-          <li>Email <span>sjm336@cornell.edu</span></li>
-          <li>Phone <span>607-255-1809</span></li>
-          <li>Location <span>Ithaca, NY</span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ FOOTER ============ -->
-  <footer>
-    <div class="wrap">
-      <div class="foot-grid">
-        <div class="foot-brand">
-          <div class="name">Lab for Plant Genomic Diversity &amp; Design</div>
-          <p class="fd">Founding Director · Edward Buckler</p>
-          <p>Maize genetics, computational biology, and the design of sustainable crops. A multi-PI team across USDA-ARS, Cornell University, the Boyce Thompson Institute, and the University of Florida.</p>
-          <p class="heritage">Formerly the Buckler Lab · maizegenetics.net</p>
-        </div>
-        <div>
-          <h4>Explore</h4>
-          <a href="#research">Research</a>
-          <a href="#institutions">Institutions</a>
-          <a href="#papers">Publications</a>
-          <a href="#tools">Tools &amp; software</a>
-          <a href="#join">People &amp; jobs</a>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <p>175 Biotechnology Building<br>Ithaca, NY 14853-2703<br><br>607-255-1809<br>sjm336@cornell.edu</p>
-        </div>
-      </div>
-      <div class="foot-bottom">
-        <p>© <span id="yr"></span> Lab for Plant Genomic Diversity &amp; Design · USDA-ARS · Cornell · BTI · UF</p>
-        <div class="foot-social">
-          <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12zM10 15.5v-7l6 3.5-6 3.5z"/></svg></a>
-          <a href="#" aria-label="Twitter / X"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7l-5.5-7.2L4.5 22H1.4l8.1-9.3L.9 2h7.2l5 6.6L18.9 2zm-1.2 18h1.9L7.1 4H5.1l12.6 16z"/></svg></a>
-          <a href="#" aria-label="Google Scholar"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 1 8l11 6 9-4.9V16h2V8L12 2zM5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 3.8-7-3.8z"/></svg></a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <!-- footer (injected by js/lab-global.js) -->
+  <footer id="site-footer"></footer>
 
   <script src="js/lab-global.js"></script>
 </body>
