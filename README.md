@@ -75,23 +75,23 @@ python3 -m http.server 8000
 
 Then open <http://localhost:8000/>.
 
-## Deploy on GitHub Pages
+## Branching & deploy (GitHub Flow on GitHub Pages)
 
-1. Create a repo (e.g. `maize-genetics/lab_landing_page`) and push these files to `main`.
-2. In the repo: **Settings → Pages → Source → GitHub Actions**.
-3. The included workflow publishes on every push to `main`.
+`main` is production and is always deployable. All changes land through a pull
+request off a short-lived branch (`feature/…`, `fix/…`, `content/…`); preview the
+branch locally (see above) before merging. See [`CONTRIBUTING.md`](CONTRIBUTING.md)
+for the full workflow.
+
+Hosting is **GitHub Pages** (no build step): the `.github/workflows/` action
+publishes `main` on every merge, and the custom domain (once cut over) points
+here.
 
 ## Custom domain (maizegenetics.net)
 
-Only do this once you're ready to move the domain off Wix.
-
-1. Repo **Settings → Pages → Custom domain** → enter your domain (writes a `CNAME` file).
-2. At your DNS host, point the domain to GitHub Pages using the **exact A/AAAA
-   records for the apex and the CNAME for `www`** listed in GitHub's docs
-   ("Managing a custom domain for your GitHub Pages site"). Confirm current
-   values there — do not hard-code IPs from memory.
-3. Enable **Enforce HTTPS** once the certificate provisions.
-4. Note: pointing the apex domain here disconnects the current Wix site from it.
+Only do this once you're ready to move the domain off Wix. In the repo →
+**Settings → Pages → Custom domain** → add `maizegenetics.net` (writes a `CNAME`),
+then point DNS at GitHub Pages per GitHub's docs and enable **Enforce HTTPS**.
+Pointing the apex domain here disconnects the current Wix site from it.
 
 ## Content
 
