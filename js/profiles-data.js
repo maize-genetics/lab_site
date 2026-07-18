@@ -15,6 +15,7 @@ window.LAB_PROFILES = {
   "orcid": "https://orcid.org/0000-0002-3100-371X",
   "twitter": "https://twitter.com/EdBuckler",
   "photo": "edward-s-buckler.jpg",
+  "linkedin": "https://linkedin.com/in/edward-buckler-b0749212",
   "now": "Research Geneticist, USDA-ARS; Adjunct Professor, Cornell University",
   "start": 1998,
   "end": "present"
@@ -27,6 +28,7 @@ window.LAB_PROFILES = {
   "email": "nonoy.bandillo@ndsu.edu",
   "scholar": "https://scholar.google.com/citations?user=bqXdSssAAAAJ&hl=en",
   "photo": "nonoy-bandillo.jpg",
+  "linkedin": "https://linkedin.com/in/nonoy-bandillo-6b629630",
   "now": "Associate Professor, North Dakota State University",
   "start": 2017,
   "end": 2021
@@ -40,6 +42,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=eP1POjUAAAAJ&hl=en",
   "orcid": "https://orcid.org/0000-0003-0325-5861",
   "photo": "lara-brindisi.jpg",
+  "linkedin": "https://linkedin.com/in/larabrindisi",
   "start": 2023,
   "end": 2025
  },
@@ -52,6 +55,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.co.in/citations?user=iIuHIyMAAAAJ&hl=en",
   "photo": "patrick-brown.jpg",
   "website": "https://pjblab.faculty.ucdavis.edu/",
+  "linkedin": "https://#N/A",
   "now": "Associate Professor, UC Davis",
   "start": 2007,
   "end": 2021
@@ -63,6 +67,7 @@ window.LAB_PROFILES = {
   "bio": "Charles Chen was a postdoctoral associate in the Buckler Lab. He is currently an assistant professor of Bioinformatics at Oklahoma State University.",
   "email": "charles.chen@okstate.edu",
   "photo": "charles-chen.jpg",
+  "linkedin": "https://linkedin.com/in/charles-chen-0211152b",
   "now": "Associate Professor, Oklahoma State University",
   "start": 2008,
   "end": 2015
@@ -73,8 +78,9 @@ window.LAB_PROFILES = {
   "title": "Visiting Postdoctoral Scientist (former)",
   "bio": "While working at the Buckler Lab, Dr. Chen focused his research on maize small RNA GWAS with 250 lines and determining the position that controls small RNA expression all over the maize genome.",
   "photo": "shu-yun-chen.jpg",
+  "linkedin": "https://linkedin.com/in/chen-shu-yun-a796b949",
   "start": 2016,
-  "end": "present"
+  "end": 2016
  },
  "emre-cimen": {
   "name": "Emre Cimen",
@@ -85,6 +91,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=2shjmK0AAAAJ&hl=en",
   "orcid": "https://orcid.org/0000-0002-6715-1810",
   "photo": "emre-cimen.jpg",
+  "linkedin": "https://linkedin.com/in/ecimen001",
   "start": 2018,
   "end": 2021
  },
@@ -97,8 +104,9 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=wUUhKgUAAAAJ&hl=en",
   "orcid": "https://orcid.org/0000-0003-1137-6786",
   "photo": "germano-costa-neto.jpg",
+  "linkedin": "https://linkedin.com/in/germanocneto",
   "start": 2020,
-  "end": "present"
+  "end": 2023
  },
  "elhan-ersoz": {
   "name": "Elhan Ersoz",
@@ -108,6 +116,7 @@ window.LAB_PROFILES = {
   "twitter": "https://twitter.com/geneticsOD",
   "photo": "elhan-ersoz.jpg",
   "website": "https://umbrellagenetics.org",
+  "linkedin": "https://0",
   "start": 2005,
   "end": 2020
  },
@@ -120,6 +129,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=RhUjVB8AAAAJ&hl=en",
   "orcid": "https://orcid.org/0000-0001-5946-4414",
   "photo": "joseph-gage.jpg",
+  "linkedin": "https://linkedin.com/in/joe-gage-13bb5457",
   "now": "Assistant Professor, North Carolina State University",
   "start": 2015,
   "end": "present"
@@ -131,9 +141,10 @@ window.LAB_PROFILES = {
   "bio": "Former postdoctoral associate in the Buckler Lab, currently a plant research geneticist with the USDA based at the University of Missouri in Columbia, Missouri.",
   "email": "Sherry.Flint-Garcia@ars.usda.gov",
   "photo": "sherry-flint-garcia.jpg",
+  "linkedin": "https://linkedin.com/in/sherry-flint-garcia",
   "now": "Research Geneticist, USDA-ARS; Adjunct Professor, University of Missouri",
   "start": 2001,
-  "end": "present"
+  "end": 2004
  },
  "christy-gault": {
   "name": "Christy Gault",
@@ -144,7 +155,7 @@ window.LAB_PROFILES = {
   "photo": "christy-gault.jpg",
   "linkedin": "https://www.linkedin.com/in/christygault/",
   "start": 2013,
-  "end": "present"
+  "end": 2018
  },
  "anju-giri": {
   "name": "Anju Giri",
@@ -154,8 +165,9 @@ window.LAB_PROFILES = {
   "email": "ag2484@cornell.edu",
   "scholar": "https://scholar.google.com/citations?user=8Z5b454AAAAJ&hl=en",
   "photo": "anju-giri.jpg",
+  "linkedin": "https://linkedin.com/in/anju-giri-b0838997",
   "start": 2018,
-  "end": "present"
+  "end": 2021
  },
  "niranjani-gnanapragasam": {
   "name": "Niranjani Gnanapragasam",
@@ -164,8 +176,9 @@ window.LAB_PROFILES = {
   "bio": "My research focuses on exploring genetic adaptation and genomic evolution in cassava, with a focus on understanding the effects of deleterious mutations and interspecies introgression.",
   "email": "ng529@cornell.edu",
   "photo": "niranjani-gnanapragasam.jpg",
+  "linkedin": "https://linkedin.com/in/gnanagnanapragasam-niranjani",
   "start": 2024,
-  "end": "present"
+  "end": 2025
  },
  "amit-gur": {
   "name": "Amit Gur",
@@ -175,6 +188,7 @@ window.LAB_PROFILES = {
   "email": "amitgur@volcani.agri.gov.il",
   "scholar": "https://scholar.google.co.il/citations?user=lJRGxvYAAAAJ&hl=en",
   "photo": "amit-gur.jpg",
+  "linkedin": "https://linkedin.com/in/amit-gur-0054291a",
   "start": 2008,
   "end": 2016
  },
@@ -184,6 +198,7 @@ window.LAB_PROFILES = {
   "title": "Molecular Geneticist, Bayer (former Postdoc)",
   "bio": "Carlos Harjes was a postdoctoral associate in the Buckler Lab. He is now employed as a molecular geneticist for Bayer.",
   "photo": "carlos-harjes.jpg",
+  "linkedin": "https://linkedin.com/in/carlos-harjes",
   "start": 2006,
   "end": 2010
  },
@@ -196,6 +211,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=u_wofDgAAAAJ&hl=en",
   "orcid": "https://orcid.org/0000-0002-6942-7163",
   "photo": "sheng-kai-hsu.jpg",
+  "linkedin": "https://0",
   "start": 2022,
   "end": "present"
  },
@@ -207,6 +223,7 @@ window.LAB_PROFILES = {
   "email": "mkirst@ufl.edu",
   "scholar": "https://scholar.google.com/citations?user=jwHa16wAAAAJ&hl=en",
   "photo": "matias-kirst.jpg",
+  "linkedin": "https://linkedin.com/in/matias-kirst-6899051b",
   "now": "Professor, University of Florida",
   "start": 2004,
   "end": 2013
@@ -218,6 +235,7 @@ window.LAB_PROFILES = {
   "bio": "I study the genetic basis of environmental adaptation in maize by integrating genomics, evolutionary biology, and computational approaches to identify causal variants and uncover the underlying mechanisms of adaptation.",
   "email": "wl748@cornell.edu",
   "photo": "wei-yun-lai.jpg",
+  "linkedin": "https://0",
   "start": 2022,
   "end": "present"
  },
@@ -229,6 +247,7 @@ window.LAB_PROFILES = {
   "email": "lihuihui@caas.cn",
   "scholar": "https://scholar.google.com/citations?user=7wenvVQAAAAJ&hl=en",
   "photo": "huihui-li.jpg",
+  "linkedin": "https://linkedin.com/in/huihui-li-5057142a",
   "start": 2006,
   "end": 2023
  },
@@ -241,6 +260,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=LeQcPl4AAAAJ&hl=en",
   "photo": "alex-lipka.jpg",
   "website": "http://publish.illinois.edu/thelipkalab/",
+  "linkedin": "https://linkedin.com/in/alex-lipka-45aa7a2b",
   "now": "Professor, University of Illinois Urbana-Champaign",
   "start": 2009,
   "end": 2021
@@ -263,6 +283,7 @@ window.LAB_PROFILES = {
   "email": "flu@genetics.ac.cn",
   "photo": "fei-lu.jpg",
   "website": "http://plantgeneticslab.weebly.com/",
+  "linkedin": "https://linkedin.com/in/fei-lu-1a07b864",
   "now": "Professor, Chinese Academy of Sciences",
   "start": 2009,
   "end": 2022
@@ -276,17 +297,19 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=WY7OQ-0AAAAJ&hl=en",
   "twitter": "https://twitter.com/katherinemejia",
   "photo": "maria-katherine-mejia-guerra.jpg",
+  "linkedin": "https://linkedin.com/in/katherine-mejia-guerra",
   "start": 2017,
   "end": 2023
  },
  "brandon-monier": {
   "name": "Brandon Monier",
-  "role": "postdoc",
+  "role": "staff",
   "title": "Postdoc",
   "bio": "Researcher focused on bioinformatics, software development, and education working on methods to efficiently assemble and annotate wild grass relatives of maize and sorghum through the PanAnd Project, collaborating with the Innovation Lab for Crop Improvement to develop genomic analytical pipelines and improve TASSEL for plant breeders, and creator of R packages including rTASSEL.",
   "email": "bm646@cornell.edu",
   "scholar": "https://scholar.google.com/citations?user=buYGhlYAAAAJ&hl=en",
   "photo": "brandon-monier.jpg",
+  "linkedin": "https://linkedin.com/in/btmonier",
   "start": 2018,
   "end": "present"
  },
@@ -299,6 +322,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=lPomOcYAAAAJ&hl=en",
   "photo": "sean-myles.jpg",
   "website": "http://www.cultivatingdiversity.org/",
+  "linkedin": "https://linkedin.com/in/sean-myles-bb052555",
   "now": "Professor, Dalhousie University",
   "start": 2007,
   "end": 2015
@@ -312,6 +336,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=6sTAJAkAAAAJ&hl=en",
   "orcid": "https://orcid.org/0000-0002-2310-5564",
   "photo": "jonathan-ojeda.jpg",
+  "linkedin": "https://linkedin.com/in/jonathan-ojeda-53b2712b5",
   "start": 2023,
   "end": "present"
  },
@@ -324,6 +349,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.co.il/citations?user=zIPUQtkAAAAJ&hl=en",
   "orcid": "https://orcid.org/0000-0001-6821-4409",
   "photo": "elad-oren.jpg",
+  "linkedin": "https://0",
   "start": 2017,
   "end": "present"
  },
@@ -335,6 +361,7 @@ window.LAB_PROFILES = {
   "email": "gael.pressoir@chibas-bioenergy.org",
   "scholar": "https://scholar.google.com/citations?user=YIfM5UAAAAAJ&hl=en",
   "photo": "gael-pressoir.jpg",
+  "linkedin": "https://linkedin.com/in/gael-pressoir-0720697",
   "start": 2003,
   "end": 2009
  },
@@ -346,6 +373,7 @@ window.LAB_PROFILES = {
   "email": "ramu.punna@corteva.com",
   "scholar": "https://scholar.google.com/citations?user=U35cpIcAAAAJ&hl=en",
   "photo": "ramu-punna.jpg",
+  "linkedin": "https://linkedin.com/in/ramu-punna-a4102848",
   "start": 2014,
   "end": 2018
  },
@@ -358,9 +386,10 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=R5cq1l8AAAAJ&hl=en",
   "orcid": "https://orcid.org/0000-0002-7536-1113",
   "photo": "guillaume-ramstein.jpg",
+  "linkedin": "https://linkedin.com/in/guillaume-ramstein-85680336",
   "now": "Assistant Professor, Aarhus University",
   "start": 2013,
-  "end": "present"
+  "end": 2021
  },
  "david-remington": {
   "name": "David Remington",
@@ -370,6 +399,7 @@ window.LAB_PROFILES = {
   "email": "dlreming@uncg.edu",
   "photo": "david-remington.jpg",
   "website": "https://sites.google.com/a/uncg.edu/david-remington-home/",
+  "linkedin": "https://linkedin.com/in/david-remington-21198078",
   "now": "Associate Professor, UNC Greensboro",
   "start": 1999,
   "end": 2001
@@ -381,6 +411,7 @@ window.LAB_PROFILES = {
   "bio": "Genetic variation is a two-way street. Although mutations can provide the basis for environmental adaptation or phenotypes favored by human breeders, the random nature of these alterations guarantees the emergence of genetic variants with deleterious effects on the fitness of the organism. My research focuses on developing efficient machine learning approaches to identify the alleles that contribute to the genetic load in maize.",
   "scholar": "https://scholar.google.com/citations?user=jFTkd3UAAAAJ&hl=en",
   "photo": "eli-rodgers-melnick.jpg",
+  "linkedin": "https://linkedin.com/in/eli-rodgers-melnick-0a12825",
   "start": 2013,
   "end": 2018
  },
@@ -393,6 +424,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=YNokV_4AAAAJ&hl=en",
   "orcid": "https://orcid.org/0000-0001-9309-1586",
   "photo": "m-cinta-romay.jpg",
+  "linkedin": "https://linkedin.com/in/maria-cinta-romay-alvarez-142a1a50",
   "now": "Research Associate, Cornell University (IGD)",
   "start": 2006,
   "end": "present"
@@ -405,6 +437,7 @@ window.LAB_PROFILES = {
   "email": "moirasheehan@cornell.edu",
   "photo": "moira-sheehan.jpg",
   "website": "https://www.breedinginsight.org/",
+  "linkedin": "https://linkedin.com/in/moira-sheehan-8723151b",
   "start": 2008,
   "end": 2012
  },
@@ -416,6 +449,7 @@ window.LAB_PROFILES = {
   "email": "singh.nisha88@gmail.com",
   "scholar": "https://scholar.google.co.in/citations?user=occkhqAAAAAJ&hl=en",
   "photo": "nisha-singh.jpg",
+  "linkedin": "https://linkedin.com/in/dr-nisha-singh-48a7b914",
   "start": 2018,
   "end": 2020
  },
@@ -427,6 +461,7 @@ window.LAB_PROFILES = {
   "email": "bs674@cornell.edu",
   "scholar": "https://scholar.google.com/citations?user=ZEV5OkoAAAAJ&hl=en",
   "photo": "baoxing-song.jpg",
+  "linkedin": "https://linkedin.com/in/song-baoxing-77301a60",
   "now": "Principal Investigator, Peking University",
   "start": 2018,
   "end": 2024
@@ -440,6 +475,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=NkohZq4AAAAJ&hl=en",
   "orcid": "https://orcid.org/0000-0003-4140-3765",
   "photo": "michelle-stitzer.jpg",
+  "linkedin": "https://0",
   "start": 2019,
   "end": "present"
  },
@@ -451,6 +487,7 @@ window.LAB_PROFILES = {
   "email": "jthorns@nwmissouri.edu",
   "photo": "jeff-thornsberry.jpg",
   "website": "https://www.nwmissouri.edu/naturalsciences/directory/thornsberry.htm",
+  "linkedin": "https://0",
   "start": 1999,
   "end": 2009
  },
@@ -461,6 +498,7 @@ window.LAB_PROFILES = {
   "bio": "Feng Tian was a postdoc at the Buckler Lab but is now a professor for the National Maize Improvement Center of China at China Agricultural University.",
   "email": "ft55@cau.edu.cn",
   "photo": "feng-tian.jpg",
+  "linkedin": "https://0",
   "now": "Professor, China Agricultural University",
   "start": 2007,
   "end": 2016
@@ -484,6 +522,7 @@ window.LAB_PROFILES = {
   "title": "Senior Expert, African Observatory for STI (former Postdoc)",
   "bio": "Irie Vroh was a postdoc working on flowering time, nitrogen use, and high throughput sequencing. He is now a Senior Expert of Science and Technology Policy at the African Observatory for STI (AOSTI).",
   "photo": "irie-vroh-bi.jpg",
+  "linkedin": "https://0",
   "start": 2004,
   "end": 2006
  },
@@ -497,6 +536,7 @@ window.LAB_PROFILES = {
   "twitter": "https://twitter.com/TheWallaceLab",
   "photo": "jason-wallace.jpg",
   "website": "https://wallacelab.uga.edu",
+  "linkedin": "https://linkedin.com/in/jason-wallace-a874b845",
   "now": "Associate Professor, University of Georgia",
   "start": 2012,
   "end": 2018
@@ -511,6 +551,7 @@ window.LAB_PROFILES = {
   "orcid": "https://orcid.org/0000-0002-1722-1518",
   "photo": "hai-wang.jpg",
   "website": "http://bri.caas.cn/en/scientists/faculty/87624.htm",
+  "linkedin": "https://0",
   "now": "Associate Professor, China Agricultural University",
   "start": 2017,
   "end": 2021
@@ -524,6 +565,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=GRyNfH8AAAAJ&hl=en",
   "orcid": "https://orcid.org/0000-0003-3998-568X",
   "photo": "jacob-washburn.jpg",
+  "linkedin": "https://linkedin.com/in/jacob-washburn-99013937",
   "now": "Research Geneticist, USDA-ARS",
   "start": 2017,
   "end": "present"
@@ -536,6 +578,7 @@ window.LAB_PROFILES = {
   "email": "yw2326@cornell.edu",
   "orcid": "https://orcid.org/0000-0003-0766-1541",
   "photo": "yaoyao-wu.jpg",
+  "linkedin": "https://0",
   "start": 2018,
   "end": 2023
  },
@@ -547,6 +590,7 @@ window.LAB_PROFILES = {
   "email": "yjianbing@mail.hzau.edu.cn",
   "scholar": "https://scholar.google.com/citations?user=rP8YhtcAAAAJ&hl=zh-CN",
   "photo": "jianbing-yan.jpg",
+  "linkedin": "https://0",
   "now": "President, Huazhong Agricultural University",
   "start": 2007,
   "end": "present"
@@ -560,6 +604,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=x59S4kEAAAAJ&hl=en",
   "photo": "jianming-yu.jpg",
   "website": "https://sites.google.com/site/quantitativegeneticsmaize/home",
+  "linkedin": "https://0",
   "now": "Professor, Iowa State University",
   "start": 2003,
   "end": 2014
@@ -571,6 +616,7 @@ window.LAB_PROFILES = {
   "bio": "My research interests focus on applying machine learning/deep learning technologies to understand how DNA/RNA sequences contribute to phenotypes in crops. Toward this goal, I will try to develop computational methods to predict sequence functions and their regulations in organisms across plant species.",
   "email": "jz963@cornell.edu",
   "photo": "jingjing-zhai.jpg",
+  "linkedin": "https://linkedin.com/in/jingjing-zhai-866031303",
   "start": 2022,
   "end": "present"
  },
@@ -580,6 +626,7 @@ window.LAB_PROFILES = {
   "title": "Postdoctoral Associate (former)",
   "bio": "Nengyi Zhang was a postdoctoral associate in the Buckler Lab. He is now at BASF Plant Science in North Carolina.",
   "photo": "nengyi-zhang.jpg",
+  "linkedin": "https://0",
   "start": 2008,
   "end": 2016
  },
@@ -592,6 +639,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=HOOhHMoAAAAJ&hl=en",
   "photo": "zhiwu-zhang.jpg",
   "website": "http://zzlab.net/",
+  "linkedin": "https://linkedin.com/in/zhiwu-zhang-14080223",
   "now": "Professor, Washington State University",
   "start": 2003,
   "end": 2018
@@ -602,6 +650,7 @@ window.LAB_PROFILES = {
   "title": "Bioinformatics Scientist, Monsanto (former Postdoc)",
   "bio": "Tao Zuo was a postdoctoral associate in the Buckler Lab. He is now a bioinformatics scientist at Monsanto Company.",
   "photo": "tao-zuo.jpg",
+  "linkedin": "https://linkedin.com/in/taozuo",
   "start": 2016,
   "end": 2019
  },
@@ -612,6 +661,7 @@ window.LAB_PROFILES = {
   "bio": "My research interest lies at the intersection of plant biology and statistics, with a focus on leveraging computational approaches to address complex biological questions.",
   "email": "sc3367@cornell.edu",
   "photo": "szu-ping-chen.jpg",
+  "linkedin": "https://linkedin.com/in/szu-ping-chen-40746319a",
   "start": 2016,
   "end": "present"
  },
@@ -622,6 +672,7 @@ window.LAB_PROFILES = {
   "bio": "From Washington DC, Brown University Biology graduate pursuing PhD to learn plant evolution and develop robust corn agricultural systems; enjoys cooking, reading, and outdoors.",
   "email": "hdd29@cornell.edu",
   "photo": "henry-dawson.jpg",
+  "linkedin": "https://linkedin.com/in/henry-dawson-2b16b3173",
   "start": 2024,
   "end": "present"
  },
@@ -632,8 +683,9 @@ window.LAB_PROFILES = {
   "bio": "Recently completed Biochemistry degree from University of Missouri; studying organellar DNA movement into maize B chromosome; interested in machine learning models for sequence feature prediction.",
   "email": "mze3@cornell.edu",
   "photo": "mohamed-el-walid.jpg",
+  "linkedin": "https://linkedin.com/in/mohamed-el-walid",
   "start": 2023,
-  "end": "present"
+  "end": 2026
  },
  "taylor-ferebee": {
   "name": "Taylor Ferebee",
@@ -642,6 +694,7 @@ window.LAB_PROFILES = {
   "bio": "Graduate student in Computational Biology with interest in high-dimensional modelling through application of classical, machine learning, and stochastic techniques to address key hypotheses associated with genomes.",
   "email": "tf259@cornell.edu",
   "photo": "taylor-ferebee.jpg",
+  "linkedin": "https://linkedin.com/in/taylorferebee",
   "start": 2021,
   "end": "present"
  },
@@ -654,6 +707,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=RbNQWbUAAAAJ&hl=en",
   "photo": "michael-gore.jpg",
   "website": "https://blogs.cornell.edu/gorelab",
+  "linkedin": "https://linkedin.com/in/michael-gore-9046a790",
   "now": "Professor, Cornell University",
   "start": 2004,
   "end": "present"
@@ -665,6 +719,7 @@ window.LAB_PROFILES = {
   "bio": "Undergraduate work at Haverford College sparked broad academic interest in genetics, adaptation, and ecology. After graduating in 2017, researched wild plant ecology and evolution as a Fulbright grantee to the Czech Republic and as a lab technician at Harvard University. In the Buckler Lab, applies knowledge of wild plant systems to better understand the genetics, ecology, and evolution of maize and its wild relatives using computational approaches.",
   "email": "coh22@cornell.edu",
   "photo": "charles-hale.jpg",
+  "linkedin": "https://linkedin.com/in/charlesohale",
   "start": 2022,
   "end": "present"
  },
@@ -675,6 +730,7 @@ window.LAB_PROFILES = {
   "bio": "Focused on transferring knowledge across species and domains. Built a Practical Haplotype Graph in sorghum, imputed genotypes from low-coverage sequence data, and showed imputed genotypes could be used for genomic selection. Worked on multiple projects studying molecular adaptation to high temperature.",
   "email": "sej65@cornell.edu",
   "photo": "sarah-jensen.jpg",
+  "linkedin": "https://linkedin.com/in/sarah-jensen-1652b784",
   "start": 2017,
   "end": 2022
  },
@@ -685,6 +741,7 @@ window.LAB_PROFILES = {
   "bio": "Graduate student in Plant Breeding and Genetics working on Practical Haplotype Graph in maize and investigating genetic variation and genetic load in Andropogoneae.",
   "email": "mbb262@cornell.edu",
   "photo": "merritt-khaipho-burch.jpg",
+  "linkedin": "https://linkedin.com/in/merrittkhaiphoburch",
   "start": 2019,
   "end": "present"
  },
@@ -694,7 +751,8 @@ window.LAB_PROFILES = {
   "title": "Graduate Student",
   "bio": "Plant Breeding and Genetics PhD student on Schlumberger's Faculty for the Future Foundation fellowship at Cornell University focused on identifying key genes governing nitrogen remobilization in maize and their integration into annual cultivars.",
   "email": "bak234@cornell.edu",
-  "photo": "beatrice-konadu.jpg"
+  "photo": "beatrice-konadu.jpg",
+  "linkedin": "https://linkedin.com/in/beatrice-konadu-62a350231"
  },
  "karl-kremling": {
   "name": "Karl Kremling",
@@ -703,6 +761,7 @@ window.LAB_PROFILES = {
   "bio": "Formerly a graduate student in the Plant Breeding and Genetics department at Cornell University, joined the Buckler lab to gain skills in quantitative genetics and computational biology, focusing on identifying loci underlying quantitative differences in transcription.",
   "email": "kkremling@inari.com",
   "photo": "karl-kremling.jpg",
+  "linkedin": "https://linkedin.com/in/karl-kremling-70593715",
   "start": 2013,
   "end": 2023
  },
@@ -713,6 +772,7 @@ window.LAB_PROFILES = {
   "bio": "Sara J. Larsson was a graduate student at the Buckler Lab. She received her PhD in January of 2013, and now works at DuPont Pioneer.",
   "scholar": "https://scholar.google.com/citations?user=TK8v6qcAAAAJ&hl=en",
   "photo": "sara-larsson.jpg",
+  "linkedin": "https://linkedin.com/in/sara-larsson-3053a542",
   "start": 2011,
   "end": 2020
  },
@@ -723,6 +783,7 @@ window.LAB_PROFILES = {
   "bio": "Graduate student in Plant Breeding and Genetics with educational background in genomics and bioinformatics, holding degrees in Agronomy, Information Systems Management, and Applied Economics; focuses on applying predictive biology to elucidate pathways, protein structures, and functions through algorithm development and machine learning.",
   "email": "zl843@cornell.edu",
   "photo": "zong-yan-liu.jpg",
+  "linkedin": "https://linkedin.com/in/zongyanliu",
   "start": 2014,
   "end": "present"
  },
@@ -733,6 +794,7 @@ window.LAB_PROFILES = {
   "bio": "Grew up in Newberg, Oregon; B.S. in Developmental Biology from Brigham Young University; M.S. in Genetics and Biotechnology from BYU; research interests include chromosomal structural variation effects on genome evolution and computational tools for plant breeding, particularly cassava improvement.",
   "email": "eml255@cornell.edu",
   "photo": "evan-long.jpg",
+  "linkedin": "https://linkedin.com/in/evan-long-97952886",
   "start": 2020,
   "end": "present"
  },
@@ -743,15 +805,17 @@ window.LAB_PROFILES = {
   "bio": "Worked on mapping freezing tolerance in Tripsacum, genome assembly with long-read sequencing, and developed GASCO for Master's thesis; currently works as Genomics Data Curator with GOBii.",
   "email": "err87@cornell.edu",
   "photo": "evan-rees.jpg",
+  "linkedin": "https://linkedin.com/in/evanrr",
   "start": 2018,
-  "end": "present"
+  "end": 2022
  },
  "jorge-alberto-romero": {
   "name": "Jorge Alberto Romero",
   "role": "grad",
   "title": "Graduate Student (former)",
   "bio": "Jorge Alberto Romero was a graduate student at the Buckler Lab. Since 2018 he has worked at VILMORIN SA.",
-  "photo": "jorge-alberto-romero.jpg"
+  "photo": "jorge-alberto-romero.jpg",
+  "linkedin": "https://linkedin.com/in/j-alberto-romero-navarro-51a038139"
  },
  "travis-rooney": {
   "name": "Travis Rooney",
@@ -761,8 +825,9 @@ window.LAB_PROFILES = {
   "email": "ter56@cornell.edu",
   "scholar": "https://scholar.google.com/citations?user=NwvLPEMAAAAJ&hl=en",
   "photo": "travis-rooney.jpg",
+  "linkedin": "https://linkedin.com/in/travis-rooney-45226540",
   "start": 2023,
-  "end": "present"
+  "end": 2022
  },
  "aimee-schulz": {
   "name": "Aimee Schulz",
@@ -771,6 +836,7 @@ window.LAB_PROFILES = {
   "bio": "PhD Candidate in Plant Breeding and Genetics focusing on leveraging evolution to develop crops requiring fewer nutrient inputs and more climate resilient while maintaining yield.",
   "email": "ajs692@cornell.edu",
   "photo": "aimee-schulz.jpg",
+  "linkedin": "https://linkedin.com/in/aimeejschulz",
   "start": 2022,
   "end": "present"
  },
@@ -781,6 +847,7 @@ window.LAB_PROFILES = {
   "bio": "Kelly Swarts was a graduate student in the Buckler Lab who received her Ph.D. in 2016, completed a postdoc at Max Planck for Developmental Biology, and is currently at Umeå Plant Science Center.",
   "orcid": "https://orcid.org/0000-0002-0578-7426",
   "photo": "kelly-swarts.jpg",
+  "linkedin": "https://linkedin.com/in/kelly-swarts-5a8787b3",
   "now": "Assistant Professor, Wageningen University",
   "start": 2006,
   "end": 2022
@@ -793,7 +860,8 @@ window.LAB_PROFILES = {
   "email": "jav246@cornell.edu",
   "scholar": "https://scholar.google.com/citations?user=o4ran8EAAAAJ&hl=en",
   "orcid": "https://orcid.org/0000-0002-0887-5827",
-  "photo": "arcadio-valdes-franco.jpg"
+  "photo": "arcadio-valdes-franco.jpg",
+  "linkedin": "https://linkedin.com/in/arcadeo"
  },
  "larissa-wilson": {
   "name": "Larissa Wilson",
@@ -801,6 +869,7 @@ window.LAB_PROFILES = {
   "title": "Graduate Student (former)",
   "bio": "Larissa Wilson was a graduate student with our group at North Carolina State University. She did an excellent association study on starch synthesis. She is currently a researcher with BASF in Research Triangle of North Carolina.",
   "photo": "larissa-wilson.jpg",
+  "linkedin": "https://linkedin.com/in/larissa-wilson-49b0291",
   "start": 1999,
   "end": 2004
  },
@@ -813,8 +882,9 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=wH3tHbEAAAAJ&hl=en",
   "orcid": "https://orcid.org/0000-0002-0904-6473",
   "photo": "travis-wrightsman.jpg",
+  "linkedin": "https://linkedin.com/in/travis-wrightsman",
   "start": 2019,
-  "end": "present"
+  "end": 2024
  },
  "mingqiu-dai": {
   "name": "Mingqiu Dai",
@@ -823,6 +893,7 @@ window.LAB_PROFILES = {
   "bio": "Principal Investigator at National Key Laboratory of Crop Genetic Improvement at Huazhong Agricultural University; research focuses on genetic dissection of maize drought tolerance using multiple omics datasets and machine learning.",
   "email": "md365@cornell.edu",
   "photo": "mingqiu-dai.jpg",
+  "linkedin": "https://0",
   "now": "Professor, Huazhong Agricultural University"
  },
  "meng-li": {
@@ -831,6 +902,7 @@ window.LAB_PROFILES = {
   "title": "Visiting Graduate Student (former)",
   "bio": "Meng Li was a visiting graduate student at the Buckler Lab. She is now an associate professor at Nanjing Agricultural University.",
   "photo": "meng-li.jpg",
+  "linkedin": "https://0",
   "start": 2010,
   "end": 2016
  },
@@ -841,6 +913,7 @@ window.LAB_PROFILES = {
   "bio": "Torsten Pook was a visiting student at the Buckler Lab. He is now at Georg-August-Universität Göttingen.",
   "scholar": "https://scholar.google.de/citations?user=bqwHyfYAAAAJ&hl=de",
   "photo": "torsten-pook.jpg",
+  "linkedin": "https://0",
   "now": "Assistant Professor, University of Goettingen"
  },
  "ram-kumar-sharma": {
@@ -849,7 +922,8 @@ window.LAB_PROFILES = {
   "title": "Visiting Scientist (former, 2010–2011)",
   "bio": "Ram K. Sharma was a visiting scientist in Dr. Buckler's lab from 2010-2011 under the IUSSTF Research Fellowship program. Dr. Sharma holds a Scientist position at the Institute of Himalayan Bioresource Technology, IHBT (CSIR), Palampur, India. His research interests include the development and exploitation of various molecular markers technologies for plant diversity evaluation and genetic improvement of crop plants and plantation crops.",
   "scholar": "https://scholar.google.com/citations?user=37k9WkIAAAAJ&hl=en",
-  "photo": "ram-kumar-sharma.jpg"
+  "photo": "ram-kumar-sharma.jpg",
+  "linkedin": "https://linkedin.com/in/ram-kumar-sharma-7636845"
  },
  "kenta-shirasawa": {
   "name": "Kenta Shirasawa",
@@ -858,6 +932,7 @@ window.LAB_PROFILES = {
   "bio": "Kenta Shirasawa was a visiting scientist at the Buckler Lab. He is now a senior researcher at the Kazusa DNA Research Institute.",
   "photo": "kenta-shirasawa.jpg",
   "website": "https://kazusa.or.jp",
+  "linkedin": "https://0",
   "now": "Senior Researcher, Kazusa DNA Research Institute"
  },
  "mei-hsiu-su": {
@@ -867,6 +942,7 @@ window.LAB_PROFILES = {
   "bio": "Mei-Hsiu Su was a visiting scientist at the Buckler Lab. She now works as a researcher at Academia Sinica.",
   "photo": "mei-hsiu-su.jpg",
   "website": "https://www.sinica.edu.tw/en",
+  "linkedin": "https://0",
   "start": 2016,
   "end": 2020
  },
@@ -877,7 +953,8 @@ window.LAB_PROFILES = {
   "bio": "Plant genetics and genomics researcher focused on functional genomics, genetic diversity, and kernel composition in corn, with interests in tropical corn diversity, avocado genetics, and transcriptomics.",
   "email": "clc294@cornell.edu",
   "orcid": "https://orcid.org/0000-0002-6674-2504",
-  "photo": "carlos-ligne-calderon-vazquez.jpg"
+  "photo": "carlos-ligne-calderon-vazquez.jpg",
+  "linkedin": "https://0"
  },
  "qiang-xu": {
   "name": "Qiang Xu",
@@ -886,7 +963,8 @@ window.LAB_PROFILES = {
   "bio": "My research focuses on the genomic basis of domestication and diversification through somatic mutations in fruit crops, particularly in sweet oranges.",
   "email": "xuqiang@mail.hzau.edu.cn",
   "orcid": "https://orcid.org/0000-0003-1786-9696",
-  "photo": "qiang-xu.jpg"
+  "photo": "qiang-xu.jpg",
+  "linkedin": "https://0"
  },
  "xiao-zhang": {
   "name": "Xiao Zhang",
@@ -894,6 +972,7 @@ window.LAB_PROFILES = {
   "title": "Visiting Graduate Student (former)",
   "bio": "Xiao Zhang was a visiting graduate student from Sichuan Agricultural University.",
   "photo": "xiao-zhang.jpg",
+  "linkedin": "https://0",
   "start": 2013,
   "end": 2024
  },
@@ -904,6 +983,7 @@ window.LAB_PROFILES = {
   "bio": "From a young age, I was fascinated with many things, chief among them being field guides and logic puzzles.",
   "email": "ahb232@cornell.edu",
   "photo": "ana-berthel.jpg",
+  "linkedin": "https://linkedin.com/in/ana-berthel",
   "now": "Programmer, USDA-ARS",
   "start": 2019,
   "end": "present"
@@ -915,9 +995,10 @@ window.LAB_PROFILES = {
   "bio": "Computer science background with interest in life sciences; joined Buckler Lab in 2023 as undergrad, now full-time programmer working on machine learning models for genetic imputation in crops.",
   "email": "smm477@cornell.edu",
   "photo": "sarah-mcmorrow.jpg",
+  "linkedin": "https://linkedin.com/in/sarah-jane-mcmorrow-537302207",
   "now": "Bioinformatics, USDA-ARS",
   "start": 2021,
-  "end": "present"
+  "end": 2026
  },
  "thuy-la": {
   "name": "Thuy La",
@@ -926,6 +1007,7 @@ window.LAB_PROFILES = {
   "bio": "Lab technician using molecular skills to assist in designing and optimizing protocols including DNA, RNA, protein, and metabolomic sample extraction, preparing libraries for next generation sequencing.",
   "email": "tml78@cornell.edu",
   "photo": "thuy-la.jpg",
+  "linkedin": "https://linkedin.com/in/thuy-la-4a5a67ba",
   "now": "Technician, USDA-ARS",
   "start": 2016,
   "end": "present"
@@ -937,6 +1019,7 @@ window.LAB_PROFILES = {
   "bio": "Business Director of the Institute for Genomic Diversity and Buckler Lab. Cornell supervisor of the group, responsible for personnel, finances, and administrative matters. Graduate of Swarthmore College and University of Michigan Law School.",
   "email": "sara.miller@cornell.edu",
   "photo": "sara-miller.jpg",
+  "linkedin": "https://linkedin.com/in/sara-miller-03b53a19b",
   "now": "Business Director",
   "start": 2014,
   "end": "present"
@@ -948,6 +1031,7 @@ window.LAB_PROFILES = {
   "bio": "Software developer who works on development and support of the TASSEL package and various other systems used by the Buckler Lab. Has a B.S. in Computer Science and Mathematics from Houghton College and an M.S. in Computer Science from Rochester Institute of Technology with a focus on Intelligent Systems.",
   "email": "zrm22@cornell.edu",
   "photo": "zack-miller.jpg",
+  "linkedin": "https://0",
   "now": "Programmer, USDA-ARS",
   "start": 2019,
   "end": "present"
@@ -959,6 +1043,7 @@ window.LAB_PROFILES = {
   "bio": "Agricultural Research Science technician and field manager for the Buckler group since 2005, responsible for field nurseries and greenhouse/chamber projects, with research interests in high-throughput phenotyping, precision agriculture, stress tolerance in Tripsacum species, and Fall Armyworm resistance in maize.",
   "email": "nkl3@cornell.edu",
   "photo": "nick-lepak.jpg",
+  "linkedin": "https://linkedin.com/in/nick-lepak-8321ab4a",
   "now": "Field Manager, USDA-ARS",
   "start": 2005,
   "end": "present"
@@ -970,6 +1055,7 @@ window.LAB_PROFILES = {
   "bio": "Focuses on applied genomics for plant breeding of underfunded crops with international partners, working on crop improvement and cassava breeding projects.",
   "email": "bfe4@cornell.edu",
   "photo": "bethany-econopouly.jpg",
+  "linkedin": "https://linkedin.com/in/bethany-fallon-econopouly-322a16164",
   "now": "International Applied Genomics Lead, Breeding Insight",
   "start": 2020,
   "end": "present"
@@ -981,6 +1067,7 @@ window.LAB_PROFILES = {
   "bio": "Led software efforts of the Buckler Lab at Cornell University, focusing on TASSEL software including the GBS Pipeline. Started working with Dr. Buckler at North Carolina State University in 2001.",
   "email": "tmc46@cornell.edu",
   "photo": "terry-casstevens.jpg",
+  "linkedin": "https://linkedin.com/in/terry-casstevens-391a1a",
   "now": "Retired (formerly Bioinformatics Lead)",
   "start": 2003,
   "end": 2024
@@ -992,6 +1079,7 @@ window.LAB_PROFILES = {
   "bio": "I am a computational biologist with the USDA-ARS in Ithaca, New York.",
   "email": "pjb39@cornell.edu",
   "photo": "peter-bradbury.jpg",
+  "linkedin": "https://linkedin.com/in/peter-bradbury-2236a714",
   "now": "Computational Biologist, USDA-ARS",
   "start": 2003,
   "end": "present"
@@ -1003,6 +1091,7 @@ window.LAB_PROFILES = {
   "bio": "Bioinformatics specialist with expertise in population genetics, conservation genetics, and molecular breeding, holding a Ph.D. in Forest Molecular Genetics from University of British Columbia.",
   "email": "jcg233@cornell.edu",
   "photo": "jeff-glaubitz.jpg",
+  "linkedin": "https://0",
   "start": 2004,
   "end": 2021
  },
@@ -1013,6 +1102,7 @@ window.LAB_PROFILES = {
   "bio": "Rob Elshire was the Sequencing Technology Lead at the Buckler Lab from 2007 to 2015. He later started the Elshire Group Ltd., a genotyping-by-sequencing service provider.",
   "photo": "rob-elshire.jpg",
   "website": "https://www.elshiregroup.co.nz",
+  "linkedin": "https://0",
   "now": "Founder, Elshire Group Ltd.",
   "start": 2006,
   "end": 2015
@@ -1023,6 +1113,7 @@ window.LAB_PROFILES = {
   "title": "Software Developer (former)",
   "bio": "Dallas E. Kroon worked as a software developer for the Buckler Group and he helped program the TASSEL software.",
   "photo": "dallas-e-kroon.jpg",
+  "linkedin": "https://linkedin.com/in/dallas-kroon",
   "start": 2003,
   "end": 2010
  },
@@ -1032,6 +1123,7 @@ window.LAB_PROFILES = {
   "title": "Programmer (former)",
   "bio": "Yogesh Ramdoss was a programmer at the Buckler Lab. He now serves as a principal engineer at Cisco in Research Triangle Park, North Carolina.",
   "photo": "yogesh-ramdoss.jpg",
+  "linkedin": "https://#N/A",
   "start": 2005,
   "end": 2007
  },
@@ -1042,6 +1134,7 @@ window.LAB_PROFILES = {
   "bio": "Denise Costich returned to the Buckler Lab after serving as a senior scientist at CIMMYT and overseeing the CIMMYT Germplasm Bank's maize collection.",
   "email": "dc58@cornell.edu",
   "photo": "denise-costich.jpg",
+  "linkedin": "https://0",
   "now": "Retired (formerly CIMMYT Maize Germplasm Bank)",
   "start": 2007,
   "end": "present"
@@ -1053,6 +1146,7 @@ window.LAB_PROFILES = {
   "bio": "Programmer with background in anthropology and computer science who joined the Buckler Lab in 2014, combining computational analysis with scientific research.",
   "email": "lcj34@cornell.edu",
   "photo": "lynn-johnson.jpg",
+  "linkedin": "https://linkedin.com/in/lynn-johnson-1355aaa",
   "now": "Statistical Consultant, Cornell University",
   "start": 2014,
   "end": "present"
@@ -1064,6 +1158,7 @@ window.LAB_PROFILES = {
   "bio": "Nick Kaczmar was a field and lab assistant in the Buckler Lab. He is now a Hydroponics/Aquaponics Specialist for the Horticulture Section of SIPS at Cornell University.",
   "email": "nsk37@cornell.edu",
   "photo": "nick-kaczmar.jpg",
+  "linkedin": "https://linkedin.com/in/nicholas-kaczmar-04605412",
   "start": 2017,
   "end": 2024
  },
@@ -1074,6 +1169,7 @@ window.LAB_PROFILES = {
   "bio": "Brad Rauh was a researcher with the group at North Carolina State University conducting a QTL experiment on nitrogen uptake in Arabidopsis and now serves as a Lab Technologist at Clemson University.",
   "email": "brauh@clemson.edu",
   "photo": "brad-rauh.jpg",
+  "linkedin": "https://linkedin.com/in/bradley-rauh-amplify-science",
   "start": 2000,
   "end": 2002
  },
@@ -1084,6 +1180,7 @@ window.LAB_PROFILES = {
   "bio": "Quantitative Researcher at the Buckler Lab, Cornell University, working on bioinformatics and genomics problems using mathematics and machine learning tools.",
   "scholar": "https://scholar.google.com/citations?user=b2LJDtMAAAAJ&hl=en",
   "photo": "janu-verma.jpg",
+  "linkedin": "https://linkedin.com/in/janu-verma-b79b8823",
   "start": 2014,
   "end": 2017
  },
@@ -1094,6 +1191,7 @@ window.LAB_PROFILES = {
   "bio": "Arturo Garcia was a programmer in our group and now works as an Information Technology Specialist for the USDA, based at the University of Missouri.",
   "email": "arturo.garcia@usda.gov",
   "photo": "arturo-garcia.jpg",
+  "linkedin": "https://#N/A",
   "start": 2007,
   "end": 2020
  },
@@ -1104,6 +1202,7 @@ window.LAB_PROFILES = {
   "bio": "James Harriman was a programmer in the Buckler Lab, working on the issues of SNP discovery and diversity informatics. His chief interests are genomic selection (colloquially known as \"Smart Breeding\") and technology transfer from developed to developing countries.",
   "email": "jim@spaghettilogic.com",
   "photo": "james-harriman.jpg",
+  "linkedin": "https://#N/A",
   "start": 2009,
   "end": 2015
  },
@@ -1113,7 +1212,8 @@ window.LAB_PROFILES = {
   "title": "Programmer",
   "bio": "Lifetime programmer with a B.A. in Philosophy who joined the lab after industry work as a software engineer, motivated to sharpen plant breeding and genetics knowledge while applying insights to silviculture, agroforestry, and regenerative agriculture.",
   "email": "mbw88@cornell.edu",
-  "photo": "matthew-wiese.jpg"
+  "photo": "matthew-wiese.jpg",
+  "linkedin": "https://#N/A"
  },
  "george-day": {
   "name": "George Day",
@@ -1121,7 +1221,8 @@ window.LAB_PROFILES = {
   "title": "Technician (former)",
   "bio": "Lab technician who collected tissue samples, extracted DNA/RNA/protein, and prepared libraries for next-generation sequencing at the Buckler Lab before moving to the Cornell Genomics Facility.",
   "email": "gqd2@cornell.edu",
-  "photo": "george-day.jpg"
+  "photo": "george-day.jpg",
+  "linkedin": "https://#N/A"
  },
  "josh-budka": {
   "name": "Josh Budka",
@@ -1130,15 +1231,19 @@ window.LAB_PROFILES = {
   "bio": "Josh Budka worked as a field technician during his time at the Buckler Lab.",
   "email": "jsbudka@gmail.com",
   "photo": "josh-budka.jpg",
+  "linkedin": "https://#N/A",
   "start": 2013,
-  "end": "present"
+  "end": 2016
  },
  "heather-mose-yates": {
   "name": "Heather Mose-Yates",
   "role": "staff",
   "title": "Molecular Biology Technician (former)",
   "bio": "Former molecular biology technician at the Buckler Lab who worked on NSF Maize Diversity projects; now employed as a Biological Scientist at the University of Florida.",
-  "photo": "heather-mose-yates.jpg"
+  "photo": "heather-mose-yates.jpg",
+  "linkedin": "https://#N/A",
+  "start": 2008,
+  "end": 2009
  },
  "susan-romero": {
   "name": "Susan Romero",
@@ -1146,6 +1251,7 @@ window.LAB_PROFILES = {
   "title": "Lab Technician (former)",
   "bio": "Susan Romero worked as a lab technician during her time at the Buckler Lab.",
   "photo": "susan-romero.jpg",
+  "linkedin": "https://#N/A",
   "start": 2003,
   "end": 2005
  },
@@ -1156,6 +1262,7 @@ window.LAB_PROFILES = {
   "bio": "Natalie Stevens was a former lab administrator for the Buckler Lab. She is now a program manager for the Executive Leadership Institute and the McColl School of Business.",
   "email": "stevensn@queens.edu",
   "photo": "natalie-stevens.jpg",
+  "linkedin": "https://#N/A",
   "start": 2004,
   "end": 2009
  },
@@ -1165,6 +1272,7 @@ window.LAB_PROFILES = {
   "title": "Lab Manager (former)",
   "bio": "Lab manager when the lab was at North Carolina State University. She led research on molecular diversity in the starch production pathway and determined the functional nucleotide polymorphisms that caused natural sweet corns. She is currently a researcher with BASF in the Research Triangle of North Carolina.",
   "photo": "sherry-whitt.jpg",
+  "linkedin": "https://#N/A",
   "start": 1999,
   "end": 2006
  },
@@ -1174,7 +1282,8 @@ window.LAB_PROFILES = {
   "title": "Administrative Assistant",
   "bio": "Serves as the administrative assistant for the Buckler Lab and helps with travel, purchasing, visitors and website maintenance. Graduate of Brigham Young University with a master's degree from Utah State in Business Information Systems.",
   "email": "sr2254@cornell.edu",
-  "photo": "shawna-robertson.jpg"
+  "photo": "shawna-robertson.jpg",
+  "linkedin": "https://#N/A"
  },
  "andrew-robertson": {
   "name": "Andrew Robertson",
@@ -1182,7 +1291,8 @@ window.LAB_PROFILES = {
   "title": "Tripsacum Field Technician (former)",
   "bio": "Assisting with the Tripsacum fields and greenhouse work during time at the Buckler Lab while pursuing a BA in Technical Writing from Brigham Young University.",
   "email": "adr52@cornell.edu",
-  "photo": "andrew-robertson.jpg"
+  "photo": "andrew-robertson.jpg",
+  "linkedin": "https://#N/A"
  },
  "linda-rigamer-lirette": {
   "name": "Linda Rigamer Lirette",
@@ -1190,7 +1300,10 @@ window.LAB_PROFILES = {
   "title": "Administrative Assistant (former)",
   "bio": "Linda Rigamer Lirette was an Administrative Assistant in the Buckler Lab. She now works as the choral director at Chamblee Charter High School.",
   "email": "linda_a_lirette@dekalbschoolsga.org",
-  "photo": "linda-rigamer-lirette.jpg"
+  "photo": "linda-rigamer-lirette.jpg",
+  "linkedin": "https://#N/A",
+  "start": 2008,
+  "end": 2010
  },
  "patrick-o-briant": {
   "name": "Patrick O'Briant",
@@ -1198,7 +1311,10 @@ window.LAB_PROFILES = {
   "title": "Lab Technician",
   "bio": "Interested in sustainable and precision agriculture, machine learning, field techniques, and robotics; preparing for master's in Soil and Crop Sciences at Cornell.",
   "email": "rpo28@cornell.edu",
-  "photo": "patrick-o-briant.jpg"
+  "photo": "patrick-o-briant.jpg",
+  "linkedin": "https://#N/A",
+  "start": 2024,
+  "end": 2024
  },
  "elliot-richards": {
   "name": "Elliot Richards",
@@ -1207,6 +1323,7 @@ window.LAB_PROFILES = {
   "bio": "Supports robotic data collection operations at Buckler Lab with expertise in electrical and mechanical design, prototype fabrication, and robot repair. Developing a robotic leaf tissue collector for improved DNA sample acquisition.",
   "email": "er499@cornell.edu",
   "photo": "elliot-richards.jpg",
+  "linkedin": "https://#N/A",
   "start": 2017,
   "end": 2019
  },
@@ -1216,7 +1333,10 @@ window.LAB_PROFILES = {
   "title": "Lab Technician (former)",
   "bio": "Technician in the Buckler Lab, now a research scientist at University of California, Davis, working on aluminum tolerance of maize and association mapping of candidate genes.",
   "email": "akrillbrown@ucdavis.edu",
-  "photo": "allison-krill-brown.jpg"
+  "photo": "allison-krill-brown.jpg",
+  "linkedin": "https://#N/A",
+  "start": 2004,
+  "end": 2009
  },
  "alina-miller": {
   "name": "Alina Miller",
@@ -1225,6 +1345,7 @@ window.LAB_PROFILES = {
   "bio": "Undergraduate researcher in the Buckler Lab.",
   "email": "am2653@cornell.edu",
   "photo": "alina-miller.jpg",
+  "linkedin": "https://#N/A",
   "start": 2011,
   "end": 2014
  },
@@ -1235,6 +1356,7 @@ window.LAB_PROFILES = {
   "bio": "Interested in seeking advancement in sustainability-related traits in agricultural crops through improved breeding techniques.",
   "email": "ajg326@cornell.edu",
   "photo": "allen-gelfond.jpg",
+  "linkedin": "https://#N/A",
   "start": 2023,
   "end": "present"
  },
@@ -1245,6 +1367,7 @@ window.LAB_PROFILES = {
   "bio": "Undergraduate student in Plant Sciences with an interest in understanding how transposable element mutations and accumulation impact plant fitness through computational techniques and machine learning approaches.",
   "email": "gec83@cornell.edu",
   "photo": "grace-campidilli.jpg",
+  "linkedin": "https://#N/A",
   "start": 2019,
   "end": 2021
  },
@@ -1253,7 +1376,8 @@ window.LAB_PROFILES = {
   "role": "undergrad",
   "title": "Undergraduate Researcher (former)",
   "bio": "Greg Young was an undergraduate researcher with the Buckler group at North Carolina State University. He went on to become a graduate student at Indiana University and now works as a Senior Scientist at Pacific Biosciences.",
-  "photo": "gregory-young.jpg"
+  "photo": "gregory-young.jpg",
+  "linkedin": "https://#N/A"
  },
  "jack-greenberg": {
   "name": "Jack Greenberg",
@@ -1261,7 +1385,10 @@ window.LAB_PROFILES = {
   "title": "Undergraduate Programmer",
   "bio": "Programmer developing a new version of the Fieldbook phenotype collection app and assisting with alpha testing of autonomous data collection rovers.",
   "email": "jmg572@cornell.edu",
-  "photo": "jack-greenberg.jpg"
+  "photo": "jack-greenberg.jpg",
+  "linkedin": "https://#N/A",
+  "start": 2018,
+  "end": 2019
  },
  "jennifer-zhao": {
   "name": "Jennifer Zhao",
@@ -1269,7 +1396,8 @@ window.LAB_PROFILES = {
   "title": "Student Intern",
   "bio": "High school student interested in plant science assisting with Tripsacum research field at the Buckler Lab.",
   "email": "jjz65@cornell.edu",
-  "photo": "jennifer-zhao.jpg"
+  "photo": "jennifer-zhao.jpg",
+  "linkedin": "https://#N/A"
  },
  "jeffrey-morse": {
   "name": "Jeffrey Morse",
@@ -1277,7 +1405,10 @@ window.LAB_PROFILES = {
   "title": "Undergraduate Researcher",
   "bio": "Interested in improving the nutritional quality and environmental impact of staple food crops and developing software to aid in this research.",
   "email": "jbm249@cornell.edu",
-  "photo": "jeffrey-morse.jpg"
+  "photo": "jeffrey-morse.jpg",
+  "linkedin": "https://#N/A",
+  "start": 2022,
+  "end": 2024
  },
  "libby-gilmore": {
   "name": "Libby Gilmore",
@@ -1285,7 +1416,8 @@ window.LAB_PROFILES = {
   "title": "Undergraduate Researcher",
   "bio": "Undergraduate student interested in phenotypic responses to climate change and computational techniques applied to environmental and biological issues.",
   "email": "ehg47@cornell.edu",
-  "photo": "libby-gilmore.jpg"
+  "photo": "libby-gilmore.jpg",
+  "linkedin": "https://#N/A"
  },
  "lu-cao": {
   "name": "Lu Cao",
@@ -1293,7 +1425,8 @@ window.LAB_PROFILES = {
   "title": "Undergraduate Researcher",
   "bio": "Undergraduate student interested in mathematical applications in computer science and biological statistics, studying genetic basis of maize development and environmental adaptation at Buckler Lab.",
   "email": "lc892@cornell.edu",
-  "photo": "lu-cao.jpg"
+  "photo": "lu-cao.jpg",
+  "linkedin": "https://#N/A"
  },
  "maxwell-swann": {
   "name": "Maxwell Swann",
@@ -1301,7 +1434,8 @@ window.LAB_PROFILES = {
   "title": "Student Intern",
   "bio": "High school student interested in real-world applications of plant biology and genetics, studying RNA expression profiles of stressed Tripsacum to identify genes for cold and freezing tolerance.",
   "email": "ms3392@cornell.edu",
-  "photo": "maxwell-swann.jpg"
+  "photo": "maxwell-swann.jpg",
+  "linkedin": "https://#N/A"
  },
  "sophie-mccomb": {
   "name": "Sophie McComb",
@@ -1309,7 +1443,10 @@ window.LAB_PROFILES = {
   "title": "Undergraduate Researcher",
   "bio": "Undergraduate student in Applied Economics and Management exploring economic implications and statistical applications within agriculture, with focus on economic modeling for trait implementation in commercial farming and plant competition analysis in hybrid mixes.",
   "email": "sm2397@cornell.edu",
-  "photo": "sophie-mccomb.jpg"
+  "photo": "sophie-mccomb.jpg",
+  "linkedin": "https://#N/A",
+  "start": 2022,
+  "end": 2022
  },
  "truman-tse": {
   "name": "Truman Tse",
@@ -1317,7 +1454,8 @@ window.LAB_PROFILES = {
   "title": "Undergraduate Researcher",
   "bio": "Sophomore pursuing a B.S. in Biological Engineering at Cornell, combining interests in machine learning, genetics, and sustainability through computational analysis of agriculture and plant genetics.",
   "email": "tct38@cornell.edu",
-  "photo": "truman-tse.jpg"
+  "photo": "truman-tse.jpg",
+  "linkedin": "https://#N/A"
  },
  "vaishnavi-gupta": {
   "name": "Vaishnavi Gupta",
@@ -1325,7 +1463,8 @@ window.LAB_PROFILES = {
   "title": "Bioinformatics Intern",
   "bio": "While working on creating an online learning platform for healthcare professionals across India, I realized my passion for working on problems at the intersection of computer science and biology. I'm particularly interested in predictive machine learning models and building genetic analysis tools. At Buckler Lab, I hope to contribute to the development of bioinformatics tools for Kotlin, and learn about modeling the central dogma of biology.",
   "email": "vg222@cornell.edu",
-  "photo": "vaishnavi-gupta.jpg"
+  "photo": "vaishnavi-gupta.jpg",
+  "linkedin": "https://#N/A"
  },
  "xiao-lei-liu": {
   "name": "Xiao-Lei Liu",
@@ -1333,14 +1472,8 @@ window.LAB_PROFILES = {
   "title": "Visiting Student (former)",
   "bio": "Xiao-Lei Liu was a visiting student at the Buckler Lab. He is now an associate professor at Huazhong Agricultural University.",
   "scholar": "https://scholar.google.com/citations?user=dM7uPXcAAAAJ&hl=en",
-  "photo": "xiao-lei-liu.jpg"
- },
- "beth-kraft-sant": {
-  "name": "Beth Kraft Sant",
-  "role": "grad",
-  "title": "Graduate Student (former)",
-  "bio": "Non-thesis master's student with the group at North Carolina State University who pursued an MD at the Osteopathic Medical School at Virginia Tech.",
-  "photo": "beth-kraft-sant.jpg"
+  "photo": "xiao-lei-liu.jpg",
+  "linkedin": "https://#N/A"
  },
  "emily-yi": {
   "name": "Emily Yi",
@@ -1348,7 +1481,10 @@ window.LAB_PROFILES = {
   "title": "Undergraduate Researcher",
   "bio": "Undergraduate student interested in computational and statistical techniques to solve biological problems, especially in response to changing climate; working on understanding pleiotropy in maize.",
   "email": "ety8@cornell.edu",
-  "photo": "emily-yi.jpg"
+  "photo": "emily-yi.jpg",
+  "linkedin": "https://#N/A",
+  "start": 2022,
+  "end": 2022
  },
  "ben-fehr": {
   "name": "Ben Fehr",
@@ -1356,7 +1492,10 @@ window.LAB_PROFILES = {
   "title": "Graduate Student",
   "bio": "Computational Biology graduate student interested in leveraging big data and machine learning for food system equity and sustainability, currently working on BAHD enzyme identification in maize.",
   "email": "bf325@cornell.edu",
-  "photo": "ben-fehr.jpg"
+  "photo": "ben-fehr.jpg",
+  "linkedin": "https://#N/A",
+  "start": 2020,
+  "end": 2021
  },
  "timothy-reeves": {
   "name": "Timothy Reeves",
@@ -1364,7 +1503,10 @@ window.LAB_PROFILES = {
   "title": "Undergraduate Researcher",
   "bio": "Junior pursuing a B.S. in Agricultural Sciences at Cornell, studying sustainable plant breeding with interests in machine learning and big data applications to environmental and genetic data.",
   "email": "tjr239@cornell.edu",
-  "photo": "timothy-reeves.jpg"
+  "photo": "timothy-reeves.jpg",
+  "linkedin": "https://#N/A",
+  "start": 2019,
+  "end": 2019
  },
  "cindy-guan": {
   "name": "Cindy Guan",
@@ -1372,14 +1514,16 @@ window.LAB_PROFILES = {
   "title": "Undergraduate Researcher",
   "bio": "Sophomore pursuing a B.A. in Biological Sciences at Cornell, working on cassava genome assembly and evolutionary conservation using computational biology and statistics for sustainable global nutrition.",
   "email": "cg493@cornell.edu",
-  "photo": "cindy-guan.jpg"
+  "photo": "cindy-guan.jpg",
+  "linkedin": "https://#N/A"
  },
  "kristina-volkert": {
   "name": "Kristina Volkert",
   "role": "staff",
   "title": "Program Support Specialist (former)",
   "bio": "Served as the Program Support Specialist for the Buckler Lab and helped with travel, purchasing, visitors and website maintenance.",
-  "email": "kmp279@cornell.edu"
+  "email": "kmp279@cornell.edu",
+  "linkedin": "https://#N/A"
  },
  "jesse-zhou": {
   "name": "Jesse Zhou",
@@ -1387,12 +1531,14 @@ window.LAB_PROFILES = {
   "title": "Undergraduate Researcher",
   "bio": "Senior pursuing a B.S. in Plant Science at Cornell; researching soil's importance in crop growth models and assisting with maize field research in the Buckler Lab.",
   "email": "sz546@cornell.edu",
-  "photo": "jesse-zhou.jpg"
+  "photo": "jesse-zhou.jpg",
+  "linkedin": "https://#N/A"
  },
  "jennifer-heer": {
   "name": "Jennifer Heer",
   "role": "staff",
   "title": "Research Technician (former)",
-  "bio": "Jennifer was a research technician with the group at North Carolina State University and worked on the Ra1 and the maize leafy homologues. She later went to work with TIGR."
+  "bio": "Jennifer was a research technician with the group at North Carolina State University and worked on the Ra1 and the maize leafy homologues. She later went to work with TIGR.",
+  "linkedin": "https://#N/A"
  }
 };
