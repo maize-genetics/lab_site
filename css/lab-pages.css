@@ -87,7 +87,7 @@ body:not(.theme-dark) .lead-card .r{color:#9a6d12}
 .person:nth-child(4n+2) .av{background:linear-gradient(135deg,var(--gold),#a9761a);color:var(--forest-2)}
 .person:nth-child(4n+3) .av{background:linear-gradient(135deg,var(--anthocyanin),#3d1a2c)}
 .person:nth-child(4n) .av{background:linear-gradient(135deg,#2a6b57,#16342A)}
-.person .who{min-width:0}
+.person .who{min-width:0;display:flex;flex-direction:column}
 .person .nm{font-family:"Spectral",serif;font-size:16px;font-weight:500;line-height:1.15}
 .person .rl{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--text-soft);margin-top:3px}
 

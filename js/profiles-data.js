@@ -43,6 +43,7 @@ window.LAB_PROFILES = {
   "orcid": "https://orcid.org/0000-0003-0325-5861",
   "photo": "lara-brindisi.jpg",
   "linkedin": "https://linkedin.com/in/larabrindisi",
+  "now": "Research Geneticist, USDA-ARS, Washington, DC",
   "start": 2023,
   "end": 2025
  },
@@ -55,10 +56,10 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.co.in/citations?user=iIuHIyMAAAAJ&hl=en",
   "photo": "patrick-brown.jpg",
   "website": "https://pjblab.faculty.ucdavis.edu/",
-  "linkedin": "https://#N/A",
+  "linkedin": "https://www.linkedin.com/in/pat-j-brown-397b4218/",
   "now": "Associate Professor, UC Davis",
-  "start": 2007,
-  "end": 2021
+  "start": 2008,
+  "end": 2010
  },
  "charles-chen": {
   "name": "Charles Chen",
@@ -69,8 +70,8 @@ window.LAB_PROFILES = {
   "photo": "charles-chen.jpg",
   "linkedin": "https://linkedin.com/in/charles-chen-0211152b",
   "now": "Associate Professor, Oklahoma State University",
-  "start": 2008,
-  "end": 2015
+  "start": 2009,
+  "end": 2012
  },
  "shu-yun-chen": {
   "name": "Shu-Yun Chen",
@@ -79,7 +80,8 @@ window.LAB_PROFILES = {
   "bio": "While working at the Buckler Lab, Dr. Chen focused his research on maize small RNA GWAS with 250 lines and determining the position that controls small RNA expression all over the maize genome.",
   "photo": "shu-yun-chen.jpg",
   "linkedin": "https://linkedin.com/in/chen-shu-yun-a796b949",
-  "start": 2016,
+  "now": "Associate professor at Agronomy Dep., National Cheng Kung University",
+  "start": 2014,
   "end": 2016
  },
  "emre-cimen": {
@@ -92,8 +94,9 @@ window.LAB_PROFILES = {
   "orcid": "https://orcid.org/0000-0002-6715-1810",
   "photo": "emre-cimen.jpg",
   "linkedin": "https://linkedin.com/in/ecimen001",
-  "start": 2018,
-  "end": 2021
+  "now": "Assoc Prof. of Machine Learning, Eskişehir Technical University",
+  "start": 2019,
+  "end": 2020
  },
  "germano-costa-neto": {
   "name": "Germano Costa-Neto",
@@ -105,7 +108,8 @@ window.LAB_PROFILES = {
   "orcid": "https://orcid.org/0000-0003-1137-6786",
   "photo": "germano-costa-neto.jpg",
   "linkedin": "https://linkedin.com/in/germanocneto",
-  "start": 2020,
+  "now": "Research Scientist, Corteva",
+  "start": 2021,
   "end": 2023
  },
  "elhan-ersoz": {
@@ -117,8 +121,9 @@ window.LAB_PROFILES = {
   "photo": "elhan-ersoz.jpg",
   "website": "https://umbrellagenetics.org",
   "linkedin": "https://0",
+  "now": "University of Illinois",
   "start": 2005,
-  "end": 2020
+  "end": 2010
  },
  "joseph-gage": {
   "name": "Joseph Gage",
@@ -131,8 +136,8 @@ window.LAB_PROFILES = {
   "photo": "joseph-gage.jpg",
   "linkedin": "https://linkedin.com/in/joe-gage-13bb5457",
   "now": "Assistant Professor, North Carolina State University",
-  "start": 2015,
-  "end": "present"
+  "start": 2018,
+  "end": 2021
  },
  "sherry-flint-garcia": {
   "name": "Sherry Flint-Garcia",
@@ -154,7 +159,8 @@ window.LAB_PROFILES = {
   "email": "christygault@gmail.com",
   "photo": "christy-gault.jpg",
   "linkedin": "https://www.linkedin.com/in/christygault/",
-  "start": 2013,
+  "now": "Bioinformatician and Plant Geneticist, Wayfinder Genetics",
+  "start": 2015,
   "end": 2018
  },
  "anju-giri": {
@@ -166,7 +172,8 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=8Z5b454AAAAJ&hl=en",
   "photo": "anju-giri.jpg",
   "linkedin": "https://linkedin.com/in/anju-giri-b0838997",
-  "start": 2018,
+  "now": "Genomic Scientist, Syngenta",
+  "start": 2019,
   "end": 2021
  },
  "niranjani-gnanapragasam": {
@@ -177,6 +184,7 @@ window.LAB_PROFILES = {
   "email": "ng529@cornell.edu",
   "photo": "niranjani-gnanapragasam.jpg",
   "linkedin": "https://linkedin.com/in/gnanagnanapragasam-niranjani",
+  "now": "Instructor",
   "start": 2024,
   "end": 2025
  },
@@ -188,9 +196,11 @@ window.LAB_PROFILES = {
   "email": "amitgur@volcani.agri.gov.il",
   "scholar": "https://scholar.google.co.il/citations?user=lJRGxvYAAAAJ&hl=en",
   "photo": "amit-gur.jpg",
+  "website": "https://www.agri.gov.il/en/author/amitgur/",
   "linkedin": "https://linkedin.com/in/amit-gur-0054291a",
-  "start": 2008,
-  "end": 2016
+  "now": "Lead Researcher, Volcani Center",
+  "start": 2004,
+  "end": 2007
  },
  "carlos-harjes": {
   "name": "Carlos Harjes",
@@ -199,8 +209,9 @@ window.LAB_PROFILES = {
   "bio": "Carlos Harjes was a postdoctoral associate in the Buckler Lab. He is now employed as a molecular geneticist for Bayer.",
   "photo": "carlos-harjes.jpg",
   "linkedin": "https://linkedin.com/in/carlos-harjes",
-  "start": 2006,
-  "end": 2010
+  "now": "Plant Breeder",
+  "start": 2003,
+  "end": 2007
  },
  "sheng-kai-hsu": {
   "name": "Sheng-Kai Hsu",
@@ -212,6 +223,7 @@ window.LAB_PROFILES = {
   "orcid": "https://orcid.org/0000-0002-6942-7163",
   "photo": "sheng-kai-hsu.jpg",
   "linkedin": "https://0",
+  "now": "Postdoc",
   "start": 2022,
   "end": "present"
  },
@@ -224,9 +236,9 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=jwHa16wAAAAJ&hl=en",
   "photo": "matias-kirst.jpg",
   "linkedin": "https://linkedin.com/in/matias-kirst-6899051b",
-  "now": "Professor, University of Florida",
-  "start": 2004,
-  "end": 2013
+  "now": "Distinguished Professor, University of Florida, Entrepreneur",
+  "start": 2003,
+  "end": 2004
  },
  "wei-yun-lai": {
   "name": "Wei-Yun Lai",
@@ -236,6 +248,7 @@ window.LAB_PROFILES = {
   "email": "wl748@cornell.edu",
   "photo": "wei-yun-lai.jpg",
   "linkedin": "https://0",
+  "now": "Postdoc",
   "start": 2022,
   "end": "present"
  },
@@ -248,8 +261,9 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=7wenvVQAAAAJ&hl=en",
   "photo": "huihui-li.jpg",
   "linkedin": "https://linkedin.com/in/huihui-li-5057142a",
-  "start": 2006,
-  "end": 2023
+  "now": "Professor at the Institute of Crop Science, Chinese Academy of Agricultural Sciences",
+  "start": 2008,
+  "end": 2009
  },
  "alex-lipka": {
   "name": "Alex Lipka",
@@ -262,8 +276,8 @@ window.LAB_PROFILES = {
   "website": "http://publish.illinois.edu/thelipkalab/",
   "linkedin": "https://linkedin.com/in/alex-lipka-45aa7a2b",
   "now": "Professor, University of Illinois Urbana-Champaign",
-  "start": 2009,
-  "end": 2021
+  "start": 2010,
+  "end": 2014
  },
  "yun-luo": {
   "name": "Yun Luo",
@@ -271,7 +285,9 @@ window.LAB_PROFILES = {
   "title": "Postdoc",
   "bio": "My research aims to enhance maize frost tolerance by integrating advanced technologies. Using single-cell analysis, I identify key frost-tolerance genes and regulatory networks in F2 Tripsacum populations. Machine learning uncovers cell-specific cold-tolerance regulatory elements, which, along with these genes, are introduced into modern maize to enable earlier planting and optimize soil nitrogen use.",
   "email": "yl3956@cornell.edu",
+  "scholar": "https://scholar.google.com/citations?user=6nrowxcAAAAJ&hl=en&oi=sra",
   "photo": "yun-luo.jpg",
+  "now": "Postdoc",
   "start": 2024,
   "end": "present"
  },
@@ -285,8 +301,8 @@ window.LAB_PROFILES = {
   "website": "http://plantgeneticslab.weebly.com/",
   "linkedin": "https://linkedin.com/in/fei-lu-1a07b864",
   "now": "Professor, Chinese Academy of Sciences",
-  "start": 2009,
-  "end": 2022
+  "start": 2010,
+  "end": 2017
  },
  "maria-katherine-mejia-guerra": {
   "name": "Maria Katherine Mejia-Guerra",
@@ -298,8 +314,9 @@ window.LAB_PROFILES = {
   "twitter": "https://twitter.com/katherinemejia",
   "photo": "maria-katherine-mejia-guerra.jpg",
   "linkedin": "https://linkedin.com/in/katherine-mejia-guerra",
-  "start": 2017,
-  "end": 2023
+  "now": "Principal Scientist, Sarepta Therapeutics",
+  "start": 2016,
+  "end": 2020
  },
  "brandon-monier": {
   "name": "Brandon Monier",
@@ -310,6 +327,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=buYGhlYAAAAJ&hl=en",
   "photo": "brandon-monier.jpg",
   "linkedin": "https://linkedin.com/in/btmonier",
+  "now": "Genome Informaticist",
   "start": 2018,
   "end": "present"
  },
@@ -349,9 +367,11 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.co.il/citations?user=zIPUQtkAAAAJ&hl=en",
   "orcid": "https://orcid.org/0000-0001-6821-4409",
   "photo": "elad-oren.jpg",
+  "website": "https://cucurbitomics.github.io/",
   "linkedin": "https://0",
-  "start": 2017,
-  "end": "present"
+  "now": "Researcher, Volcani Institute",
+  "start": 2021,
+  "end": 2025
  },
  "gael-pressoir": {
   "name": "Gael Pressoir",
@@ -362,8 +382,9 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=YIfM5UAAAAAJ&hl=en",
   "photo": "gael-pressoir.jpg",
   "linkedin": "https://linkedin.com/in/gael-pressoir-0720697",
+  "now": "Director CHIBAS, Dean",
   "start": 2003,
-  "end": 2009
+  "end": 2007
  },
  "ramu-punna": {
   "name": "Ramu Punna",
@@ -374,6 +395,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=U35cpIcAAAAJ&hl=en",
   "photo": "ramu-punna.jpg",
   "linkedin": "https://linkedin.com/in/ramu-punna-a4102848",
+  "now": "Senior Data Scientist, Corteva",
   "start": 2014,
   "end": 2018
  },
@@ -400,7 +422,7 @@ window.LAB_PROFILES = {
   "photo": "david-remington.jpg",
   "website": "https://sites.google.com/a/uncg.edu/david-remington-home/",
   "linkedin": "https://linkedin.com/in/david-remington-21198078",
-  "now": "Associate Professor, UNC Greensboro",
+  "now": "Professor Emeritus, UNC Greensboro",
   "start": 1999,
   "end": 2001
  },
@@ -412,32 +434,35 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=jFTkd3UAAAAJ&hl=en",
   "photo": "eli-rodgers-melnick.jpg",
   "linkedin": "https://linkedin.com/in/eli-rodgers-melnick-0a12825",
+  "now": "Senior Research Scientist, Laureate at Corteva Agriscience",
   "start": 2013,
   "end": 2018
  },
  "m-cinta-romay": {
   "name": "M. Cinta Romay",
-  "role": "postdoc",
+  "role": "pi",
   "title": "Project Manager",
   "bio": "Research interests focus on efficiently manipulating genomes to breed better crops using molecular biology and computational tools. PhD training in maize breeding; postdoc experience genotyping thousands of inbred lines. Currently coordinates Buckler Lab projects including planning, finances, outreach, data management, analysis, and publications.",
   "email": "mcr72@cornell.edu",
   "scholar": "https://scholar.google.com/citations?user=YNokV_4AAAAJ&hl=en",
   "orcid": "https://orcid.org/0000-0001-9309-1586",
   "photo": "m-cinta-romay.jpg",
+  "website": "https://www.maizegenetics.net",
   "linkedin": "https://linkedin.com/in/maria-cinta-romay-alvarez-142a1a50",
-  "now": "Research Associate, Cornell University (IGD)",
-  "start": 2006,
+  "now": "Research Director, Cornell University (IGD)",
+  "start": 2009,
   "end": "present"
  },
  "moira-sheehan": {
   "name": "Moira Sheehan",
-  "role": "postdoc",
+  "role": "pi",
   "title": "Director, Breeding Insight (former Postdoctoral Associate)",
   "bio": "Moira Sheehan was a postdoctoral associate in the Buckler Lab. She is now the director of Breeding Insight.",
   "email": "moirasheehan@cornell.edu",
   "photo": "moira-sheehan.jpg",
   "website": "https://www.breedinginsight.org/",
   "linkedin": "https://linkedin.com/in/moira-sheehan-8723151b",
+  "now": "Director, University of Florida",
   "start": 2008,
   "end": 2012
  },
@@ -450,6 +475,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.co.in/citations?user=occkhqAAAAAJ&hl=en",
   "photo": "nisha-singh.jpg",
   "linkedin": "https://linkedin.com/in/dr-nisha-singh-48a7b914",
+  "now": "Assistant Professor, Gujarat Biotechnology University",
   "start": 2018,
   "end": 2020
  },
@@ -462,9 +488,9 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=ZEV5OkoAAAAJ&hl=en",
   "photo": "baoxing-song.jpg",
   "linkedin": "https://linkedin.com/in/song-baoxing-77301a60",
-  "now": "Principal Investigator, Peking University",
+  "now": "Professor, Peking University Institute of Advanced Agricultural Sciences",
   "start": 2018,
-  "end": 2024
+  "end": 2022
  },
  "michelle-stitzer": {
   "name": "Michelle Stitzer",
@@ -487,9 +513,10 @@ window.LAB_PROFILES = {
   "email": "jthorns@nwmissouri.edu",
   "photo": "jeff-thornsberry.jpg",
   "website": "https://www.nwmissouri.edu/naturalsciences/directory/thornsberry.htm",
-  "linkedin": "https://0",
+  "linkedin": "https://www.linkedin.com/in/jeffry-thornsberry-31a4418/",
+  "now": "Chair, School of Natural Sciences",
   "start": 1999,
-  "end": 2009
+  "end": 2003
  },
  "feng-tian": {
   "name": "Feng Tian",
@@ -498,10 +525,11 @@ window.LAB_PROFILES = {
   "bio": "Feng Tian was a postdoc at the Buckler Lab but is now a professor for the National Maize Improvement Center of China at China Agricultural University.",
   "email": "ft55@cau.edu.cn",
   "photo": "feng-tian.jpg",
+  "website": "https://sklper.cau.edu.cn/article/EN1687378313654853632",
   "linkedin": "https://0",
-  "now": "Professor, China Agricultural University",
+  "now": "Professor, China Agricultural University, Deputy Director of the National Maize Improvement Center of China",
   "start": 2007,
-  "end": 2016
+  "end": 2011
  },
  "ravi-valluru": {
   "name": "Ravi Valluru",
@@ -512,7 +540,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=_Abmmy8AAAAJ&hl=en",
   "photo": "ravi-valluru.jpg",
   "linkedin": "https://www.linkedin.com/in/ravi-valluru-5a7576165/",
-  "now": "Lecturer, University of Lincoln",
+  "now": "Senior Lecturer, University of Lincoln",
   "start": 2016,
   "end": 2019
  },
@@ -522,7 +550,8 @@ window.LAB_PROFILES = {
   "title": "Senior Expert, African Observatory for STI (former Postdoc)",
   "bio": "Irie Vroh was a postdoc working on flowering time, nitrogen use, and high throughput sequencing. He is now a Senior Expert of Science and Technology Policy at the African Observatory for STI (AOSTI).",
   "photo": "irie-vroh-bi.jpg",
-  "linkedin": "https://0",
+  "linkedin": "https://www.linkedin.com/in/irie-vroh-bi-46883a4a/",
+  "now": "Senior Expert, Science and Technology Policy at the African Observatory for STI",
   "start": 2004,
   "end": 2006
  },
@@ -550,9 +579,9 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=Ip1Q-DEAAAAJ&hl=en",
   "orcid": "https://orcid.org/0000-0002-1722-1518",
   "photo": "hai-wang.jpg",
-  "website": "http://bri.caas.cn/en/scientists/faculty/87624.htm",
+  "website": "http://faculty.cau.edu.cn/nxswxy/wh/list.htm",
   "linkedin": "https://0",
-  "now": "Associate Professor, China Agricultural University",
+  "now": "Professor, China Agricultural University",
   "start": 2017,
   "end": 2021
  },
@@ -568,7 +597,7 @@ window.LAB_PROFILES = {
   "linkedin": "https://linkedin.com/in/jacob-washburn-99013937",
   "now": "Research Geneticist, USDA-ARS",
   "start": 2017,
-  "end": "present"
+  "end": 2020
  },
  "yaoyao-wu": {
   "name": "Yaoyao Wu",
@@ -576,11 +605,14 @@ window.LAB_PROFILES = {
   "title": "Visiting Postdoc",
   "bio": "Interested in researching deleterious mutations and plant fitness, currently predicting deleterious mutations in potato and tracking evolution in Solanaceae family.",
   "email": "yw2326@cornell.edu",
+  "scholar": "https://scholar.google.com/citations?user=4AdGXCgAAAAJ&hl=en&oi=ao",
   "orcid": "https://orcid.org/0000-0003-0766-1541",
   "photo": "yaoyao-wu.jpg",
+  "website": "http://faculty.njau.edu.cn/wuyaoyao/en/index.htm",
   "linkedin": "https://0",
-  "start": 2018,
-  "end": 2023
+  "now": "Professor, Nanjing Agricultural University",
+  "start": 2019,
+  "end": 2021
  },
  "jianbing-yan": {
   "name": "Jianbing Yan",
@@ -590,10 +622,11 @@ window.LAB_PROFILES = {
   "email": "yjianbing@mail.hzau.edu.cn",
   "scholar": "https://scholar.google.com/citations?user=rP8YhtcAAAAJ&hl=zh-CN",
   "photo": "jianbing-yan.jpg",
+  "website": "http://www.maizego.org/",
   "linkedin": "https://0",
   "now": "President, Huazhong Agricultural University",
-  "start": 2007,
-  "end": "present"
+  "start": 2006,
+  "end": 2008
  },
  "jianming-yu": {
   "name": "Jianming Yu",
@@ -603,11 +636,11 @@ window.LAB_PROFILES = {
   "email": "jmyu@iastate.edu",
   "scholar": "https://scholar.google.com/citations?user=x59S4kEAAAAJ&hl=en",
   "photo": "jianming-yu.jpg",
-  "website": "https://sites.google.com/site/quantitativegeneticsmaize/home",
-  "linkedin": "https://0",
-  "now": "Professor, Iowa State University",
-  "start": 2003,
-  "end": 2014
+  "website": "https://www.agron.iastate.edu/people/yu-jianming/",
+  "linkedin": "https://www.linkedin.com/in/jianming-yu-92b6617b/",
+  "now": "Distinguished Professor, Iowa State University",
+  "start": 2004,
+  "end": 2006
  },
  "jingjing-zhai": {
   "name": "Jingjing Zhai",
@@ -617,6 +650,7 @@ window.LAB_PROFILES = {
   "email": "jz963@cornell.edu",
   "photo": "jingjing-zhai.jpg",
   "linkedin": "https://linkedin.com/in/jingjing-zhai-866031303",
+  "now": "Senior Postdoc",
   "start": 2022,
   "end": "present"
  },
@@ -626,9 +660,10 @@ window.LAB_PROFILES = {
   "title": "Postdoctoral Associate (former)",
   "bio": "Nengyi Zhang was a postdoctoral associate in the Buckler Lab. He is now at BASF Plant Science in North Carolina.",
   "photo": "nengyi-zhang.jpg",
-  "linkedin": "https://0",
+  "linkedin": "https://www.linkedin.com/in/nengyi-z-571045292/",
+  "now": "Research Scientist, BASF",
   "start": 2008,
-  "end": 2016
+  "end": 2011
  },
  "zhiwu-zhang": {
   "name": "Zhiwu Zhang",
@@ -641,8 +676,8 @@ window.LAB_PROFILES = {
   "website": "http://zzlab.net/",
   "linkedin": "https://linkedin.com/in/zhiwu-zhang-14080223",
   "now": "Professor, Washington State University",
-  "start": 2003,
-  "end": 2018
+  "start": 2005,
+  "end": 2014
  },
  "tao-zuo": {
   "name": "Tao Zuo",
@@ -651,8 +686,9 @@ window.LAB_PROFILES = {
   "bio": "Tao Zuo was a postdoctoral associate in the Buckler Lab. He is now a bioinformatics scientist at Monsanto Company.",
   "photo": "tao-zuo.jpg",
   "linkedin": "https://linkedin.com/in/taozuo",
+  "now": "Senior Data Scientist, Bayer",
   "start": 2016,
-  "end": 2019
+  "end": 2017
  },
  "szu-ping-chen": {
   "name": "Szu-Ping Chen",
@@ -662,7 +698,8 @@ window.LAB_PROFILES = {
   "email": "sc3367@cornell.edu",
   "photo": "szu-ping-chen.jpg",
   "linkedin": "https://linkedin.com/in/szu-ping-chen-40746319a",
-  "start": 2016,
+  "now": "Graduate Student",
+  "start": 2024,
   "end": "present"
  },
  "henry-dawson": {
@@ -673,6 +710,7 @@ window.LAB_PROFILES = {
   "email": "hdd29@cornell.edu",
   "photo": "henry-dawson.jpg",
   "linkedin": "https://linkedin.com/in/henry-dawson-2b16b3173",
+  "now": "Graduate Student",
   "start": 2024,
   "end": "present"
  },
@@ -684,7 +722,8 @@ window.LAB_PROFILES = {
   "email": "mze3@cornell.edu",
   "photo": "mohamed-el-walid.jpg",
   "linkedin": "https://linkedin.com/in/mohamed-el-walid",
-  "start": 2023,
+  "now": "Graduate",
+  "start": 2020,
   "end": 2026
  },
  "taylor-ferebee": {
@@ -695,8 +734,9 @@ window.LAB_PROFILES = {
   "email": "tf259@cornell.edu",
   "photo": "taylor-ferebee.jpg",
   "linkedin": "https://linkedin.com/in/taylorferebee",
-  "start": 2021,
-  "end": "present"
+  "now": "Senior Data Scientist, Corteva",
+  "start": 2019,
+  "end": 2024
  },
  "michael-gore": {
   "name": "Michael Gore",
@@ -708,9 +748,9 @@ window.LAB_PROFILES = {
   "photo": "michael-gore.jpg",
   "website": "https://blogs.cornell.edu/gorelab",
   "linkedin": "https://linkedin.com/in/michael-gore-9046a790",
-  "now": "Professor, Cornell University",
+  "now": "Liberty Hyde Bailey Professor, Cornell University",
   "start": 2004,
-  "end": "present"
+  "end": 2009
  },
  "charles-hale": {
   "name": "Charles Hale",
@@ -731,8 +771,9 @@ window.LAB_PROFILES = {
   "email": "sej65@cornell.edu",
   "photo": "sarah-jensen.jpg",
   "linkedin": "https://linkedin.com/in/sarah-jensen-1652b784",
+  "now": "Applied Analytics Manager, Syngenta",
   "start": 2017,
-  "end": 2022
+  "end": 2021
  },
  "merritt-khaipho-burch": {
   "name": "Merritt Khaipho-Burch",
@@ -742,8 +783,9 @@ window.LAB_PROFILES = {
   "email": "mbb262@cornell.edu",
   "photo": "merritt-khaipho-burch.jpg",
   "linkedin": "https://linkedin.com/in/merrittkhaiphoburch",
-  "start": 2019,
-  "end": "present"
+  "now": "Research Scientist, Corteva Agriscience",
+  "start": 2018,
+  "end": 2024
  },
  "beatrice-konadu": {
   "name": "Beatrice Konadu",
@@ -752,7 +794,10 @@ window.LAB_PROFILES = {
   "bio": "Plant Breeding and Genetics PhD student on Schlumberger's Faculty for the Future Foundation fellowship at Cornell University focused on identifying key genes governing nitrogen remobilization in maize and their integration into annual cultivars.",
   "email": "bak234@cornell.edu",
   "photo": "beatrice-konadu.jpg",
-  "linkedin": "https://linkedin.com/in/beatrice-konadu-62a350231"
+  "linkedin": "https://linkedin.com/in/beatrice-konadu-62a350231",
+  "now": "Graduate Student",
+  "start": 2023,
+  "end": "present"
  },
  "karl-kremling": {
   "name": "Karl Kremling",
@@ -762,8 +807,9 @@ window.LAB_PROFILES = {
   "email": "kkremling@inari.com",
   "photo": "karl-kremling.jpg",
   "linkedin": "https://linkedin.com/in/karl-kremling-70593715",
-  "start": 2013,
-  "end": 2023
+  "now": "Technical Lead, Food Security, Google DeepMind",
+  "start": 2012,
+  "end": 2018
  },
  "sara-larsson": {
   "name": "Sara Larsson",
@@ -773,8 +819,9 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=TK8v6qcAAAAJ&hl=en",
   "photo": "sara-larsson.jpg",
   "linkedin": "https://linkedin.com/in/sara-larsson-3053a542",
-  "start": 2011,
-  "end": 2020
+  "now": "Sorghum and Wheat Breeding Lead, Corteva Agriscience",
+  "start": 2008,
+  "end": 2013
  },
  "zong-yan-liu": {
   "name": "Zong-Yan Liu",
@@ -784,7 +831,8 @@ window.LAB_PROFILES = {
   "email": "zl843@cornell.edu",
   "photo": "zong-yan-liu.jpg",
   "linkedin": "https://linkedin.com/in/zongyanliu",
-  "start": 2014,
+  "now": "Graduate Student",
+  "start": 2022,
   "end": "present"
  },
  "evan-long": {
@@ -795,8 +843,9 @@ window.LAB_PROFILES = {
   "email": "eml255@cornell.edu",
   "photo": "evan-long.jpg",
   "linkedin": "https://linkedin.com/in/evan-long-97952886",
-  "start": 2020,
-  "end": "present"
+  "now": "Research Geneticist, USDA-ARS",
+  "start": 2018,
+  "end": 2022
  },
  "evan-rees": {
   "name": "Evan Rees",
@@ -806,8 +855,9 @@ window.LAB_PROFILES = {
   "email": "err87@cornell.edu",
   "photo": "evan-rees.jpg",
   "linkedin": "https://linkedin.com/in/evanrr",
-  "start": 2018,
-  "end": 2022
+  "now": "Software Engineer, Embark Veterinary",
+  "start": 2017,
+  "end": 2021
  },
  "jorge-alberto-romero": {
   "name": "Jorge Alberto Romero",
@@ -815,7 +865,10 @@ window.LAB_PROFILES = {
   "title": "Graduate Student (former)",
   "bio": "Jorge Alberto Romero was a graduate student at the Buckler Lab. Since 2018 he has worked at VILMORIN SA.",
   "photo": "jorge-alberto-romero.jpg",
-  "linkedin": "https://linkedin.com/in/j-alberto-romero-navarro-51a038139"
+  "linkedin": "https://linkedin.com/in/j-alberto-romero-navarro-51a038139",
+  "now": "Group Lead Breeding, Nestle",
+  "start": 2011,
+  "end": 2016
  },
  "travis-rooney": {
   "name": "Travis Rooney",
@@ -826,6 +879,7 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=NwvLPEMAAAAJ&hl=en",
   "photo": "travis-rooney.jpg",
   "linkedin": "https://linkedin.com/in/travis-rooney-45226540",
+  "now": "Plant Breeder, Sesaco",
   "start": 2023,
   "end": 2022
  },
@@ -837,8 +891,9 @@ window.LAB_PROFILES = {
   "email": "ajs692@cornell.edu",
   "photo": "aimee-schulz.jpg",
   "linkedin": "https://linkedin.com/in/aimeejschulz",
-  "start": 2022,
-  "end": "present"
+  "now": "Corn Breeding Data Scientist, Corteva Agriscience",
+  "start": 2019,
+  "end": 2024
  },
  "kelly-swarts": {
   "name": "Kelly Swarts",
@@ -848,9 +903,9 @@ window.LAB_PROFILES = {
   "orcid": "https://orcid.org/0000-0002-0578-7426",
   "photo": "kelly-swarts.jpg",
   "linkedin": "https://linkedin.com/in/kelly-swarts-5a8787b3",
-  "now": "Assistant Professor, Wageningen University",
-  "start": 2006,
-  "end": 2022
+  "now": "Assistant Professor, Umeå Plant Science Centre",
+  "start": 2011,
+  "end": 2016
  },
  "arcadio-valdes-franco": {
   "name": "Arcadio Valdes Franco",
@@ -861,7 +916,10 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=o4ran8EAAAAJ&hl=en",
   "orcid": "https://orcid.org/0000-0002-0887-5827",
   "photo": "arcadio-valdes-franco.jpg",
-  "linkedin": "https://linkedin.com/in/arcadeo"
+  "linkedin": "https://linkedin.com/in/arcadeo",
+  "now": "Applied Genetics Scientist, Syngenta",
+  "start": 2016,
+  "end": 2023
  },
  "larissa-wilson": {
   "name": "Larissa Wilson",
@@ -870,8 +928,9 @@ window.LAB_PROFILES = {
   "bio": "Larissa Wilson was a graduate student with our group at North Carolina State University. She did an excellent association study on starch synthesis. She is currently a researcher with BASF in Research Triangle of North Carolina.",
   "photo": "larissa-wilson.jpg",
   "linkedin": "https://linkedin.com/in/larissa-wilson-49b0291",
+  "now": "Global Supply Chain Manager, Syngenta",
   "start": 1999,
-  "end": 2004
+  "end": 2002
  },
  "travis-wrightsman": {
   "name": "Travis Wrightsman",
@@ -883,7 +942,8 @@ window.LAB_PROFILES = {
   "orcid": "https://orcid.org/0000-0002-0904-6473",
   "photo": "travis-wrightsman.jpg",
   "linkedin": "https://linkedin.com/in/travis-wrightsman",
-  "start": 2019,
+  "now": "Data Scientist, Heritable Agriculture",
+  "start": 2018,
   "end": 2024
  },
  "mingqiu-dai": {
@@ -894,17 +954,23 @@ window.LAB_PROFILES = {
   "email": "md365@cornell.edu",
   "photo": "mingqiu-dai.jpg",
   "linkedin": "https://0",
-  "now": "Professor, Huazhong Agricultural University"
+  "now": "Professor, Huazhong Agricultural University",
+  "start": 2019,
+  "end": 2020
  },
  "meng-li": {
   "name": "Meng Li",
   "role": "visiting",
   "title": "Visiting Graduate Student (former)",
   "bio": "Meng Li was a visiting graduate student at the Buckler Lab. She is now an associate professor at Nanjing Agricultural University.",
+  "email": "mli@njau.edu.cn",
+  "scholar": "https://sciprofiles.com/user/publications/1873263",
   "photo": "meng-li.jpg",
+  "website": "https://sciprofiles.com/user/publications/1873263",
   "linkedin": "https://0",
+  "now": "Professor Horticulture, Nanjing Agricultural University",
   "start": 2010,
-  "end": 2016
+  "end": 2011
  },
  "torsten-pook": {
   "name": "Torsten Pook",
@@ -913,8 +979,10 @@ window.LAB_PROFILES = {
   "bio": "Torsten Pook was a visiting student at the Buckler Lab. He is now at Georg-August-Universität Göttingen.",
   "scholar": "https://scholar.google.de/citations?user=bqwHyfYAAAAJ&hl=de",
   "photo": "torsten-pook.jpg",
-  "linkedin": "https://0",
-  "now": "Assistant Professor, University of Goettingen"
+  "linkedin": "https://www.linkedin.com/in/torsten-pook-92725114b/",
+  "now": "Assistant Professor, University of Goettingen",
+  "start": 2017,
+  "end": 2017
  },
  "ram-kumar-sharma": {
   "name": "Ram Kumar Sharma",
