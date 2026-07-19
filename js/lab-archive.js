@@ -294,7 +294,10 @@
       return a.start - b.start || String(a.name).localeCompare(b.name);
     });
     var rows = people.map(function (p) {
-      var left = pct(p.start), right = pct(p.end);
+      // a tenure runs to the END of its final year, so 2016–2016 spans the whole
+      // of 2016 rather than collapsing to zero width
+      var left = pct(p.start),
+          right = p.end === "present" ? pct("present") : pct(p.end + 1);
       var end = p.end === "present" ? "present" : p.end;
       var now = p.now ? ' — <span class="tl-now">' + esc(p.now) + "</span>" : "";
       var slug = p.slug || slugify(p.name);
