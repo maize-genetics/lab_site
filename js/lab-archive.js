@@ -172,7 +172,11 @@
   function renderResearchTimeline(containerId) {
     var c = el(containerId); if (!c || !window.LAB_LINES) return;
     var rows = window.LAB_LINES.map(function (ln) {
-      var left = pct(ln.start), right = pct(ln.end || "present");
+      // same end-of-year rule as the people timeline: a line runs through the
+      // whole of its final year, so a single-year line isn't zero width
+      var lnEnd = ln.end || "present",
+          left = pct(ln.start),
+          right = lnEnd === "present" ? pct("present") : pct(lnEnd + 1);
       var dots = (ln.milestones || []).map(function (m) {
         return '<span class="tl-dot" style="left:' + pct(m.y) + '%" title="' +
           esc(m.y + " · " + m.label) + '"><span class="tl-dot-lbl">' + esc(m.label) + "</span></span>";
