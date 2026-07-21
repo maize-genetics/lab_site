@@ -223,7 +223,7 @@ window.LAB_PROFILES = {
   "orcid": "https://orcid.org/0000-0002-6942-7163",
   "photo": "sheng-kai-hsu.jpg",
   "linkedin": "https://0",
-  "now": "Postdoc",
+  "now": "Senior Postdoc",
   "start": 2022,
   "end": "present"
  },
@@ -355,6 +355,7 @@ window.LAB_PROFILES = {
   "orcid": "https://orcid.org/0000-0002-2310-5564",
   "photo": "jonathan-ojeda.jpg",
   "linkedin": "https://linkedin.com/in/jonathan-ojeda-53b2712b5",
+  "now": "Senior Postdoc",
   "start": 2023,
   "end": "present"
  },
@@ -502,6 +503,7 @@ window.LAB_PROFILES = {
   "orcid": "https://orcid.org/0000-0003-4140-3765",
   "photo": "michelle-stitzer.jpg",
   "linkedin": "https://0",
+  "now": "Senior Postdoc",
   "start": 2019,
   "end": "present"
  },
@@ -989,19 +991,27 @@ window.LAB_PROFILES = {
   "role": "visiting",
   "title": "Visiting Scientist (former, 2010–2011)",
   "bio": "Ram K. Sharma was a visiting scientist in Dr. Buckler's lab from 2010-2011 under the IUSSTF Research Fellowship program. Dr. Sharma holds a Scientist position at the Institute of Himalayan Bioresource Technology, IHBT (CSIR), Palampur, India. His research interests include the development and exploitation of various molecular markers technologies for plant diversity evaluation and genetic improvement of crop plants and plantation crops.",
+  "email": "ramsharma@ihbt.res.in",
   "scholar": "https://scholar.google.com/citations?user=37k9WkIAAAAJ&hl=en",
   "photo": "ram-kumar-sharma.jpg",
-  "linkedin": "https://linkedin.com/in/ram-kumar-sharma-7636845"
+  "website": "http://www.ihbt.res.in/en/staff/scientific-staff?chronoform=sctdetail&task=detail&id=17",
+  "linkedin": "https://linkedin.com/in/ram-kumar-sharma-7636845",
+  "now": "Chief Scientist, Professor, CSIR-IHBT, Palampur",
+  "start": 2010,
+  "end": 2011
  },
  "kenta-shirasawa": {
   "name": "Kenta Shirasawa",
   "role": "visiting",
   "title": "Visiting Scientist (former)",
   "bio": "Kenta Shirasawa was a visiting scientist at the Buckler Lab. He is now a senior researcher at the Kazusa DNA Research Institute.",
+  "scholar": "https://scholar.google.com/citations?user=sUto4QUAAAAJ&hl=en",
   "photo": "kenta-shirasawa.jpg",
-  "website": "https://kazusa.or.jp",
+  "website": "https://www.kazusa.or.jp/en-laboratories/en-advanced-department/en-plant-genome-lab/",
   "linkedin": "https://0",
-  "now": "Senior Researcher, Kazusa DNA Research Institute"
+  "now": "Laboratory Head, Kazusa DNA Research Institute",
+  "start": 2013,
+  "end": 2014
  },
  "mei-hsiu-su": {
   "name": "Mei-Hsiu Su",
@@ -1010,9 +1020,10 @@ window.LAB_PROFILES = {
   "bio": "Mei-Hsiu Su was a visiting scientist at the Buckler Lab. She now works as a researcher at Academia Sinica.",
   "photo": "mei-hsiu-su.jpg",
   "website": "https://www.sinica.edu.tw/en",
-  "linkedin": "https://0",
-  "start": 2016,
-  "end": 2020
+  "linkedin": "https://www.linkedin.com/in/mei-hsiu-su-97a853117/",
+  "now": "Researcher, National Chung Hsing University",
+  "start": 2014,
+  "end": 2016
  },
  "carlos-ligne-calderon-vazquez": {
   "name": "Carlos Ligne Calderon Vazquez",
@@ -1022,7 +1033,10 @@ window.LAB_PROFILES = {
   "email": "clc294@cornell.edu",
   "orcid": "https://orcid.org/0000-0002-6674-2504",
   "photo": "carlos-ligne-calderon-vazquez.jpg",
-  "linkedin": "https://0"
+  "linkedin": "https://0",
+  "now": "Professor, CIIDIR Unidad Sinaloa",
+  "start": 2022,
+  "end": 2023
  },
  "qiang-xu": {
   "name": "Qiang Xu",
@@ -1032,7 +1046,10 @@ window.LAB_PROFILES = {
   "email": "xuqiang@mail.hzau.edu.cn",
   "orcid": "https://orcid.org/0000-0003-1786-9696",
   "photo": "qiang-xu.jpg",
-  "linkedin": "https://0"
+  "linkedin": "https://0",
+  "now": "Director & Professor, Huazhong Agricultural University",
+  "start": 2018,
+  "end": 2018
  },
  "xiao-zhang": {
   "name": "Xiao Zhang",
@@ -1041,8 +1058,9 @@ window.LAB_PROFILES = {
   "bio": "Xiao Zhang was a visiting graduate student from Sichuan Agricultural University.",
   "photo": "xiao-zhang.jpg",
   "linkedin": "https://0",
+  "now": "Professor, Sichuan Agricultural University",
   "start": 2013,
-  "end": 2024
+  "end": 2013
  },
  "ana-berthel": {
   "name": "Ana Berthel",
@@ -1052,7 +1070,7 @@ window.LAB_PROFILES = {
   "email": "ahb232@cornell.edu",
   "photo": "ana-berthel.jpg",
   "linkedin": "https://linkedin.com/in/ana-berthel",
-  "now": "Programmer, USDA-ARS",
+  "now": "Programmer, BTU",
   "start": 2019,
   "end": "present"
  },
@@ -1064,7 +1082,7 @@ window.LAB_PROFILES = {
   "email": "smm477@cornell.edu",
   "photo": "sarah-mcmorrow.jpg",
   "linkedin": "https://linkedin.com/in/sarah-jane-mcmorrow-537302207",
-  "now": "Bioinformatics, USDA-ARS",
+  "now": "Bioinformatics, Cornell",
   "start": 2021,
   "end": 2026
  },
@@ -1076,9 +1094,9 @@ window.LAB_PROFILES = {
   "email": "tml78@cornell.edu",
   "photo": "thuy-la.jpg",
   "linkedin": "https://linkedin.com/in/thuy-la-4a5a67ba",
-  "now": "Technician, USDA-ARS",
-  "start": 2016,
-  "end": "present"
+  "now": "Technician, Cornell",
+  "start": 2019,
+  "end": 2025
  },
  "sara-miller": {
   "name": "Sara Miller",
@@ -1088,8 +1106,8 @@ window.LAB_PROFILES = {
   "email": "sara.miller@cornell.edu",
   "photo": "sara-miller.jpg",
   "linkedin": "https://linkedin.com/in/sara-miller-03b53a19b",
-  "now": "Business Director",
-  "start": 2014,
+  "now": "Business Director, BTI",
+  "start": 2010,
   "end": "present"
  },
  "zack-miller": {
@@ -1100,8 +1118,8 @@ window.LAB_PROFILES = {
   "email": "zrm22@cornell.edu",
   "photo": "zack-miller.jpg",
   "linkedin": "https://0",
-  "now": "Programmer, USDA-ARS",
-  "start": 2019,
+  "now": "Bioinformatics Lead, USDA-ARS",
+  "start": 2014,
   "end": "present"
  },
  "nick-lepak": {
@@ -1136,7 +1154,7 @@ window.LAB_PROFILES = {
   "email": "tmc46@cornell.edu",
   "photo": "terry-casstevens.jpg",
   "linkedin": "https://linkedin.com/in/terry-casstevens-391a1a",
-  "now": "Retired (formerly Bioinformatics Lead)",
+  "now": "Retired (Bioinformatics Lead, Cornell)",
   "start": 2003,
   "end": 2024
  },
@@ -1148,9 +1166,9 @@ window.LAB_PROFILES = {
   "email": "pjb39@cornell.edu",
   "photo": "peter-bradbury.jpg",
   "linkedin": "https://linkedin.com/in/peter-bradbury-2236a714",
-  "now": "Computational Biologist, USDA-ARS",
+  "now": "Retired (Computational Biologist, USDA-ARS)",
   "start": 2003,
-  "end": "present"
+  "end": 2024
  },
  "jeff-glaubitz": {
   "name": "Jeff Glaubitz",
@@ -1158,22 +1176,25 @@ window.LAB_PROFILES = {
   "title": "Genomic Selection Application Coordinator (former)",
   "bio": "Bioinformatics specialist with expertise in population genetics, conservation genetics, and molecular breeding, holding a Ph.D. in Forest Molecular Genetics from University of British Columbia.",
   "email": "jcg233@cornell.edu",
+  "scholar": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://scholar.google.com/citations%3Fuser%3D2p550qoAAAAJ%26hl%3Den&ved=2ahUKEwic6LPFueKVAxWbCnkGHcBBPeoQFnoECB4QAQ&usg=AOvVaw1_XRPMJBEIIr6NbVGsYOb8",
   "photo": "jeff-glaubitz.jpg",
-  "linkedin": "https://0",
-  "start": 2004,
-  "end": 2021
+  "linkedin": "https://www.linkedin.com/in/jeff-glaubitz-a794a6191/",
+  "now": "Project Manager, Computational Biologist",
+  "start": 2005,
+  "end": 2016
  },
  "rob-elshire": {
   "name": "Rob Elshire",
   "role": "staff",
   "title": "Sequencing Technology Lead (former, 2007–2015)",
   "bio": "Rob Elshire was the Sequencing Technology Lead at the Buckler Lab from 2007 to 2015. He later started the Elshire Group Ltd., a genotyping-by-sequencing service provider.",
+  "scholar": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://scholar.google.com/citations%3Fuser%3DGzS71NwAAAAJ%26hl%3Den&ved=2ahUKEwjmzOCdvOKVAxUAlYkEHVvqFdcQFnoECBkQAQ&usg=AOvVaw2KpM2scapSyx_wHLKTVLU5",
   "photo": "rob-elshire.jpg",
   "website": "https://www.elshiregroup.co.nz",
   "linkedin": "https://0",
   "now": "Founder, Elshire Group Ltd.",
-  "start": 2006,
-  "end": 2015
+  "start": 2007,
+  "end": 2013
  },
  "dallas-e-kroon": {
   "name": "Dallas E. Kroon",
@@ -1181,9 +1202,10 @@ window.LAB_PROFILES = {
   "title": "Software Developer (former)",
   "bio": "Dallas E. Kroon worked as a software developer for the Buckler Group and he helped program the TASSEL software.",
   "photo": "dallas-e-kroon.jpg",
-  "linkedin": "https://linkedin.com/in/dallas-kroon",
+  "linkedin": "https://www.linkedin.com/in/dallas-kroon/",
+  "now": "Scientist, International Food & Fragrence",
   "start": 2003,
-  "end": 2010
+  "end": 2014
  },
  "yogesh-ramdoss": {
   "name": "Yogesh Ramdoss",
@@ -1191,7 +1213,8 @@ window.LAB_PROFILES = {
   "title": "Programmer (former)",
   "bio": "Yogesh Ramdoss was a programmer at the Buckler Lab. He now serves as a principal engineer at Cisco in Research Triangle Park, North Carolina.",
   "photo": "yogesh-ramdoss.jpg",
-  "linkedin": "https://#N/A",
+  "linkedin": "https://www.linkedin.com/in/yogesh-ramdoss-763448/",
+  "now": "Principal Engineer, Everpure",
   "start": 2005,
   "end": 2007
  },
@@ -1203,9 +1226,9 @@ window.LAB_PROFILES = {
   "email": "dc58@cornell.edu",
   "photo": "denise-costich.jpg",
   "linkedin": "https://0",
-  "now": "Retired (formerly CIMMYT Maize Germplasm Bank)",
+  "now": "Retired (Director CIMMYT Maize Germplasm Bank)",
   "start": 2007,
-  "end": "present"
+  "end": 2014
  },
  "lynn-johnson": {
   "name": "Lynn Johnson",
@@ -1215,31 +1238,33 @@ window.LAB_PROFILES = {
   "email": "lcj34@cornell.edu",
   "photo": "lynn-johnson.jpg",
   "linkedin": "https://linkedin.com/in/lynn-johnson-1355aaa",
-  "now": "Statistical Consultant, Cornell University",
+  "now": "Retired (Programmer, Cornell University)",
   "start": 2014,
-  "end": "present"
+  "end": 2025
  },
  "nick-kaczmar": {
   "name": "Nick Kaczmar",
   "role": "staff",
-  "title": "Field and Lab Assistant (former)",
+  "title": "Field Technician, USDA-ARS",
   "bio": "Nick Kaczmar was a field and lab assistant in the Buckler Lab. He is now a Hydroponics/Aquaponics Specialist for the Horticulture Section of SIPS at Cornell University.",
   "email": "nsk37@cornell.edu",
   "photo": "nick-kaczmar.jpg",
   "linkedin": "https://linkedin.com/in/nicholas-kaczmar-04605412",
-  "start": 2017,
-  "end": 2024
+  "now": "Research Specialist, Cornell University",
+  "start": 2010,
+  "end": 2014
  },
  "brad-rauh": {
   "name": "Brad Rauh",
   "role": "staff",
-  "title": "Researcher (former)",
+  "title": "Research Technician, USDA-ARS",
   "bio": "Brad Rauh was a researcher with the group at North Carolina State University conducting a QTL experiment on nitrogen uptake in Arabidopsis and now serves as a Lab Technologist at Clemson University.",
   "email": "brauh@clemson.edu",
   "photo": "brad-rauh.jpg",
   "linkedin": "https://linkedin.com/in/bradley-rauh-amplify-science",
+  "now": "Teaching Lab Manager, Clemson University",
   "start": 2000,
-  "end": 2002
+  "end": 2003
  },
  "janu-verma": {
   "name": "Janu Verma",
@@ -1249,8 +1274,9 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=b2LJDtMAAAAJ&hl=en",
   "photo": "janu-verma.jpg",
   "linkedin": "https://linkedin.com/in/janu-verma-b79b8823",
+  "now": "Principal Applied Scientist, Microsoft",
   "start": 2014,
-  "end": 2017
+  "end": 2015
  },
  "arturo-garcia": {
   "name": "Arturo Garcia",
@@ -1259,9 +1285,10 @@ window.LAB_PROFILES = {
   "bio": "Arturo Garcia was a programmer in our group and now works as an Information Technology Specialist for the USDA, based at the University of Missouri.",
   "email": "arturo.garcia@usda.gov",
   "photo": "arturo-garcia.jpg",
-  "linkedin": "https://#N/A",
-  "start": 2007,
-  "end": 2020
+  "linkedin": "https://www.linkedin.com/in/arturo-garcia-27872324/",
+  "now": "IT Specialist, USDA-ARS",
+  "start": 2001,
+  "end": 2004
  },
  "james-harriman": {
   "name": "James Harriman",
@@ -1271,8 +1298,9 @@ window.LAB_PROFILES = {
   "email": "jim@spaghettilogic.com",
   "photo": "james-harriman.jpg",
   "linkedin": "https://#N/A",
-  "start": 2009,
-  "end": 2015
+  "now": "Informatics, Osthus GmbH, Aachen",
+  "start": 2010,
+  "end": 2012
  },
  "matthew-wiese": {
   "name": "Matthew Wiese",
@@ -1281,7 +1309,11 @@ window.LAB_PROFILES = {
   "bio": "Lifetime programmer with a B.A. in Philosophy who joined the lab after industry work as a software engineer, motivated to sharpen plant breeding and genetics knowledge while applying insights to silviculture, agroforestry, and regenerative agriculture.",
   "email": "mbw88@cornell.edu",
   "photo": "matthew-wiese.jpg",
-  "linkedin": "https://#N/A"
+  "website": "https://mattwie.se",
+  "linkedin": "https://#N/A",
+  "now": "Programmer",
+  "start": 2022,
+  "end": 2023
  },
  "george-day": {
   "name": "George Day",
@@ -1290,7 +1322,10 @@ window.LAB_PROFILES = {
   "bio": "Lab technician who collected tissue samples, extracted DNA/RNA/protein, and prepared libraries for next-generation sequencing at the Buckler Lab before moving to the Cornell Genomics Facility.",
   "email": "gqd2@cornell.edu",
   "photo": "george-day.jpg",
-  "linkedin": "https://#N/A"
+  "linkedin": "https://#N/A",
+  "now": "Technician, Cornell",
+  "start": 2020,
+  "end": 2021
  },
  "josh-budka": {
   "name": "Josh Budka",
@@ -1299,7 +1334,8 @@ window.LAB_PROFILES = {
   "bio": "Josh Budka worked as a field technician during his time at the Buckler Lab.",
   "email": "jsbudka@gmail.com",
   "photo": "josh-budka.jpg",
-  "linkedin": "https://#N/A",
+  "linkedin": "https://www.linkedin.com/in/joshua-budka-7ba30562/",
+  "now": "Head Grower, Gotham Greens",
   "start": 2013,
   "end": 2016
  },
@@ -1310,18 +1346,19 @@ window.LAB_PROFILES = {
   "bio": "Former molecular biology technician at the Buckler Lab who worked on NSF Maize Diversity projects; now employed as a Biological Scientist at the University of Florida.",
   "photo": "heather-mose-yates.jpg",
   "linkedin": "https://#N/A",
-  "start": 2008,
-  "end": 2009
+  "start": 2004,
+  "end": 2007
  },
  "susan-romero": {
   "name": "Susan Romero",
   "role": "staff",
-  "title": "Lab Technician (former)",
+  "title": "Field Manager (former)",
   "bio": "Susan Romero worked as a lab technician during her time at the Buckler Lab.",
   "photo": "susan-romero.jpg",
   "linkedin": "https://#N/A",
-  "start": 2003,
-  "end": 2005
+  "now": "Software Engineer, IBM",
+  "start": 2001,
+  "end": 2006
  },
  "natalie-stevens": {
   "name": "Natalie Stevens",
@@ -1330,9 +1367,10 @@ window.LAB_PROFILES = {
   "bio": "Natalie Stevens was a former lab administrator for the Buckler Lab. She is now a program manager for the Executive Leadership Institute and the McColl School of Business.",
   "email": "stevensn@queens.edu",
   "photo": "natalie-stevens.jpg",
-  "linkedin": "https://#N/A",
-  "start": 2004,
-  "end": 2009
+  "linkedin": "https://www.linkedin.com/in/natalie-stevens-4964b4162/",
+  "now": "Slate Consultant",
+  "start": 2003,
+  "end": 2005
  },
  "sherry-whitt": {
   "name": "Sherry Whitt",
@@ -1340,9 +1378,10 @@ window.LAB_PROFILES = {
   "title": "Lab Manager (former)",
   "bio": "Lab manager when the lab was at North Carolina State University. She led research on molecular diversity in the starch production pathway and determined the functional nucleotide polymorphisms that caused natural sweet corns. She is currently a researcher with BASF in the Research Triangle of North Carolina.",
   "photo": "sherry-whitt.jpg",
-  "linkedin": "https://#N/A",
-  "start": 1999,
-  "end": 2006
+  "linkedin": "https://www.linkedin.com/in/sherry-whitt-3aaaa410a/",
+  "now": "Global Manager Diagnostics, BASF",
+  "start": 2000,
+  "end": 2003
  },
  "shawna-robertson": {
   "name": "Shawna Robertson",
@@ -1351,7 +1390,10 @@ window.LAB_PROFILES = {
   "bio": "Serves as the administrative assistant for the Buckler Lab and helps with travel, purchasing, visitors and website maintenance. Graduate of Brigham Young University with a master's degree from Utah State in Business Information Systems.",
   "email": "sr2254@cornell.edu",
   "photo": "shawna-robertson.jpg",
-  "linkedin": "https://#N/A"
+  "linkedin": "https://#N/A",
+  "now": "Administrator, Cornell University",
+  "start": 2018,
+  "end": 2022
  },
  "andrew-robertson": {
   "name": "Andrew Robertson",
@@ -1369,7 +1411,8 @@ window.LAB_PROFILES = {
   "bio": "Linda Rigamer Lirette was an Administrative Assistant in the Buckler Lab. She now works as the choral director at Chamblee Charter High School.",
   "email": "linda_a_lirette@dekalbschoolsga.org",
   "photo": "linda-rigamer-lirette.jpg",
-  "linkedin": "https://#N/A",
+  "linkedin": "https://www.linkedin.com/in/linda-rigamer-lirette-bba80732/",
+  "now": "Director, Chamblee OnStage",
   "start": 2008,
   "end": 2010
  },
@@ -1380,7 +1423,8 @@ window.LAB_PROFILES = {
   "bio": "Interested in sustainable and precision agriculture, machine learning, field techniques, and robotics; preparing for master's in Soil and Crop Sciences at Cornell.",
   "email": "rpo28@cornell.edu",
   "photo": "patrick-o-briant.jpg",
-  "linkedin": "https://#N/A",
+  "linkedin": "https://www.linkedin.com/in/patrick-o-briant/",
+  "now": "Cultivation Station Farm Hub",
   "start": 2024,
   "end": 2024
  },
@@ -1391,8 +1435,9 @@ window.LAB_PROFILES = {
   "bio": "Supports robotic data collection operations at Buckler Lab with expertise in electrical and mechanical design, prototype fabrication, and robot repair. Developing a robotic leaf tissue collector for improved DNA sample acquisition.",
   "email": "er499@cornell.edu",
   "photo": "elliot-richards.jpg",
-  "linkedin": "https://#N/A",
-  "start": 2017,
+  "linkedin": "https://www.linkedin.com/in/elliot-richards-34b850119/",
+  "now": "Graduate Student, Yale",
+  "start": 2018,
   "end": 2019
  },
  "allison-krill-brown": {
@@ -1402,7 +1447,9 @@ window.LAB_PROFILES = {
   "bio": "Technician in the Buckler Lab, now a research scientist at University of California, Davis, working on aluminum tolerance of maize and association mapping of candidate genes.",
   "email": "akrillbrown@ucdavis.edu",
   "photo": "allison-krill-brown.jpg",
-  "linkedin": "https://#N/A",
+  "website": "https://strawberry.ucdavis.edu/people/allison-krill-brown",
+  "linkedin": "https://www.linkedin.com/in/allison-krill-brown-110060314/",
+  "now": "Strawberry Breeder, UC Davis",
   "start": 2004,
   "end": 2009
  },
@@ -1426,7 +1473,7 @@ window.LAB_PROFILES = {
   "photo": "allen-gelfond.jpg",
   "linkedin": "https://#N/A",
   "start": 2023,
-  "end": "present"
+  "end": 2025
  },
  "grace-campidilli": {
   "name": "Grace Campidilli",
