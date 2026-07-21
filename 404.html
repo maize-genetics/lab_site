@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirecting… · Lab for Plant Genomic Diversity &amp; Design</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="css/lab-base.css" rel="stylesheet">
+  <link href="css/lab-pages.css" rel="stylesheet">
+
+  <script>
+  /* ============================================================
+     Legacy-URL redirect router for the Wix → GitHub Pages cutover.
+     GitHub Pages serves this 404.html for any unmatched path; we
+     look the path up and forward it so inbound links (papers,
+     Google Scholar, bookmarks) keep working. See HANDOFF.md for the
+     full map and the software files still owed a canonical home.
+     ============================================================ */
+  (function () {
+    "use strict";
+
+    /* exact path -> destination (leading slash added at redirect time) */
+    var REDIRECTS = {
+      "/": "index.html",
+      "/research": "research.html", "/our-research": "research.html",
+      "/publications": "publications.html",
+      "/bioinformatics-1": "tools.html", "/analysis": "tools.html", "/data-sets": "tools.html",
+      "/our-team": "people.html", "/copy-of-our-team": "people.html", "/photo-albums": "people.html",
+      "/alumni": "people.html#timeline",
+      "/about-us": "join.html", "/aboutus": "join.html", "/about": "join.html",
+      "/contact-us": "join.html", "/cerca-about-us": "join.html",
+      "/jobs": "join.html#positions", "/cerca-jobs": "join.html#positions",
+      "/news": "index.html#news", "/blog": "index.html#news", "/game": "index.html",
+      "/copy-of-home": "index.html", "/copy-of-home-1": "index.html",
+      "/tassel": "tassel.html", "/copy-of-tassel": "tassel.html",
+      "/gapit": "tools.html#gapit", "/phg": "tools.html#phg", "/sorghumphg": "tools.html#phg",
+      "/plantcad": "tools.html#plantcad",
+      "/robotic-code": "research.html#ai", "/field-informatics": "research.html#ai",
+      "/copy-of-diversity": "research.html#diversity", "/diversity": "research.html#diversity",
+      "/trait-diversity": "research.html#diversity", "/germplasm": "research.html#diversity",
+      "/whole-genome-sequencing": "research.html#diversity",
+      "/genotyping-by-sequencing": "research.html#diversity",
+      "/proteinadaptation": "research.html#diversity",
+      "/cerca": "research.html#nitrogen", "/cerca-nitrogen": "research.html#nitrogen",
+      "/cerca-nitrogen-over": "research.html#nitrogen", "/cerca-cold-over": "research.html#nitrogen",
+      "/copy-of-cold-tolerance-1": "research.html#nitrogen",
+      "/allocatingnitrogen": "research.html#nitrogen", "/measuringyield": "research.html#nitrogen",
+      "/breeding": "research.html#breeding", "/copy-of-hybrid-vigor-1": "research.html#breeding",
+      "/trnathermometer": "index.html#news"
+    };
+
+    /* legacy Wix person slug -> new profile slug (person.html#<slug>).
+       Generated from data/update_tools/router_person_map.json — keep in sync
+       by re-running scripts/generate-people.py + merge_scraped.py. */
+    var PERSON_MAP = {
+      "aimeeschulz":"aimee-schulz", "alexlipka":"alex-lipka", "alinamiller":"alina-miller", "allengelfond":"allen-gelfond",
+      "allisonkrillbrown":"allison-krill-brown", "amitgur":"amit-gur", "anaberthel":"ana-berthel", "andrewrobertson":"andrew-robertson",
+      "anjugiri":"anju-giri", "arcadiovaldesfranco":"arcadio-valdes-franco", "arturogarcia":"arturo-garcia", "baoxing-song":"baoxing-song",
+      "beatricekonadu":"beatrice-konadu", "benfehr":"ben-fehr", "bethanyeconopouly":"bethany-econopouly", "bethkraftsant":"beth-kraft-sant",
+      "bradrauh":"brad-rauh", "brandonmonier":"brandon-monier", "carlosharjes":"carlos-harjes", "carloslignecalderonvazquez":"carlos-ligne-calderon-vazquez",
+      "charleschen":"charles-chen", "charliehale":"charles-hale", "christygault":"christy-gault", "cindyguan":"cindy-guan",
+      "cintaromay":"m-cinta-romay", "dallaskroon":"dallas-e-kroon", "davidremington":"david-remington", "denisecostich":"denise-costich",
+      "edwardbuckler":"edward-s-buckler", "eladoren":"elad-oren", "elhanersoz":"elhan-ersoz", "elliotrichards":"elliot-richards",
+      "emilyyi":"emily-yi", "emre-cimen":"emre-cimen", "evanlong":"evan-long", "evanrees":"evan-rees",
+      "fei-lu":"fei-lu", "fengtian":"feng-tian", "gaelpressoir":"gael-pressoir", "georgeday":"george-day", "germanocosta-ento":"germano-costa-neto",
+      "gracecampidilli":"grace-campidilli", "gregoryyoung":"gregory-young", "guillaumeramstein":"guillaume-ramstein", "haiwang":"hai-wang",
+      "heathermose-yates":"heather-mose-yates", "henry-dawson":"henry-dawson", "huihuili":"huihui-li", "irievroh":"irie-vroh-bi",
+      "jackgreenberg":"jack-greenberg", "jacobwashburn":"jacob-washburn", "jamesharriman":"james-harriman", "janu-verma":"janu-verma",
+      "jasonwallace":"jason-wallace", "jeffglaubitz":"jeff-glaubitz", "jeffreymorse":"jeffrey-morse", "jeffthornsberry":"jeff-thornsberry",
+      "jenniferheer":"jennifer-heer", "jenniferzhao":"jennifer-zhao", "jessezhou":"jesse-zhou", "jianbingyan":"jianbing-yan",
+      "jianmingyu":"jianming-yu", "jingjingzhai":"jingjing-zhai", "joegage":"joseph-gage", "jonathanojeda":"jonathan-ojeda",
+      "jorgealbertoromero":"jorge-alberto-romero", "joshbudka":"josh-budka", "karlkremling":"karl-kremling", "kellyswarts":"kelly-swarts",
+      "kentashirasawa":"kenta-shirasawa", "kristinapetrillose":"kristina-volkert", "larabrindisi":"lara-brindisi", "larissawilson":"larissa-wilson",
+      "libbygilmore":"libby-gilmore", "lindalirette":"linda-rigamer-lirette", "lucao":"lu-cao", "lynnjohnson":"lynn-johnson",
+      "matiaskirst":"matias-kirst", "matthewwiese":"matthew-wiese", "maxwellswann":"maxwell-swann", "mei-hsiusu":"mei-hsiu-su",
+      "mejia-guerra":"maria-katherine-mejia-guerra", "mengli":"meng-li", "merrittkhaipho-burch":"merritt-khaipho-burch", "michellestitzer":"michelle-stitzer",
+      "mikegore":"michael-gore", "mingqiudai":"mingqiu-dai", "mohamedel-walid":"mohamed-el-walid", "moirasheehan":"moira-sheehan",
+      "nataliestevens":"natalie-stevens", "nengyizhang":"nengyi-zhang", "nickkaczmar":"nick-kaczmar", "nicklepak":"nick-lepak",
+      "niranjani-gnanapragasm":"niranjani-gnanapragasam", "nishasingh":"nisha-singh", "nonoybandillo":"nonoy-bandillo", "patrickjbrown":"patrick-brown",
+      "patrickobriant":"patrick-o-briant", "peterbradbury":"peter-bradbury", "qiangxu":"qiang-xu", "ramsharma":"ram-kumar-sharma",
+      "ramupunna":"ramu-punna", "ravivalluru":"ravi-valluru", "robelshire":"rob-elshire", "rodgers-melnick":"eli-rodgers-melnick",
+      "sarah-mcmorrow":"sarah-mcmorrow", "sarahjensen":"sarah-jensen", "saralarsson":"sara-larsson", "saramiller":"sara-miller",
+      "seanmyles":"sean-myles", "shawnarobertson":"shawna-robertson", "sheng-kaihsu":"sheng-kai-hsu", "sherryflintgarcia":"sherry-flint-garcia",
+      "sherrywhitt":"sherry-whitt", "shu-yunchen":"shu-yun-chen", "sophiemccomb":"sophie-mccomb", "susanromero":"susan-romero",
+      "szu-ping-chen":"szu-ping-chen", "taozuo":"tao-zuo", "taylorferebee":"taylor-ferebee", "terrycasstevens":"terry-casstevens",
+      "thuyla":"thuy-la", "timothyreeves":"timothy-reeves", "torstenpook":"torsten-pook", "travisrooney":"travis-rooney",
+      "traviswrightsman":"travis-wrightsman", "trumantse":"truman-tse", "vaishnavigupta":"vaishnavi-gupta", "wei-yun-lai":"wei-yun-lai",
+      "xiaoleiliu":"xiao-lei-liu", "xiaozhang":"xiao-zhang", "yaoyao-wu":"yaoyao-wu", "yogeshramdoss":"yogesh-ramdoss",
+      "yun-luo":"yun-luo", "zackmiller":"zack-miller", "zhiwuzhang":"zhiwu-zhang", "zong-yan-liu":"zong-yan-liu"
+    };
+    /* alphanumeric-only index, so /baoxingsong resolves to baoxing-song etc. */
+    var PERSON_ALNUM = {};
+    for (var k in PERSON_MAP) PERSON_ALNUM[k.replace(/[^a-z0-9]/g, "")] = PERSON_MAP[k];
+
+    function personDest(slug) {
+      if (PERSON_MAP[slug]) return "person.html#" + PERSON_MAP[slug];
+      var key = slug.replace(/[^a-z0-9]/g, "");
+      if (PERSON_ALNUM[key]) return "person.html#" + PERSON_ALNUM[key];
+      return null;
+    }
+
+    function resolve(path) {
+      var p = String(path || "/").toLowerCase();
+      try { p = decodeURIComponent(p); } catch (e) {}
+      p = p.replace(/^\/lab_site/, "");           // tolerate project-pages base
+      if (p.length > 1) p = p.replace(/\/+$/, ""); // strip trailing slash
+      if (REDIRECTS[p]) return REDIRECTS[p];
+      /* prefix rules — deep links under a legacy section */
+      if (p.indexOf("/tassel/") === 0 || p === "/tassel") return "tassel.html";
+      if (p.indexOf("/gapit/") === 0) return "tools.html#gapit";
+      if (p.indexOf("/publications/") === 0) return "publications.html";
+      if (p.indexOf("/post/") === 0 || p.indexOf("/blog") === 0) return "index.html#news";
+      if (p.indexOf("/cerca") === 0) return "research.html#nitrogen";
+      /* single-segment path -> a person page, or soft-land on the roster
+         (most bare legacy slugs on the old site were member pages) */
+      if (/^\/[a-z0-9-]+$/.test(p)) {
+        return personDest(p.slice(1)) || "people.html";
+      }
+      return null;
+    }
+    window.resolveRedirect = resolve; // exposed for verification
+
+    var dest = resolve(location.pathname);
+    if (dest) {
+      if (!/^https?:\/\//.test(dest) && dest.charAt(0) !== "/") dest = "/" + dest;
+      location.replace(dest);
+    }
+  })();
+  </script>
+  <style>
+    .nf-wrap{max-width:640px;margin:0 auto;padding:80px 24px;text-align:center}
+    .nf-wrap h1{font-family:Spectral,serif;font-size:clamp(28px,4vw,42px);margin:.2em 0}
+    .nf-links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+  </style>
+</head>
+<body>
+
+  <div id="site-nav"></div>
+
+  <main class="nf-wrap">
+    <span class="eyebrow">404</span>
+    <h1>This page has moved.</h1>
+    <p class="lede">The lab site was rebuilt. If you followed an old link, it may not map cleanly — start from one of these:</p>
+    <div class="nf-links">
+      <a class="btn btn-primary" href="index.html">Home</a>
+      <a class="btn btn-ghost" href="research.html">Research</a>
+      <a class="btn btn-ghost" href="people.html">People</a>
+      <a class="btn btn-ghost" href="publications.html">Publications</a>
+      <a class="btn btn-ghost" href="tools.html">Tools</a>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="js/lab-global.js"></script>
+</body>
+</html>

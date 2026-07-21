@@ -1,26 +1,32 @@
 #!/usr/bin/env python3
-# Regenerate js/people-data.js (LAB_PEOPLE, drives the People timeline).
+# Regenerate the People data files from the roster Ed & Sara maintain.
 #
-# Source of truth, in priority order:
-#   1. data/people-roster.xlsx  — the fillable roster Ed & Sara maintain
-#   2. data/people.tsv          — tab-separated fallback (from build_people.py)
+#   data/people-roster.xlsx  ->  js/people-data.js     (window.LAB_PEOPLE)
+#                                js/profiles-data.js    (window.LAB_PROFILES)
 #
-# Usage (from repo root):
-#   python3 scripts/generate-people.py
+# LAB_PEOPLE drives the "lab over time" timeline (people with a start year).
+# LAB_PROFILES drives the per-person profile pages (person.html) — every
+# member with a bio or photo, keyed by a name slug, including those without
+# years (undergrads, short-term visitors).
 #
-# Columns (header row, case-insensitive):
-#   name, role, start_year, end_year, current_position, website, linkedin
-# role: pi | postdoc | grad | staff | undergrad | visiting
-# end_year: a 4-digit year or "present" (blank = present)
-# People with a blank start_year can't be placed on the timeline; they're
-# skipped and listed so you can backfill their years.
-import csv, os
+# Usage (from repo root):  python3 scripts/generate-people.py
+#
+# Columns (header row, case-insensitive; pretty labels like "Start year" ok):
+#   name, role, start_year, end_year, current_position, website, linkedin,
+#   title, bio, email, scholar, orcid, twitter, photo
+import csv, os, re, json
 
 XLSX = 'data/people-roster.xlsx'
 TSV = 'data/people.tsv'
-OUT = 'js/people-data.js'
+OUT_PEOPLE = 'js/people-data.js'
+OUT_PROFILES = 'js/profiles-data.js'
 VALID_ROLES = {'pi', 'postdoc', 'grad', 'staff', 'undergrad', 'visiting'}
-FIELDS = ['name', 'role', 'start_year', 'end_year', 'current_position', 'website', 'linkedin']
+FIELDS = ['name', 'role', 'start_year', 'end_year', 'current_position', 'website',
+          'linkedin', 'title', 'bio', 'email', 'scholar', 'orcid', 'twitter', 'photo']
+
+
+def slugify(s):
+    return re.sub(r'^-|-$', '', re.sub(r'[^a-z0-9]+', '-', (s or '').lower()))
 
 
 def rows_from_xlsx(path):
@@ -28,7 +34,6 @@ def rows_from_xlsx(path):
     wb = load_workbook(path, data_only=True)
     ws = wb['Roster'] if 'Roster' in wb.sheetnames else wb.active
     it = ws.iter_rows(values_only=True)
-    # normalize pretty labels ("Start year") to machine fields ("start_year")
     header = [str(h).strip().lower().replace(' ', '_') if h is not None else '' for h in next(it)]
     idx = {f: (header.index(f) if f in header else None) for f in FIELDS}
     out = []
@@ -43,18 +48,23 @@ def rows_from_xlsx(path):
 
 
 def rows_from_tsv(path):
-    out = []
-    for r in csv.DictReader(open(path, encoding='utf-8'), delimiter='\t'):
-        out.append({f: (r.get(f) or '').strip() for f in FIELDS})
-    return out
+    return [{f: (r.get(f) or '').strip() for f in FIELDS}
+            for r in csv.DictReader(open(path, encoding='utf-8'), delimiter='\t')]
 
 
 src = XLSX if os.path.exists(XLSX) else TSV
 rows = rows_from_xlsx(XLSX) if src == XLSX else rows_from_tsv(TSV)
 
+
+def esc(s):
+    return s.replace('\\', '\\\\').replace("'", "\\'")
+
+
+# ---- LAB_PEOPLE (timeline: people with a start year) ----
 people, skipped = [], []
 for r in rows:
     name, start = r['name'], r['start_year']
+    slug = slugify(name)
     if not start.replace('.0', '').isdigit():
         skipped.append(name)
         continue
@@ -63,21 +73,16 @@ for r in rows:
         role = 'staff'
     end_raw = r['end_year'].lower().replace('.0', '')
     end = 'present' if end_raw in ('', 'present') else (int(end_raw) if end_raw.isdigit() else 'present')
-    people.append({
-        'name': name, 'role': role, 'start': int(start.replace('.0', '')), 'end': end,
-        'now': r['current_position'], 'site': r['website'], 'linkedin': r['linkedin'],
-    })
-
+    people.append({'name': name, 'slug': slug, 'role': role,
+                   'start': int(start.replace('.0', '')), 'end': end,
+                   'now': r['current_position'], 'site': r['website'],
+                   'linkedin': r['linkedin'], 'photo': r['photo']})
 people.sort(key=lambda p: (p['start'], p['name']))
-
-
-def esc(s):
-    return s.replace('\\', '\\\\').replace("'", "\\'")
-
 
 lines = []
 for p in people:
-    parts = ["name:'%s'" % esc(p['name']), "role:'%s'" % p['role'], "start:%d" % p['start']]
+    parts = ["name:'%s'" % esc(p['name']), "slug:'%s'" % p['slug'],
+             "role:'%s'" % p['role'], "start:%d" % p['start']]
     parts.append("end:'present'" if p['end'] == 'present' else "end:%d" % p['end'])
     if p['now']:
         parts.append("now:'%s'" % esc(p['now']))
@@ -85,23 +90,62 @@ for p in people:
         parts.append("site:'%s'" % esc(p['site']))
     if p['linkedin']:
         parts.append("linkedin:'%s'" % esc(p['linkedin']))
+    if p['photo']:
+        parts.append("photo:'%s'" % esc(p['photo']))
     lines.append('  { ' + ', '.join(parts) + ' }')
 
-header = '''/* ============================================================
+people_hdr = '''/* ============================================================
    People data — drives the "lab over time" timeline on people.html.
-   Rendered by js/lab-archive.js (renderPeopleTimeline).
-
-   GENERATED by scripts/generate-people.py from data/people-roster.xlsx
-   (fillable roster Ed & Sara maintain) or data/people.tsv — do not hand-edit.
-
-   Schema: { name, role(pi|postdoc|grad|staff|undergrad|visiting),
-             start (year), end (year|"present"),
-             now (optional), site (optional URL), linkedin (optional URL) }
+   GENERATED by scripts/generate-people.py from data/people-roster.xlsx.
+   Schema: { name, slug, role, start, end(year|"present"),
+             now?, site?, linkedin?, photo? }
    ============================================================ */
 
 '''
-open(OUT, 'w', encoding='utf-8').write(header + 'window.LAB_PEOPLE = [\n' + ',\n'.join(lines) + '\n];\n')
+open(OUT_PEOPLE, 'w', encoding='utf-8').write(
+    people_hdr + 'window.LAB_PEOPLE = [\n' + ',\n'.join(lines) + '\n];\n')
+
+
+# ---- LAB_PROFILES (profile pages: everyone with a bio or photo) ----
+profiles = {}
+for r in rows:
+    if not (r['bio'] or r['photo']):
+        continue
+    slug = slugify(r['name'])
+    role = r['role'].lower()
+    if role not in VALID_ROLES:
+        role = 'staff'
+    start = r['start_year'].replace('.0', '')
+    end = r['end_year'].replace('.0', '')
+    rec = {'name': r['name'], 'role': role}
+    for k in ('title', 'bio', 'email', 'scholar', 'orcid', 'twitter', 'photo'):
+        if r[k]:
+            rec[k] = r[k]
+    if r['website']:
+        rec['website'] = r['website']
+    if r['linkedin']:
+        rec['linkedin'] = r['linkedin']
+    if r['current_position']:
+        rec['now'] = r['current_position']
+    if start.isdigit():
+        rec['start'] = int(start)
+    if end.isdigit():
+        rec['end'] = int(end)
+    elif start.isdigit() and end.lower() in ('', 'present'):
+        rec['end'] = 'present'
+    profiles[slug] = rec
+
+profiles_hdr = '''/* ============================================================
+   Per-person profile data — drives person.html (renderProfile).
+   GENERATED by scripts/generate-people.py from data/people-roster.xlsx.
+   Keyed by name slug; bios/photos migrated from the old Wix site.
+   ============================================================ */
+
+'''
+open(OUT_PROFILES, 'w', encoding='utf-8').write(
+    profiles_hdr + 'window.LAB_PROFILES = ' +
+    json.dumps(profiles, ensure_ascii=False, indent=1) + ';\n')
+
 print('Source: %s' % src)
-print('Wrote %d people to %s (skipped %d with no start year)' % (len(people), OUT, len(skipped)))
-if skipped:
-    print('Needs years:', ', '.join(sorted(skipped)))
+print('Wrote %d people to %s (skipped %d with no start year)' % (len(people), OUT_PEOPLE, len(skipped)))
+print('Wrote %d profiles to %s' % (len(profiles), OUT_PROFILES))

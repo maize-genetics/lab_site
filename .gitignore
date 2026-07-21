@@ -17,3 +17,6 @@ _source/
 images/LabPictures.png/
 images/LabIn2023.png
 images/1932GeneticsCongress.jpg
+
+# Python bytecode cache
+__pycache__/

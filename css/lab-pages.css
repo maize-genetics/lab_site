@@ -87,7 +87,7 @@ body:not(.theme-dark) .lead-card .r{color:#9a6d12}
 .person:nth-child(4n+2) .av{background:linear-gradient(135deg,var(--gold),#a9761a);color:var(--forest-2)}
 .person:nth-child(4n+3) .av{background:linear-gradient(135deg,var(--anthocyanin),#3d1a2c)}
 .person:nth-child(4n) .av{background:linear-gradient(135deg,#2a6b57,#16342A)}
-.person .who{min-width:0}
+.person .who{min-width:0;display:flex;flex-direction:column}
 .person .nm{font-family:"Spectral",serif;font-size:16px;font-weight:500;line-height:1.15}
 .person .rl{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--text-soft);margin-top:3px}
 
@@ -224,4 +224,41 @@ body.theme-dark .tl-filter.active{background:var(--gold);color:var(--forest-2);b
   .tl-axis{margin-left:0}
   .tl-row{grid-template-columns:1fr;gap:3px;padding:9px 0;border-bottom:1px solid var(--line)}
   .tl-track{height:16px}
+}
+
+/* ============ per-person profiles (person.html) + roster links ============ */
+.page-hero.compact { padding: 26px 0 18px; }
+.page-hero.compact .crumbs { margin: 0; }
+
+a.lead-card, a.person { text-decoration: none; color: inherit; cursor: pointer; }
+a.lead-card:hover, a.person:hover { transform: translateY(-2px); }
+a.person .nm { text-decoration: none; }
+a.person:hover .nm { color: var(--gold, #E3A324); }
+
+.tl-namelink { color: inherit; text-decoration: none; border-bottom: 1px dotted rgba(127,127,127,.5); }
+.tl-namelink:hover { color: var(--gold, #E3A324); border-bottom-color: var(--gold, #E3A324); }
+
+.profile-grid { display: grid; grid-template-columns: 230px 1fr; gap: 40px; align-items: start; }
+.profile-side { position: sticky; top: 90px; }
+.p-photo { border-radius: 14px; overflow: hidden; background: var(--forest-2, #0E241C); aspect-ratio: 1/1.15; }
+.p-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 18%; display: block; }
+.p-links { display: flex; flex-direction: column; gap: 8px; margin-top: 18px; }
+.p-link { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500;
+  color: inherit; text-decoration: none; padding: 8px 12px; border: 1px solid rgba(127,127,127,.28);
+  border-radius: 9px; transition: border-color .15s, color .15s; }
+.p-link:hover { border-color: var(--gold, #E3A324); color: var(--gold, #E3A324); }
+.p-link svg { flex: none; }
+
+.profile-main h1 { font-family: Spectral, serif; font-size: clamp(28px, 3.4vw, 42px); line-height: 1.08; margin: 6px 0 4px; }
+.profile-main .eyebrow { display: block; }
+.p-years { font-family: "IBM Plex Mono", monospace; font-size: 13px; opacity: .7; margin: 2px 0; }
+.p-now { font-size: 15px; opacity: .85; margin: 6px 0 0; }
+.p-bio { margin-top: 22px; max-width: 60ch; }
+.p-bio p { font-size: 16.5px; line-height: 1.72; margin: 0 0 16px; }
+.p-back { margin-top: 26px; }
+.p-back a { color: var(--gold, #E3A324); text-decoration: none; font-weight: 500; }
+
+@media (max-width: 720px) {
+  .profile-grid { grid-template-columns: 1fr; gap: 26px; }
+  .profile-side { position: static; max-width: 260px; }
 }

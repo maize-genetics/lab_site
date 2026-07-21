@@ -15,7 +15,7 @@
     { key: "people", href: "people.html", label: "People" },
     { key: "publications", href: "publications.html", label: "Publications" },
     { key: "tools", href: "tools.html", label: "Tools" },
-    { key: "join", href: "join.html", label: "Join" }
+    { key: "join", href: "join.html", label: "About &amp; Join" }
   ];
 
   var BRAND_MARK =
@@ -165,7 +165,10 @@
       entries.forEach(function (e) {
         if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
       });
-    }, { threshold: 0.12 });
+      // threshold 0 (not a fraction): an element taller than the viewport — e.g.
+      // the ~140-row people timeline — can never reach a fractional threshold,
+      // so it would never reveal. rootMargin keeps the "reveal on scroll" feel.
+    }, { threshold: 0, rootMargin: "0px 0px -60px 0px" });
     document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
   } else {
     document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("in"); });
