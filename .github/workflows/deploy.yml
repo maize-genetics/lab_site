@@ -24,13 +24,33 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Publish only the static site. The private source data (roster xlsx,
+      # LinkedIn CSV, scraped JSON) and the build tooling live in the repo but
+      # must NOT be served by the site — nothing loads them at runtime.
+      - name: Stage publishable files (exclude private source data)
+        run: |
+          mkdir -p _site
+          rsync -a --delete \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='.claude' \
+            --exclude='.gitignore' \
+            --exclude='.DS_Store' \
+            --exclude='_site' \
+            --exclude='data' \
+            --exclude='scripts' \
+            --exclude='HANDOFF.md' \
+            --exclude='CONTRIBUTING.md' \
+            --exclude='README.md' \
+            ./ ./_site/
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment
