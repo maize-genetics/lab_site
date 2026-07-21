@@ -36,16 +36,13 @@
 
   <section class="section tint">
     <div class="wrap">
-      <h2 class="subhead reveal">Leadership</h2>
-      <div class="leads-grid reveal" id="leadGrid"></div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <h2 class="subhead reveal">The team</h2>
+      <h2 class="subhead reveal">Team</h2>
+      <!-- Leadership + role groups rendered from js/profiles-data.js via window.LAB_ROSTER (below) -->
+      <div class="roster-group reveal">
+        <div class="pub-year" style="margin-top:0">Leadership</div>
+        <div class="leads-grid" id="leadGrid"></div>
+      </div>
       <div id="teamRoster" class="reveal"></div>
-      <!-- Leadership + team rendered from js/profiles-data.js via window.LAB_ROSTER (below) -->
       <p class="lead-copy reveal" style="margin-top:22px;font-size:13.5px;opacity:.75">Click anyone to read their full profile. The complete roster and alumni appear on the timeline below.</p>
     </div>
   </section>
@@ -103,9 +100,9 @@
       { slug: "zack-miller", role: "Software & Bioinformatics", inst: "USDA-ARS" }
     ],
     groups: [
-      { heading: "Postdocs", label: "Postdoc", slugs: ["brandon-monier","jingjing-zhai","jonathan-ojeda","lara-brindisi","michelle-stitzer","sheng-kai-hsu","wei-yun-lai","niranjani-gnanapragasam","yun-luo"] },
-      { heading: "Graduate students", label: "Grad Student", slugs: ["beatrice-konadu","charles-hale","mohamed-el-walid","henry-dawson","zong-yan-liu","szu-ping-chen"] },
-      { heading: "Professional staff", label: "Staff", slugs: ["ana-berthel","sarah-mcmorrow","thuy-la","nick-lepak","bethany-econopouly"] }
+      { heading: "Staff", label: "Staff", slugs: ["brandon-monier","ana-berthel","nick-lepak","bethany-econopouly"] },
+      { heading: "Postdocs", label: "Postdoc", slugs: ["jingjing-zhai","jonathan-ojeda","michelle-stitzer","sheng-kai-hsu","wei-yun-lai","yun-luo","yiyong-zhao"] },
+      { heading: "Graduate students", label: "Grad Student", slugs: ["beatrice-konadu","charles-hale","mohamed-el-walid","henry-dawson","zong-yan-liu","szu-ping-chen"] }
     ]
   };
   </script>

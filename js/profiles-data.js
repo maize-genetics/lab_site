@@ -409,9 +409,10 @@ window.LAB_PROFILES = {
   "scholar": "https://scholar.google.com/citations?user=R5cq1l8AAAAJ&hl=en",
   "orcid": "https://orcid.org/0000-0002-7536-1113",
   "photo": "guillaume-ramstein.jpg",
+  "website": "https://www.au.dk/en/ramstein@qgg.au.dk",
   "linkedin": "https://linkedin.com/in/guillaume-ramstein-85680336",
   "now": "Assistant Professor, Aarhus University",
-  "start": 2013,
+  "start": 2017,
   "end": 2021
  },
  "david-remington": {
@@ -451,7 +452,7 @@ window.LAB_PROFILES = {
   "website": "https://www.maizegenetics.net",
   "linkedin": "https://linkedin.com/in/maria-cinta-romay-alvarez-142a1a50",
   "now": "Research Director, Cornell University (IGD)",
-  "start": 2009,
+  "start": 2016,
   "end": "present"
  },
  "moira-sheehan": {
@@ -464,8 +465,8 @@ window.LAB_PROFILES = {
   "website": "https://www.breedinginsight.org/",
   "linkedin": "https://linkedin.com/in/moira-sheehan-8723151b",
   "now": "Director, University of Florida",
-  "start": 2008,
-  "end": 2012
+  "start": 2019,
+  "end": "present"
  },
  "nisha-singh": {
   "name": "Nisha Singh",
