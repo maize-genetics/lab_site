@@ -147,10 +147,11 @@ body:not(.theme-dark) .position .meta{color:#9a6d12}
 /* ---------- publication archive: theme tiles ---------- */
 .theme-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
 /* featured cards (landmarks + recent) — richer, always two-up */
-.featured-tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.featured-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .featured-tiles .theme-tile.feature{background:linear-gradient(150deg,var(--forest) 0%,var(--forest-2) 100%);border-color:transparent;padding:30px}
 .featured-tiles .theme-tile.feature::before{height:4px;background:var(--gold)}
-.featured-tiles .theme-tile.feature:nth-child(2)::before{background:var(--anthocyanin)}
+.featured-tiles .theme-tile.feature:nth-child(2)::before{background:#2f9e8f}
+.featured-tiles .theme-tile.feature:nth-child(3)::before{background:var(--anthocyanin)}
 .theme-tile.feature .theme-count,.theme-tile.feature .theme-go{color:var(--gold)!important}
 .theme-tile.feature h3{color:var(--on-dark);font-size:23px}
 .theme-tile.feature p{color:var(--on-dark-soft)}
