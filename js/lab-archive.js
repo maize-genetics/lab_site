@@ -247,10 +247,14 @@
     var team = el("teamRoster");
     if (team && cfg.groups) {
       team.innerHTML = cfg.groups.map(function (g) {
-        var cards = g.slugs.map(function (slug) {
+        var cards = g.slugs.map(function (entry) {
+          // an entry is either a slug string (uses the group's label) or
+          // { slug, label } to give one person a more specific label
+          var slug = typeof entry === "string" ? entry : entry.slug;
+          var label = (entry && entry.label) ? entry.label : g.label;
           var p = resolve(slug);
           var body = avatar(p) + '<span class="who"><span class="nm">' + esc(p.name) +
-            '</span><span class="rl">' + esc(g.label) + "</span></span>";
+            '</span><span class="rl">' + esc(label) + "</span></span>";
           return p.link
             ? '<a class="person" id="' + slug + '" href="person.html#' + slug + '">' + body + "</a>"
             : '<div class="person" id="' + slug + '">' + body + "</div>";
