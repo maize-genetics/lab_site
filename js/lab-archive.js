@@ -94,6 +94,15 @@
         }).sort(byYearDesc);
       }
     },
+    directions: {
+      name: "New Directions",
+      blurb: "Where the lab is heading now — AI foundation models, sustainable corn, and open breeding tools.",
+      items: function () {
+        return (window.LAB_PUBS || []).filter(function (p) {
+          return p.flags && p.flags.indexOf("direction") !== -1;
+        }).sort(byYearDesc);
+      }
+    },
     recent: {
       name: "Most recent",
       blurb: "The newest papers and preprints from the lab, refreshed as they appear.",
@@ -114,7 +123,7 @@
   }
   function renderFeaturedTiles(containerId) {
     var c = el(containerId); if (!c) return;
-    c.innerHTML = featTile("landmarks") + featTile("recent");
+    c.innerHTML = featTile("landmarks") + featTile("directions") + featTile("recent");
   }
 
   /* ---------- single theme page ---------- */

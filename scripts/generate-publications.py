@@ -114,23 +114,56 @@ CURATED=[
  ('robust, simple genotyping-by-sequencing','10.1371/journal.pone.0019379',True),
  ('association study of leaf architecture','10.1038/ng.746',True),
  ('GAPIT: genome association and prediction','10.1093/bioinformatics/bts444',False),
- ('Comprehensive genotyping of the USA national maize','10.1186/gb-2013-14-6-r55',True),
+ ('Comprehensive genotyping of the USA national maize','10.1186/gb-2013-14-6-r55',False),
  ('third-generation Zea mays haplotype map','10.1093/gigascience/gix134',False),
- ('Prediction of evolutionary constraint by genomic annotations','10.1186/s13059-022-02747-2',True),
- ('Practical Haplotype Graph, a platform','10.1093/bioinformatics/btac410',True),
- ('Cross-species modeling of plant genomes at single','10.1101/2024.06.04.596709',True),
+ ('Prediction of evolutionary constraint by genomic annotations','10.1186/s13059-022-02747-2',False),
+ ('Practical Haplotype Graph, a platform','10.1093/bioinformatics/btac410',False),
+ ('Cross-species modeling of plant genomes at single','10.1101/2024.06.04.596709',False),
+ # landmarks from Ed's curated Landmarks.csv (DOIs verified via Crossref)
+ ('Dwarf8 polymorphisms associate with','10.1038/90135',True),
+ ('Structure of linkage disequilibrium and phenotypic','10.1073/pnas.201394398',True),
+ ('Genetic design and statistical power of nested association','10.1534/genetics.107.074245',False),
+ ('Mixed linear model approach adapted for genome','10.1038/ng.546',True),
+ ('Diversity and heritability of the maize rhizosphere','10.1073/pnas.1302837110',True),
+ ('Structure of linkage disequilibrium in plants','10.1146/annurev.arplant.54.031902.134907',True),
+ ('lycopene epsilon cyclase','10.1126/science.1150255',True),
+ ('first-generation haplotype map of maize','10.1126/science.1177837',True),
+ ('Open chromatin reveals the functional maize genome','10.1073/pnas.1525244113',True),
+ ('Dysregulation of expression correlates with rare-allele burden','10.1038/nature25966',True),
  # recent DOIs (not landmarks)
  ('PlantCAD2','10.1101/2025.08.27.672609',False),
  ('GeneCAD','10.1101/2025.10.31.685877',False),
  ('distinguishes maize within a stable tribe','10.1101/2025.01.22.633974',False),
- ('conserved cis-regulatory code across 589','10.1101/2025.04.23.650228',False),
+ ('Widespread turnover of a conserved cis-regulatory','10.1093/molbev/msaf324',False),
  ('maize centromeres and knobs','10.1101/2025.01.31.635908',False),
  ('FarmGTEx','10.1038/s41588-025-02121-5',False),
  ('erosion of sexual reproduction genes in domesticated cassava','10.1093/g3journal/jkae282',False),
- ('nitrogen-efficient, cold-tolerant maize','10.1093/plcell/koaf139',False),
+ ('nitrogen-efficient cold-tolerant maize','10.1093/plcell/koaf139',False),
  ('generalize across grass species but not alleles','10.1101/2024.04.11.589024',False),
  ('multispectral aerial images improves agronomic','10.1093/genetics/iyae037',False),
+ # New Directions additions (Ed's NewDirections.csv; DOIs Crossref-verified)
+ ('Evolutionarily informed deep learning','10.1073/pnas.1814551116',False),
+ ('Reconstructing the maize leaf regulatory network','10.1038/s41467-020-18832-8',False),
+ ('AnchorWave: Sensitive alignment of genomes with high sequence diversity','10.1073/pnas.2113075119',False),
+ ('Scale up trials to validate modified','10.1038/d41586-023-02895-w',False),
+ ('Translating functional molecular knowledge','10.1038/s41576-026-00968-w',False),
 ]
+
+# DOIs that get the 'direction' flag -> the "New Directions" featured box (recent
+# flagship papers; each DOI is already present in CURATED above). A paper is a
+# landmark OR a direction OR neither.
+DIRECTIONS={
+ '10.1073/pnas.1814551116',        # Washburn 2019 deep learning transcript abundance
+ '10.1038/s41467-020-18832-8',     # Tu 2020 maize leaf regulatory network
+ '10.1093/bioinformatics/btac410', # Practical Haplotype Graph (Bradbury 2022)
+ '10.1186/s13059-022-02747-2',     # evolutionary constraint (Ramstein 2022)
+ '10.1073/pnas.2113075119',        # AnchorWave (Song 2022)
+ '10.1038/d41586-023-02895-w',     # Khaipho-Burch 2023 scale-up trials
+ '10.1093/plcell/koaf139',         # nitrogen-efficient cold-tolerant maize (Ojeda-Rivera 2025)
+ '10.1101/2025.08.27.672609',      # PlantCAD2 (Zhai 2025)
+ '10.1093/molbev/msaf324',         # Hale 2026 cis-regulatory turnover (published MBE)
+ '10.1038/s41576-026-00968-w',     # Ramstein 2026 NRG review
+}
 def curated_for(title):
     tl=(title or '').lower()
     for sub,doi,lm in CURATED:
@@ -150,7 +183,24 @@ for r in final:
     if doi: obj['doi']=doi
     else: obj['u']='https://scholar.google.com/scholar?q='+quote(t)
     if lm: obj['flags']=['landmark']
+    elif doi and doi in DIRECTIONS: obj['flags']=['direction']
     pubs.append(obj)
+
+# drop correction / erratum notices (not papers)
+pubs=[p for p in pubs if not re.match(r'(author |publisher )?(correction|erratum)\b', p['t'].strip(), re.I)]
+# de-duplicate variant rows that resolved to the same curated DOI (the dedup
+# pipeline misses these because titles differ across preprint/published/versions);
+# keep the earliest-year representative of each DOI
+best={}
+for p in pubs:
+    d=p.get('doi')
+    if d and (d not in best or p['y']<best[d]['y']): best[d]=p
+seen=set(); dd=[]
+for p in pubs:
+    d=p.get('doi')
+    if not d: dd.append(p)
+    elif d not in seen: dd.append(best[d]); seen.add(d)
+pubs=dd
 
 # ensure themes tag cerca-adjacent: done. sort by year desc
 pubs.sort(key=lambda p:(-p['y'], p['t']))
@@ -163,6 +213,9 @@ landmarks=[p for p in pubs if 'landmark' in p.get('flags',[])]
 print("FINAL pubs:", len(pubs))
 print("landmarks matched:", len(landmarks))
 for p in landmarks: print("   ", p['y'], p['t'][:60])
+directions=[p for p in pubs if 'direction' in p.get('flags',[])]
+print("directions matched:", len(directions))
+for p in directions: print("   ", p['y'], p['t'][:60])
 print("with DOI:", sum(1 for p in pubs if 'doi' in p), " with scholar-url:", sum(1 for p in pubs if 'u' in p))
 print("theme counts:", dict(theme_counts))
 multi=sum(1 for p in pubs if len(p['themes'])>1)
@@ -180,7 +233,7 @@ for p in pubs:
     if 'doi' in p: parts.append(f"doi:'{esc(p['doi'])}'")
     if 'u' in p: parts.append(f"u:'{esc(p['u'])}'")
     parts.append('themes:['+','.join(f"'{s}'" for s in p['themes'])+']')
-    if 'flags' in p: parts.append("flags:['landmark']")
+    if 'flags' in p: parts.append("flags:['"+p['flags'][0]+"']")
     lines.append('  { '+', '.join(parts)+' }')
 body=',\n'.join(lines)
 
