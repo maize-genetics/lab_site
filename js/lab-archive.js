@@ -220,25 +220,44 @@
   function renderRoster() {
     var cfg = window.LAB_ROSTER || {};
     var P = window.LAB_PROFILES || {};
+    var peopleBySlug = {};
+    (window.LAB_PEOPLE || []).forEach(function (x) { if (x.slug) peopleBySlug[x.slug] = x; });
+    // Resolve a roster slug's name/photo from its profile; fall back to LAB_PEOPLE
+    // for someone who's on the roster but has no profile yet (e.g. a brand-new
+    // member with no bio/photo). link:true only when a real profile page exists.
+    function resolve(slug) {
+      var prof = P[slug];
+      if (prof) return { name: prof.name, photo: prof.photo, link: true };
+      var pe = peopleBySlug[slug];
+      return { name: (pe && pe.name) || slug, photo: pe && pe.photo, link: false };
+    }
     var lead = el("leadGrid");
     if (lead && cfg.lead) {
       lead.innerHTML = cfg.lead.map(function (c) {
-        var p = P[c.slug] || { name: c.name || c.slug };
+        var p = resolve(c.slug); if (c.name) p.name = c.name;
         var av = p.photo ? '<div class="avatar has-photo"><img src="images/people/' + esc(p.photo) +
           '" alt="' + esc(p.name) + '"></div>' : '<div class="avatar">' + esc(initials(p.name)) + "</div>";
-        return '<a class="lead-card" id="' + c.slug + '" href="person.html#' + c.slug + '">' + av +
-          "<h4>" + esc(p.name) + "</h4><span class=\"r\">" + esc(c.role) +
-          "</span><span class=\"i\">" + esc(c.inst) + "</span></a>";
+        var body = av + "<h4>" + esc(p.name) + "</h4><span class=\"r\">" + esc(c.role) +
+          "</span><span class=\"i\">" + esc(c.inst) + "</span>";
+        return p.link
+          ? '<a class="lead-card" id="' + c.slug + '" href="person.html#' + c.slug + '">' + body + "</a>"
+          : '<div class="lead-card" id="' + c.slug + '">' + body + "</div>";
       }).join("");
     }
     var team = el("teamRoster");
     if (team && cfg.groups) {
       team.innerHTML = cfg.groups.map(function (g) {
-        var cards = g.slugs.map(function (slug) {
-          var p = P[slug] || { name: slug };
-          return '<a class="person" id="' + slug + '" href="person.html#' + slug + '">' +
-            avatar(p) + '<span class="who"><span class="nm">' + esc(p.name) +
-            '</span><span class="rl">' + esc(g.label) + "</span></span></a>";
+        var cards = g.slugs.map(function (entry) {
+          // an entry is either a slug string (uses the group's label) or
+          // { slug, label } to give one person a more specific label
+          var slug = typeof entry === "string" ? entry : entry.slug;
+          var label = (entry && entry.label) ? entry.label : g.label;
+          var p = resolve(slug);
+          var body = avatar(p) + '<span class="who"><span class="nm">' + esc(p.name) +
+            '</span><span class="rl">' + esc(label) + "</span></span>";
+          return p.link
+            ? '<a class="person" id="' + slug + '" href="person.html#' + slug + '">' + body + "</a>"
+            : '<div class="person" id="' + slug + '">' + body + "</div>";
         }).join("");
         return '<div class="roster-group"><div class="pub-year">' + esc(g.heading) +
           '</div><div class="roster-grid">' + cards + "</div></div>";
