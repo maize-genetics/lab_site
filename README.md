@@ -26,6 +26,7 @@ js/lab-archive.js        Renders landmarks/recent/theme tiles/theme page + timel
 data/people-template.csv Blank template for the members-with-years export
 images/                Photos, figures, and logos (migrated from Wix; see CREDITS.md)
 .nojekyll              Serve files as-is (skip Jekyll)
+CNAME                  Custom domain (www.maizegenetics.net) — cutover plan in HANDOFF.md
 .github/workflows/     GitHub Pages deploy (publishes the whole folder on push to main)
 ```
 
