@@ -37,6 +37,8 @@
 .thread h2{font-size:clamp(26px,3vw,36px);line-height:1.1;letter-spacing:-.01em;font-weight:400;margin-bottom:16px}
 .thread p{color:var(--text-soft);font-size:16px;line-height:1.75}
 .thread p + p{margin-top:14px}
+.thread-cta{margin-top:20px}
+.thread-cta + .tags{margin-top:24px}
 .thread .tags{margin-top:22px;display:flex;gap:8px;flex-wrap:wrap}
 .thread .tag{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.04em;color:var(--green);background:var(--band-alt);padding:5px 10px;border-radius:var(--radius-sm)}
 body.theme-dark .thread .tag{color:var(--on-dark)}
@@ -118,11 +120,10 @@ body.theme-dark .pub-links a{color:var(--gold);border-color:rgba(227,163,36,.4)}
 .tool-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-soft)}
 .tool-card .icon{width:52px;height:52px;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-family:"Spectral",serif;font-size:20px;color:var(--on-dark);background:linear-gradient(135deg,var(--forest),var(--forest-2));margin-bottom:18px;overflow:hidden}
 .tool-card .icon img{width:100%;height:100%;object-fit:cover}
-/* real logos (varied aspect / transparency) sit on white, shown whole */
-.tool-card .icon.logo{background:#fff;padding:5px}
-.tool-card .icon.logo img{object-fit:contain}
-.tool-card:nth-child(3n+2) .icon{background:linear-gradient(135deg,var(--anthocyanin),#3d1a2c)}
-.tool-card:nth-child(3n) .icon{background:linear-gradient(135deg,var(--gold),#a9761a);color:var(--forest-2)}
+.tool-card .icon.logo{width:96px;height:64px;background:transparent;border-radius:0;padding:0;overflow:visible;margin-bottom:16px;flex-shrink:0}
+.tool-card .icon.logo img{width:100%;height:100%;object-fit:contain;object-position:left center}
+.tool-card:nth-child(3n+2) .icon:not(.logo){background:linear-gradient(135deg,var(--anthocyanin),#3d1a2c)}
+.tool-card:nth-child(3n) .icon:not(.logo){background:linear-gradient(135deg,var(--gold),#a9761a);color:var(--forest-2)}
 .tool-card h3{font-size:21px;font-weight:500;margin-bottom:8px}
 .tool-card p{color:var(--text-soft);font-size:14.5px;line-height:1.6;flex:1}
 .tool-card .tlinks{margin-top:18px;display:flex;gap:16px;flex-wrap:wrap}
