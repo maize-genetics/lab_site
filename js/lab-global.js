@@ -3,19 +3,21 @@
    Injects the primary nav and footer (so the six pages stay DRY
    with no build step), then wires theme toggle, mobile nav,
    scroll-spy, reveal, and the genome-track drift.
-   Vanilla JS, no dependencies. Works on file://, http.server,
-   and GitHub Pages (no fetch of partials).
+   Vanilla JS, no dependencies (no fetch of partials). Links are
+   extensionless clean URLs, so preview with a server that maps
+   /research -> research.html (GitHub Pages, `npx serve`).
    ============================================================ */
 (function () {
   "use strict";
 
   /* ---------- shared chrome ---------- */
   var PAGES = [
-    { key: "research", href: "research.html", label: "Research" },
-    { key: "people", href: "people.html", label: "People" },
-    { key: "publications", href: "publications.html", label: "Publications" },
-    { key: "tools", href: "tools.html", label: "Tools" },
-    { key: "join", href: "join.html", label: "About &amp; Join" }
+    { key: "research", href: "research", label: "Research" },
+    { key: "people", href: "people", label: "People" },
+    { key: "photos", href: "photos", label: "Photos" },
+    { key: "publications", href: "publications", label: "Publications" },
+    { key: "tools", href: "tools", label: "Tools" },
+    { key: "join", href: "join", label: "About &amp; Join" }
   ];
 
   var BRAND_MARK =
@@ -36,7 +38,7 @@
     return (
       '<div class="nav-wrap" id="siteNav">' +
       '<div class="container nav">' +
-      '<a class="brand" href="index.html" aria-label="Lab for Plant Genomic Diversity and Design — home">' +
+      '<a class="brand" href="./" aria-label="Lab for Plant Genomic Diversity and Design — home">' +
       BRAND_MARK +
       '<span class="wordmark">' +
       '<span class="name">Lab for Plant Genomic Diversity <b>&amp; Design</b></span>' +

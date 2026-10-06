@@ -98,6 +98,18 @@ unrecoverable once Wix is gone.
   (gitignored) as `<page>/<Year>_<FirstAuthor>_<wixid>.pdf` plus a `manifest.csv`
   (wix id, original upload name, year, DOI, full citation). Stdlib only, resumable.
   **Run it before cancelling Wix and park the folder in Cowork/Drive.**
+- The per-year photo sites `2008.`–`2022.maizegenetics.net` and the pre-2008
+  `buckler-lab-photos.maizegenetics.net` are Wix too:
+  `python3 scripts/archive-year-photos.py` pulls their 82 photos into
+  `_source/year-photos/<year>/` (gitignored) plus a `manifest.csv`. Same deal —
+  run before cancelling, keep the folder in Cowork/Drive.
+  Those 82 photos now drive **`photos.html`** ("Photos" in the nav): web-sized
+  copies live in `images/years/<year>/` and the page is rendered from
+  `js/year-photos-data.js`. Both are generated — add photos to
+  `_source/year-photos/<year>/` and re-run
+  `python3 scripts/build-year-photos.py` (`--force` to re-encode everything).
+  Captions come from the source file names; the hash-named 2007 and 2020–2022
+  photos have none until someone adds them to `CAPTIONS` in that script.
 
 ## DNS cutover - two phases (Wix DNS now, Directnic later)
 

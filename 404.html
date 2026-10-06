@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <!-- served at arbitrary paths (e.g. /tassel/foo), so resolve assets and links from the root -->
+  <base href="/">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Redirecting… · Lab for Plant Genomic Diversity &amp; Design</title>
   <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -25,32 +30,33 @@
 
     /* exact path -> destination (leading slash added at redirect time) */
     var REDIRECTS = {
-      "/": "index.html",
-      "/research": "research.html", "/our-research": "research.html",
-      "/publications": "publications.html",
-      "/bioinformatics-1": "tools.html", "/analysis": "tools.html", "/data-sets": "tools.html",
-      "/our-team": "people.html", "/copy-of-our-team": "people.html", "/photo-albums": "people.html",
-      "/alumni": "people.html#timeline",
-      "/about-us": "join.html", "/aboutus": "join.html", "/about": "join.html",
-      "/contact-us": "join.html", "/cerca-about-us": "join.html",
-      "/jobs": "join.html#positions", "/cerca-jobs": "join.html#positions",
-      "/news": "index.html#news", "/blog": "index.html#news", "/game": "index.html",
-      "/copy-of-home": "index.html", "/copy-of-home-1": "index.html",
-      "/tassel": "tassel.html", "/copy-of-tassel": "tassel.html",
-      "/gapit": "tools.html#gapit", "/phg": "tools.html#phg", "/sorghumphg": "tools.html#phg",
-      "/plantcad": "tools.html#plantcad",
-      "/robotic-code": "research.html#ai", "/field-informatics": "research.html#ai",
-      "/copy-of-diversity": "research.html#diversity", "/diversity": "research.html#diversity",
-      "/trait-diversity": "research.html#diversity", "/germplasm": "research.html#diversity",
-      "/whole-genome-sequencing": "research.html#diversity",
-      "/genotyping-by-sequencing": "research.html#diversity",
-      "/proteinadaptation": "research.html#diversity",
-      "/cerca": "research.html#nitrogen", "/cerca-nitrogen": "research.html#nitrogen",
-      "/cerca-nitrogen-over": "research.html#nitrogen", "/cerca-cold-over": "research.html#nitrogen",
-      "/copy-of-cold-tolerance-1": "research.html#nitrogen",
-      "/allocatingnitrogen": "research.html#nitrogen", "/measuringyield": "research.html#nitrogen",
-      "/breeding": "research.html#breeding", "/copy-of-hybrid-vigor-1": "research.html#breeding",
-      "/trnathermometer": "index.html#news"
+      "/": "/",
+      "/research": "research", "/our-research": "research",
+      "/publications": "publications",
+      "/bioinformatics-1": "tools", "/analysis": "tools", "/data-sets": "tools",
+      "/our-team": "people", "/copy-of-our-team": "people",
+      "/alumni": "people#timeline",
+      "/photos": "photos", "/photo-albums": "photos", "/pictures": "photos",
+      "/about-us": "join", "/aboutus": "join", "/about": "join",
+      "/contact-us": "join", "/cerca-about-us": "join",
+      "/jobs": "join#positions", "/cerca-jobs": "join#positions",
+      "/news": "/#news", "/blog": "/#news", "/game": "/",
+      "/copy-of-home": "/", "/copy-of-home-1": "/",
+      "/tassel": "tassel", "/copy-of-tassel": "tassel",
+      "/gapit": "tools#gapit", "/phg": "tools#phg", "/sorghumphg": "tools#phg",
+      "/plantcad": "tools#plantcad",
+      "/robotic-code": "research#ai", "/field-informatics": "research#ai",
+      "/copy-of-diversity": "research#diversity", "/diversity": "research#diversity",
+      "/trait-diversity": "research#diversity", "/germplasm": "research#diversity",
+      "/whole-genome-sequencing": "research#diversity",
+      "/genotyping-by-sequencing": "research#diversity",
+      "/proteinadaptation": "research#diversity",
+      "/cerca": "research#nitrogen", "/cerca-nitrogen": "research#nitrogen",
+      "/cerca-nitrogen-over": "research#nitrogen", "/cerca-cold-over": "research#nitrogen",
+      "/copy-of-cold-tolerance-1": "research#nitrogen",
+      "/allocatingnitrogen": "research#nitrogen", "/measuringyield": "research#nitrogen",
+      "/breeding": "research#breeding", "/copy-of-hybrid-vigor-1": "research#breeding",
+      "/trnathermometer": "/#news"
     };
 
     /* legacy Wix person slug -> new profile slug (person.html#<slug>).
@@ -97,9 +103,9 @@
     for (var k in PERSON_MAP) PERSON_ALNUM[k.replace(/[^a-z0-9]/g, "")] = PERSON_MAP[k];
 
     function personDest(slug) {
-      if (PERSON_MAP[slug]) return "person.html#" + PERSON_MAP[slug];
+      if (PERSON_MAP[slug]) return "person#" + PERSON_MAP[slug];
       var key = slug.replace(/[^a-z0-9]/g, "");
-      if (PERSON_ALNUM[key]) return "person.html#" + PERSON_ALNUM[key];
+      if (PERSON_ALNUM[key]) return "person#" + PERSON_ALNUM[key];
       return null;
     }
 
@@ -110,15 +116,18 @@
       if (p.length > 1) p = p.replace(/\/+$/, ""); // strip trailing slash
       if (REDIRECTS[p]) return REDIRECTS[p];
       /* prefix rules — deep links under a legacy section */
-      if (p.indexOf("/tassel/") === 0 || p === "/tassel") return "tassel.html";
-      if (p.indexOf("/gapit/") === 0) return "tools.html#gapit";
-      if (p.indexOf("/publications/") === 0) return "publications.html";
-      if (p.indexOf("/post/") === 0 || p.indexOf("/blog") === 0) return "index.html#news";
-      if (p.indexOf("/cerca") === 0) return "research.html#nitrogen";
+      if (p.indexOf("/tassel/") === 0 || p === "/tassel") return "tassel";
+      if (p.indexOf("/gapit/") === 0) return "tools#gapit";
+      if (p.indexOf("/publications/") === 0) return "publications";
+      if (p.indexOf("/post/") === 0 || p.indexOf("/blog") === 0) return "/#news";
+      if (p.indexOf("/cerca") === 0) return "research#nitrogen";
+      /* the old per-year photo sites were <year>.maizegenetics.net/<year> */
+      var yr = /^\/(20[0-2]\d)$/.exec(p);
+      if (yr) return "photos#y" + yr[1];
       /* single-segment path -> a person page, or soft-land on the roster
          (most bare legacy slugs on the old site were member pages) */
       if (/^\/[a-z0-9-]+$/.test(p)) {
-        return personDest(p.slice(1)) || "people.html";
+        return personDest(p.slice(1)) || "people";
       }
       return null;
     }
@@ -127,7 +136,10 @@
     var dest = resolve(location.pathname);
     if (dest) {
       if (!/^https?:\/\//.test(dest) && dest.charAt(0) !== "/") dest = "/" + dest;
-      location.replace(dest);
+      /* a clean URL like /research only lands here if the server can't map it
+         to research.html; redirecting to itself would loop */
+      var here = location.pathname.replace(/\/+$/, "") || "/";
+      if (dest.split("#")[0] !== here) location.replace(dest);
     }
   })();
   </script>
@@ -146,11 +158,11 @@
     <h1>This page has moved.</h1>
     <p class="lede">The lab site was rebuilt. If you followed an old link, it may not map cleanly — start from one of these:</p>
     <div class="nf-links">
-      <a class="btn btn-primary" href="index.html">Home</a>
-      <a class="btn btn-ghost" href="research.html">Research</a>
-      <a class="btn btn-ghost" href="people.html">People</a>
-      <a class="btn btn-ghost" href="publications.html">Publications</a>
-      <a class="btn btn-ghost" href="tools.html">Tools</a>
+      <a class="btn btn-primary" href="./">Home</a>
+      <a class="btn btn-ghost" href="research">Research</a>
+      <a class="btn btn-ghost" href="people">People</a>
+      <a class="btn btn-ghost" href="publications">Publications</a>
+      <a class="btn btn-ghost" href="tools">Tools</a>
     </div>
   </main>
 
