@@ -122,6 +122,9 @@ body.theme-dark .pub-links a{color:var(--gold);border-color:rgba(227,163,36,.4)}
 .tool-card .icon img{width:100%;height:100%;object-fit:cover}
 .tool-card .icon.logo{width:96px;height:64px;background:transparent;border-radius:0;padding:0;overflow:visible;margin-bottom:16px;flex-shrink:0}
 .tool-card .icon.logo img{width:100%;height:100%;object-fit:contain;object-position:left center}
+.tool-card .icon.logo .logo-light{display:none}
+body.theme-dark .tool-card .icon.logo img:not(.logo-light):not(:only-child){display:none}
+body.theme-dark .tool-card .icon.logo .logo-light{display:block}
 .tool-card:nth-child(3n+2) .icon:not(.logo){background:linear-gradient(135deg,var(--anthocyanin),#3d1a2c)}
 .tool-card:nth-child(3n) .icon:not(.logo){background:linear-gradient(135deg,var(--gold),#a9761a);color:var(--forest-2)}
 .tool-card h3{font-size:21px;font-weight:500;margin-bottom:8px}
