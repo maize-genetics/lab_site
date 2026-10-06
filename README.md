@@ -68,13 +68,16 @@ source-to-file mapping. Swap any file in place to update the site.
 
 ## Local preview
 
-No build required. Serve the folder with any static file server:
+No build required, but internal links use clean URLs (`/research`, not
+`research.html`), which GitHub Pages resolves automatically. Preview with a
+server that does the same:
 
 ```bash
-python3 -m http.server 8000
+npx serve .
 ```
 
-Then open <http://localhost:8000/>.
+Then open <http://localhost:3000/>. (`python3 -m http.server` and opening files
+directly via `file://` don't resolve extensionless links, so navigation breaks.)
 
 ## Deploy on GitHub Pages
 
