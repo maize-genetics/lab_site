@@ -29,8 +29,9 @@
       "/research": "research.html", "/our-research": "research.html",
       "/publications": "publications.html",
       "/bioinformatics-1": "tools.html", "/analysis": "tools.html", "/data-sets": "tools.html",
-      "/our-team": "people.html", "/copy-of-our-team": "people.html", "/photo-albums": "people.html",
+      "/our-team": "people.html", "/copy-of-our-team": "people.html",
       "/alumni": "people.html#timeline",
+      "/photos": "photos.html", "/photo-albums": "photos.html", "/pictures": "photos.html",
       "/about-us": "join.html", "/aboutus": "join.html", "/about": "join.html",
       "/contact-us": "join.html", "/cerca-about-us": "join.html",
       "/jobs": "join.html#positions", "/cerca-jobs": "join.html#positions",
@@ -115,6 +116,9 @@
       if (p.indexOf("/publications/") === 0) return "publications.html";
       if (p.indexOf("/post/") === 0 || p.indexOf("/blog") === 0) return "index.html#news";
       if (p.indexOf("/cerca") === 0) return "research.html#nitrogen";
+      /* the old per-year photo sites were <year>.maizegenetics.net/<year> */
+      var yr = /^\/(20[0-2]\d)$/.exec(p);
+      if (yr) return "photos.html#y" + yr[1];
       /* single-segment path -> a person page, or soft-land on the roster
          (most bare legacy slugs on the old site were member pages) */
       if (/^\/[a-z0-9-]+$/.test(p)) {

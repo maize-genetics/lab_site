@@ -13,6 +13,7 @@
   var PAGES = [
     { key: "research", href: "research.html", label: "Research" },
     { key: "people", href: "people.html", label: "People" },
+    { key: "photos", href: "photos.html", label: "Photos" },
     { key: "publications", href: "publications.html", label: "Publications" },
     { key: "tools", href: "tools.html", label: "Tools" },
     { key: "join", href: "join.html", label: "About &amp; Join" }
