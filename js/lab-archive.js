@@ -75,7 +75,7 @@
     var c = el(containerId); if (!c) return;
     c.innerHTML = (window.LAB_THEMES || []).map(function (t) {
       var n = countForTheme(t.slug);
-      return '<a class="theme-tile" href="theme.html#' + t.slug + '">' +
+      return '<a class="theme-tile" href="theme#' + t.slug + '">' +
         '<span class="theme-count">' + n + '<span>' + (n === 1 ? "paper" : "papers") + "</span></span>" +
         "<h3>" + esc(t.name) + "</h3>" +
         "<p>" + esc(t.blurb) + "</p>" +
@@ -115,7 +115,7 @@
   function featTile(slug) {
     var m = SPECIAL[slug];
     var n = m.items().length;
-    return '<a class="theme-tile feature" href="theme.html#' + slug + '">' +
+    return '<a class="theme-tile feature" href="theme#' + slug + '">' +
       '<span class="theme-count">' + n + "<span>papers</span></span>" +
       "<h3>" + esc(m.name) + "</h3>" +
       "<p>" + esc(m.blurb) + "</p>" +
@@ -149,7 +149,7 @@
       if (blurbEl) blurbEl.textContent = "Pick a research theme to see its papers.";
       if (listEl) {
         listEl.innerHTML = (window.LAB_THEMES || []).map(function (x) {
-          return '<a class="pub" href="theme.html#' + x.slug + '"><div class="venue">' +
+          return '<a class="pub" href="theme#' + x.slug + '"><div class="venue">' +
             countForTheme(x.slug) + ' papers</div><div><h3>' + esc(x.name) +
             '</h3><p class="authors">' + esc(x.blurb) + '</p></div><span class="go">open →</span></a>';
         }).join("");
@@ -249,7 +249,7 @@
         var body = av + "<h4>" + esc(p.name) + "</h4><span class=\"r\">" + esc(c.role) +
           "</span><span class=\"i\">" + esc(c.inst) + "</span>";
         return p.link
-          ? '<a class="lead-card" id="' + c.slug + '" href="person.html#' + c.slug + '">' + body + "</a>"
+          ? '<a class="lead-card" id="' + c.slug + '" href="person#' + c.slug + '">' + body + "</a>"
           : '<div class="lead-card" id="' + c.slug + '">' + body + "</div>";
       }).join("");
     }
@@ -265,7 +265,7 @@
           var body = avatar(p) + '<span class="who"><span class="nm">' + esc(p.name) +
             '</span><span class="rl">' + esc(label) + "</span></span>";
           return p.link
-            ? '<a class="person" id="' + slug + '" href="person.html#' + slug + '">' + body + "</a>"
+            ? '<a class="person" id="' + slug + '" href="person#' + slug + '">' + body + "</a>"
             : '<div class="person" id="' + slug + '">' + body + "</div>";
         }).join("");
         return '<div class="roster-group"><div class="pub-year">' + esc(g.heading) +
@@ -281,15 +281,15 @@
     var p = (window.LAB_PROFILES || {})[slug];
     var crumb = el("profileCrumb");
     if (!p) {
-      if (crumb) crumb.innerHTML = '<a href="index.html">Home</a> / <a href="people.html">People</a> / Not found';
+      if (crumb) crumb.innerHTML = '<a href="./">Home</a> / <a href="people">People</a> / Not found';
       host.innerHTML = '<div class="wrap"><h1 class="subhead">Profile not found</h1>' +
         '<p class="lead-copy">This person may not have a profile yet. See the ' +
-        '<a href="people.html">full team and alumni</a>.</p></div>';
+        '<a href="people">full team and alumni</a>.</p></div>';
       document.title = "People · Lab for Plant Genomic Diversity & Design";
       return;
     }
     document.title = p.name + " · Lab for Plant Genomic Diversity & Design";
-    if (crumb) crumb.innerHTML = '<a href="index.html">Home</a> / <a href="people.html">People</a> / ' + esc(p.name);
+    if (crumb) crumb.innerHTML = '<a href="./">Home</a> / <a href="people">People</a> / ' + esc(p.name);
     var years = "";
     if (p.start) years = p.start + " – " + (p.end === "present" ? "present" : (p.end || "present"));
     var ICON_MAIL = '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>';
@@ -310,7 +310,7 @@
       (years ? '<p class="p-years">' + esc(years) + "</p>" : "") +
       (p.now ? '<p class="p-now">' + esc(p.now) + "</p>" : "") +
       '<div class="p-bio">' + bioParas + "</div>" +
-      '<p class="p-back"><a href="people.html">← Back to the team &amp; alumni</a></p>' +
+      '<p class="p-back"><a href="people">← Back to the team &amp; alumni</a></p>' +
       "</div></div></div>";
   }
   function personLinks(p) {
@@ -333,7 +333,7 @@
       var end = p.end === "present" ? "present" : p.end;
       var now = p.now ? ' — <span class="tl-now">' + esc(p.now) + "</span>" : "";
       var slug = p.slug || slugify(p.name);
-      var nm = hasProfile(slug) ? '<a class="tl-namelink" href="person.html#' + slug + '">' + esc(p.name) + "</a>" : esc(p.name);
+      var nm = hasProfile(slug) ? '<a class="tl-namelink" href="person#' + slug + '">' + esc(p.name) + "</a>" : esc(p.name);
       return '<div class="tl-row person-row" id="tl-' + slug + '" data-role="' + esc(p.role) + '">' +
         '<div class="tl-name">' + nm + personLinks(p) +
         '<span class="tl-span">' + esc(p.start + "–" + end) + now + "</span></div>" +
