@@ -1103,7 +1103,7 @@ window.LAB_PROFILES = {
   "name": "Sara Miller",
   "role": "staff",
   "title": "Business Director",
-  "bio": "Business Director of the Institute for Genomic Diversity and Buckler Lab. Cornell supervisor of the group, responsible for personnel, finances, and administrative matters. Graduate of Swarthmore College and University of Michigan Law School.",
+  "bio": "Business Director of the Buckler-Romay Lab for Plant Genomic Diversity & Design. BTI supervisor of the group, responsible for personnel, finances, and administrative matters. Graduate of Swarthmore College and University of Michigan Law School.",
   "email": "sara.miller@cornell.edu",
   "photo": "sara-miller.jpg",
   "linkedin": "https://linkedin.com/in/sara-miller-03b53a19b",
